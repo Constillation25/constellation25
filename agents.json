@@ -1,0 +1,61 @@
+{
+  "framework_pillars": [
+    {
+      "pillar": "Dynamic Assessment",
+      "technique": "Task Decomposition & Assignment",
+      "function": "Granularly inferring agent state and capacity",
+      "implementation": "Earth agent analyzes input complexity, agent availability, and task dependencies to assign work optimally"
+    },
+    {
+      "pillar": "Adaptive Execution",
+      "technique": "Adaptive Coordination",
+      "function": "Handling context shifts and runtime failures",
+      "implementation": "Agents monitor execution state, retry failed tasks, and dynamically reassign work when agents become unavailable"
+    },
+    {
+      "pillar": "Structural Transparency",
+      "technique": "Monitoring & Verifiable Completion",
+      "function": "Auditing both the process and the final outcome",
+      "implementation": "Memoria logs all agent actions, tasks are marked complete only after verification, full audit trail available"
+    },
+    {
+      "pillar": "Scalable Market",
+      "technique": "Trust & Reputation & Multi-objective Optimization",
+      "function": "Efficient, trusted coordination in open markets",
+      "implementation": "Agent success rates tracked, high-performing agents prioritized, multi-objective cost/speed/quality optimization"
+    },
+    {
+      "pillar": "Systemic Resilience",
+      "technique": "Security & Permission Handling",
+      "function": "Preventing cascading failures and malicious use",
+      "implementation": "Bio-auth gates at critical points, agent permissions scoped, failure isolation prevents cascade, malicious input rejected"
+    }
+  ],
+  "agents": [
+    {"id":  1, "name": "Earth",      "role": "Parse/prune convos, create tasks, route to all agents", "pillars": ["Dynamic Assessment", "Adaptive Execution"]},
+    {"id":  2, "name": "Mars",       "role": "Intake processing and artifact recall", "pillars": ["Structural Transparency"]},
+    {"id":  3, "name": "Venus",      "role": "Ethics and compliance check", "pillars": ["Systemic Resilience"]},
+    {"id":  4, "name": "Mercury",    "role": "Speed and latency optimization", "pillars": ["Scalable Market"]},
+    {"id":  5, "name": "Jupiter",    "role": "Scale orchestration and load balancing", "pillars": ["Scalable Market", "Adaptive Execution"]},
+    {"id":  6, "name": "Saturn",     "role": "Boundary enforcement and rate limiting", "pillars": ["Systemic Resilience"]},
+    {"id":  7, "name": "Uranus",     "role": "Innovation brainstorming and novel approaches", "pillars": ["Dynamic Assessment"]},
+    {"id":  8, "name": "Neptune",    "role": "Deep analysis and pattern recognition", "pillars": ["Dynamic Assessment", "Structural Transparency"]},
+    {"id":  9, "name": "Pluto",      "role": "Edge case detection and handling", "pillars": ["Systemic Resilience", "Adaptive Execution"]},
+    {"id": 10, "name": "Ceres",      "role": "Resource allocation and management", "pillars": ["Scalable Market"]},
+    {"id": 11, "name": "Eris",       "role": "Conflict resolution between agents", "pillars": ["Adaptive Execution"]},
+    {"id": 12, "name": "Haumea",     "role": "Shape adaptation and format conversion", "pillars": ["Adaptive Execution"]},
+    {"id": 13, "name": "Makemake",   "role": "Creation tools and code generation", "pillars": ["Dynamic Assessment"]},
+    {"id": 14, "name": "Sedna",      "role": "Remote access and external API calls", "pillars": ["Systemic Resilience"]},
+    {"id": 15, "name": "Quaoar",     "role": "Probabilistic decisions and risk scoring", "pillars": ["Scalable Market"]},
+    {"id": 16, "name": "Orcus",      "role": "Balance maintenance and load distribution", "pillars": ["Scalable Market"]},
+    {"id": 17, "name": "Salacia",    "role": "Flow control and pipeline management", "pillars": ["Adaptive Execution"]},
+    {"id": 18, "name": "Varuna",     "role": "Truth verification and fact checking", "pillars": ["Structural Transparency"]},
+    {"id": 19, "name": "Ixion",      "role": "Cycle management and loop detection", "pillars": ["Systemic Resilience"]},
+    {"id": 20, "name": "Chaos",      "role": "Randomness injection and stress testing", "pillars": ["Systemic Resilience"]},
+    {"id": 21, "name": "Logos",      "role": "Logic enforcement and reasoning validation", "pillars": ["Structural Transparency"]},
+    {"id": 22, "name": "Zoe",        "role": "Life simulation and UX modeling", "pillars": ["Dynamic Assessment"]},
+    {"id": 23, "name": "Perseus",    "role": "Critical task execution and heroic ops", "pillars": ["Adaptive Execution", "Systemic Resilience"]},
+    {"id": 24, "name": "Cassiopeia", "role": "Pattern matching and memory recall", "pillars": ["Structural Transparency"]},
+    {"id": 25, "name": "BashAgent",  "role": "Generate and deploy bash scripts", "pillars": ["Dynamic Assessment", "Systemic Resilience"]}
+  ]
+}
