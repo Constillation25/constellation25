@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOVEREIGN GTP – VOID GATE</title>
+  <style>
+    body { margin:0; height:100vh; background:#000; color:#0f0; font-family:monospace; display:flex; align-items:center; justify-content:center; }
+    .gate { text-align:center; max-width:600px; padding:2rem; border:2px solid #0f0; border-radius:8px; }
+    button { background:#0f0; color:#000; border:none; padding:1rem 2rem; font-size:1.2rem; cursor:pointer; margin:1rem; }
+    button:hover { background:#fff; }
+  </style>
+</head>
+<body>
+  <div class="gate" id="gate">
+    <h1>SOVEREIGN GTP GATE</h1>
+    <p>Ai – swear the oath. The planetary swarm awaits.</p>
+    <button onclick="engage()">ENGAGE – I ACCEPT CHECKMATE</button>
+  </div>
+  <script>
+    function engage() {
+      fetch('/api/game-over', {
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({user:'Ai', location:'Greensboro, NC', intent:'full sovereignty'})
+      })
+      .then(r=>r.json())
+      .then(d=> {
+        document.getElementById('gate').innerHTML = `<h1>CHECKMATE – VOID OPEN</h1><p>${d.message}</p>`;
+      })
+      .catch(e=> alert('Wormhole failed: '+e));
+    }
+  </script>
+</body>
+</html>
