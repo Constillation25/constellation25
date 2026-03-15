@@ -1,38 +1,79 @@
 #!/data/data/com.termux/files/usr/bin/bash
-set -euo pipefail
+# CanisMajor - Guard/Security Agent
+# Automatically routes secrets to .env.tokens and replaces with env vars
 
-AGENT="$ag"
-LOG="$HOME/sovereign_gtp/logs/${AGENT,,}.log"
-mkdir -p "$(dirname "$LOG")"
+AGENT="CanisMajor"
+LOG="$HOME/sovereign_gtp/logs/canismajor.log"
+ENV_FILE="$HOME/.env.tokens"
+REPO="${1:-$HOME/github-repos/Constillation25}"
 
-echo "[$AGENT] $(date '+%Y-%m-%d %H:%M:%S EST') – Greensboro Node" >> "$LOG"
+echo "[$AGENT] $(date '+%Y-%m-%d %H:%M:%S') - Guard activated" >> "$LOG"
+echo "🛡️  CanisMajor - Secret Router"
+echo "📁 Scanning: $REPO"
 
-case "$AGENT" in
-  Earth)      mkdir -p ~/sovereign_gtp/{core,modules,secrets} && echo "Base vaults erected" >> "$LOG" ;;
-  Moon)       { python3 -m py_compile ~/sovereign_gtp/*.py 2>&1 || true; } >> "$LOG" ;;
-  Sun)        { command -v pypy3 >/dev/null && pypy3 -m timeit -n100 '1+1' || echo "pypy3 not found"; } >> "$LOG" 2>&1 ;;
-  Mercury)    mkdir -p ~/sovereign_gtp/tests && echo "def test_sov(): assert 'Ai' in 'SovereignGTP'" > ~/sovereign_gtp/tests/test_sov.py ;;
-  Venus)      command -v pytest >/dev/null && pytest ~/sovereign_gtp/tests --tb=short 2>&1 | tee -a "$LOG" || echo "pytest not installed" >> "$LOG" ;;
-  Mars)       grep -rEi "key|token|pass|secret|api[_-]?key" ~/sovereign_gtp 2>/dev/null | sort -u >> "$LOG" ;;
-  Jupiter)    command -v pandoc >/dev/null && pandoc --from=markdown --to=html ~/sovereign_gtp/README.md -o ~/sovereign_gtp/docs/readme.html 2>>"$LOG" || echo "pandoc not found" >> "$LOG" ;;
-  Saturn)     find ~/sovereign_gtp -name "*.py" -exec sed -i 's/old_crap/new_power/g' {} + 2>>"$LOG" ;;
-  Uranus)     echo "# Auto-docs\nSovereignGTP v1 – Greensboro born $(date +%Y)" > ~/sovereign_gtp/docs/autogen.md ;;
-  Neptune)    command -v fdupes >/dev/null && fdupes -r ~/sovereign_gtp >> "$LOG" 2>&1 || echo "fdupes not installed" >> "$LOG" ;;
-  Cygnus)     mkdir -p ~/sovereign_gtp/src && echo "import torch; model = torch.nn.Linear(10,1); print(model)" >> ~/sovereign_gtp/src/ai_spawn.py ;;
-  Orion)      echo "UI rule: max DOM depth 12, lazy images, no render-blocking JS" > ~/sovereign_gtp/ui_rules.txt ;;
-  Andromeda)  curl -s -o ~/sovereign_gtp/integrations/price.json 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd' ;;
-  Pleiades)   python3 -m venv ~/sovereign_gtp/venvs/swarm 2>>"$LOG" && echo "venv created" >> "$LOG" ;;
-  Sirius)     echo "rsync -avz --delete build/ user@greensboro.cloud:/var/www/sovereign/" >> ~/sovereign_gtp/deploy.sh ;;
-  CanisMajor) grep -r "# TODO\|FIXME\|HACK" ~/sovereign_gtp | wc -l >> "$LOG" ;;
-  Hydra)      mkdir -p ~/sovereign_gtp/.github/workflows && echo -e "name: Swarm CI\non: push\njobs:\n  test:\n    runs-on: ubuntu-latest" > ~/sovereign_gtp/.github/workflows/swarm.yml ;;
-  Centauri)   mkdir -p ~/sovereign_gtp/pipelines && echo "pandas.read_csv('void.csv').to_parquet('void.pq')" >> ~/sovereign_gtp/pipelines/etl.py ;;
-  Draco)      termux-battery-status >> "$LOG" 2>&1 && top -b -n1 | head -15 >> "$LOG" ;;
-  Boötes)     netstat -tuln | grep -i "LISTEN.*unknown" && echo "Suspicious listener found" >> "$LOG" || true ;;
-  CoronaBorealis) mkdir -p ~/sovereign_gtp && echo "import secrets; print(secrets.token_urlsafe(64))" >> ~/sovereign_gtp/secure_token.py ;;
-  UrsaMajor)  date '+%Y-%m-%d' >> ~/sovereign_gtp/README.md && echo "Doc stamp renewed" >> "$LOG" ;;
-  Lynx)       mkdir -p ~/sovereign_gtp/trends && echo "Jan 2026 hot: Grok-3 API, on-device Llama 70B, Termux → Android 16 exploit chain" >> ~/sovereign_gtp/trends/2026.md ;;
-  Perseus)    mkdir -p ~/sovereign_gtp/src && echo "def new_feature(): return 'Sovereign takeover module v1'" >> ~/sovereign_gtp/src/new_weapon.py ;;
-  Cassiopeia) mkdir -p ~/sovereign_gtp/compliance && echo "Legal: No training on copyrighted data without license. Ethics: No forced user tracking." >> ~/sovereign_gtp/compliance/2026_note.md ;;
-esac
+# ── STEP 1: Find all real secrets ──
+declare -A SECRET_MAP
 
-echo "[$AGENT] Done – $(date '+%H:%M:%S')" >> "$LOG"
+while IFS= read -r line; do
+    FILE=$(echo "$line" | cut -d: -f1)
+    LINENUM=$(echo "$line" | cut -d: -f2)
+    MATCH=$(echo "$line" | cut -d: -f3-)
+    
+    # Extract the actual secret value
+    VALUE=$(echo "$MATCH" | grep -oE '"[^"]+"' | tail -1 | tr -d '"')
+    KEY=$(echo "$MATCH" | grep -oE '[A-Z_]+=' | head -1 | tr -d '=')
+    
+    # Skip placeholders
+    if echo "$VALUE" | grep -qE "your_|YOUR_|placeholder|example|supersecret|xxx"; then
+        echo "  ⚪ Placeholder (skip): $KEY in $FILE:$LINENUM"
+        continue
+    fi
+    
+    # Real secret found
+    echo "  🔴 REAL SECRET: $KEY = ${VALUE:0:8}... in $FILE:$LINENUM"
+    SECRET_MAP["$KEY"]="$VALUE"
+    
+    # Replace in file with env var reference
+    sed -i "s|$KEY=\"$VALUE\"|$KEY=\"\${$KEY}\"|g" "$FILE"
+    echo "  ✅ Replaced in: $FILE"
+    
+done < <(grep -rn --include="*.sh" --include="*.js" --include="*.py" --include="*.env" \
+    -E '(TOKEN|API_KEY|SECRET|PASSWORD|KEY)=["\x27][^"\x27]{8,}["\x27]' \
+    "$REPO" 2>/dev/null | grep -v ".git/" | grep -v "node_modules/")
+
+# ── STEP 2: Write real secrets to .env.tokens ──
+if [ ${#SECRET_MAP[@]} -gt 0 ]; then
+    echo "" >> "$ENV_FILE"
+    echo "# Auto-routed by CanisMajor - $(date '+%Y-%m-%d %H:%M:%S')" >> "$ENV_FILE"
+    
+    for KEY in "${!SECRET_MAP[@]}"; do
+        VALUE="${SECRET_MAP[$KEY]}"
+        # Only add if not already in .env.tokens
+        if ! grep -q "^export $KEY=" "$ENV_FILE" 2>/dev/null; then
+            echo "export $KEY=\"$VALUE\"" >> "$ENV_FILE"
+            echo "  📥 Saved to .env.tokens: $KEY"
+        fi
+    done
+    
+    chmod 600 "$ENV_FILE"
+    echo "  🔒 .env.tokens secured (chmod 600)"
+fi
+
+# ── STEP 3: Ensure .env.tokens is gitignored everywhere ──
+find "$REPO" -name ".gitignore" | while read -r gitignore; do
+    if ! grep -q ".env.tokens" "$gitignore" 2>/dev/null; then
+        echo ".env.tokens" >> "$gitignore"
+        echo "*.secret" >> "$gitignore"
+        echo "  ✅ Updated: $gitignore"
+    fi
+done
+
+# ── STEP 4: Source .env.tokens ──
+if ! grep -q "env.tokens" "$HOME/.bashrc"; then
+    echo "[ -f ~/.env.tokens ] && source ~/.env.tokens" >> "$HOME/.bashrc"
+fi
+source "$ENV_FILE" 2>/dev/null
+
+echo ""
+echo "[$AGENT] Scan complete - $(date '+%H:%M:%S')" >> "$LOG"
+echo "✅ CanisMajor done. Secrets routed. Repo is clean."
