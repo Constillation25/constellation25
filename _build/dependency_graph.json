@@ -1,0 +1,920 @@
+{
+  "nodes": [
+    {
+      "id": "agentik",
+      "stack": [
+        "unknown"
+      ],
+      "files": 39
+    },
+    {
+      "id": "ai-kre8tive-sovereign-genesis",
+      "stack": [
+        "node"
+      ],
+      "files": 24
+    },
+    {
+      "id": "ai-web-extensions",
+      "stack": [
+        "node"
+      ],
+      "files": 5082
+    },
+    {
+      "id": "aikre8tive",
+      "stack": [
+        "node",
+        "python"
+      ],
+      "files": 91
+    },
+    {
+      "id": "AiKre8tive-",
+      "stack": [
+        "unknown"
+      ],
+      "files": 3
+    },
+    {
+      "id": "aikre8tive-sovereign-genesis",
+      "stack": [
+        "node"
+      ],
+      "files": 23
+    },
+    {
+      "id": "AiKre8tive-Stargate",
+      "stack": [
+        "node"
+      ],
+      "files": 177
+    },
+    {
+      "id": "AiKre8tive_Sovereign_Genesis",
+      "stack": [
+        "node"
+      ],
+      "files": 20
+    },
+    {
+      "id": "AiMeta",
+      "stack": [
+        "unknown"
+      ],
+      "files": 22
+    },
+    {
+      "id": "AiMetaverse",
+      "stack": [
+        "unknown"
+      ],
+      "files": 1
+    },
+    {
+      "id": "AiMetaverse-Orgin",
+      "stack": [
+        "unknown"
+      ],
+      "files": 2
+    },
+    {
+      "id": "antora-ui-stargate",
+      "stack": [
+        "node"
+      ],
+      "files": 118
+    },
+    {
+      "id": "Apollo-11",
+      "stack": [
+        "node"
+      ],
+      "files": 256
+    },
+    {
+      "id": "bolt.new",
+      "stack": [
+        "node"
+      ],
+      "files": 138
+    },
+    {
+      "id": "build-agentic-software-w-coral-os-agents",
+      "stack": [
+        "unknown"
+      ],
+      "files": 24
+    },
+    {
+      "id": "c25-1basher",
+      "stack": [
+        "unknown"
+      ],
+      "files": 5
+    },
+    {
+      "id": "c25-agent-api",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-agent-automation",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-agent-core",
+      "stack": [
+        "unknown"
+      ],
+      "files": 26
+    },
+    {
+      "id": "c25-agent-dashboard",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-agent-deploy",
+      "stack": [
+        "unknown"
+      ],
+      "files": 24
+    },
+    {
+      "id": "c25-agent-integrations",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-agent-pipeline",
+      "stack": [
+        "unknown"
+      ],
+      "files": 5
+    },
+    {
+      "id": "c25-agent-starter",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-agents",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-arcai-copy-1",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-arcai-copy-2",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-arcai-copy-3",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-arcai-copy-4",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-arcai-deploy",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-arcai-original",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-arcai-original-oldest",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-archive-agentik",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-backfill-artifacts-from-done",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-bio-push",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-bioauth",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-blackbox-github-update",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-broadcast-whisper-echo",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-build",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-build-bash",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-build-broccoli",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-build-fixer-agent",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-build-memoria",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-build-precedence-dossier",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-buzzblast",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-c25-mirror-push",
+      "stack": [
+        "unknown"
+      ],
+      "files": 0
+    },
+    {
+      "id": "c25-c25-ranger",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-check-status",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-check-todo",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-cleanup-failed",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-consolidate-obsidian",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-constellation",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-constellation-25",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-constellation25",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-constellation25-swarm",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-create-home-symlinks",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-dashboard",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-deploy",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-deploy-agents",
+      "stack": [
+        "unknown"
+      ],
+      "files": 5
+    },
+    {
+      "id": "c25-deploy-all",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-deploy-linked2",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-deploy-log-dialog",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-deploy-sovereign",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-deploy-to-github",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-deploy-universe",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-direct-agent-activation",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-do",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-final-sync",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-find-and-run-everything",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-find-videocourts",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-fix-everything",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-forensic-scan-365d",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-fp-clean-forks",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-fp-code-audit",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-fp-consolidate",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-generate-qr-affiliate",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-git-autocommit",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-inject-versedna",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-install",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-install-qrencode",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-integrity-run",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-key-rotate",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-kre8tive-portfolio-build",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-launch",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-launch-agents",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-launch-presskit",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-launch-tunnel",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-link-github",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-mars-sharecrop",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-meaningful-inventory",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-meaningful-inventory-fixed",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-package-portfolio",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-parasol-termux",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-ping-agents",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-planetary-crawl-inject-loop",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-pypi",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-quick-deploy",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-reactivate-planetary-agents",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-rebuild-percellify",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "c25-recloak",
+      "stack": [
+        "unknown"
+      ],
+      "files": 4
+    },
+    {
+      "id": "_constellation_reports",
+      "stack": [
+        "unknown"
+      ],
+      "files": 1
+    },
+    {
+      "id": "_unified_build",
+      "stack": [
+        "unknown"
+      ],
+      "files": 7100
+    }
+  ],
+  "edges": [
+    {
+      "from": "ai-kre8tive-sovereign-genesis",
+      "to": "aikre8tive",
+      "type": "ref"
+    },
+    {
+      "from": "aikre8tive",
+      "to": "AiKre8tive-",
+      "type": "ref"
+    },
+    {
+      "from": "aikre8tive-sovereign-genesis",
+      "to": "aikre8tive",
+      "type": "ref"
+    },
+    {
+      "from": "AiKre8tive-Stargate",
+      "to": "aikre8tive",
+      "type": "ref"
+    },
+    {
+      "from": "AiKre8tive_Sovereign_Genesis",
+      "to": "aikre8tive",
+      "type": "ref"
+    },
+    {
+      "from": "c25-agent-deploy",
+      "to": "AiMetaverse",
+      "type": "ref"
+    },
+    {
+      "from": "c25-agent-deploy",
+      "to": "AiMeta",
+      "type": "ref"
+    },
+    {
+      "from": "_unified_build",
+      "to": "AiKre8tive-Stargate",
+      "type": "ref"
+    },
+    {
+      "from": "_unified_build",
+      "to": "bolt.new",
+      "type": "ref"
+    },
+    {
+      "from": "_unified_build",
+      "to": "AiMeta",
+      "type": "ref"
+    },
+    {
+      "from": "_unified_build",
+      "to": "c25-agent-core",
+      "type": "ref"
+    },
+    {
+      "from": "_unified_build",
+      "to": "antora-ui-stargate",
+      "type": "ref"
+    },
+    {
+      "from": "_unified_build",
+      "to": "ai-web-extensions",
+      "type": "ref"
+    },
+    {
+      "from": "_unified_build",
+      "to": "AiKre8tive_Sovereign_Genesis",
+      "type": "ref"
+    },
+    {
+      "from": "_unified_build",
+      "to": "AiKre8tive-",
+      "type": "ref"
+    },
+    {
+      "from": "_unified_build",
+      "to": "ai-kre8tive-sovereign-genesis",
+      "type": "ref"
+    },
+    {
+      "from": "_unified_build",
+      "to": "AiMetaverse",
+      "type": "ref"
+    },
+    {
+      "from": "_unified_build",
+      "to": "aikre8tive",
+      "type": "ref"
+    },
+    {
+      "from": "_unified_build",
+      "to": "c25-agent-deploy",
+      "type": "ref"
+    }
+  ],
+  "execution_order": [
+    "agentik",
+    "AiKre8tive-",
+    "aikre8tive",
+    "ai-kre8tive-sovereign-genesis",
+    "ai-web-extensions",
+    "aikre8tive-sovereign-genesis",
+    "AiKre8tive-Stargate",
+    "AiKre8tive_Sovereign_Genesis",
+    "AiMeta",
+    "AiMetaverse",
+    "AiMetaverse-Orgin",
+    "antora-ui-stargate",
+    "Apollo-11",
+    "bolt.new",
+    "build-agentic-software-w-coral-os-agents",
+    "c25-1basher",
+    "c25-agent-api",
+    "c25-agent-automation",
+    "c25-agent-core",
+    "c25-agent-dashboard",
+    "c25-agent-deploy",
+    "c25-agent-integrations",
+    "c25-agent-pipeline",
+    "c25-agent-starter",
+    "c25-agents",
+    "c25-arcai-copy-1",
+    "c25-arcai-copy-2",
+    "c25-arcai-copy-3",
+    "c25-arcai-copy-4",
+    "c25-arcai-deploy",
+    "c25-arcai-original",
+    "c25-arcai-original-oldest",
+    "c25-archive-agentik",
+    "c25-backfill-artifacts-from-done",
+    "c25-bio-push",
+    "c25-bioauth",
+    "c25-blackbox-github-update",
+    "c25-broadcast-whisper-echo",
+    "c25-build",
+    "c25-build-bash",
+    "c25-build-broccoli",
+    "c25-build-fixer-agent",
+    "c25-build-memoria",
+    "c25-build-precedence-dossier",
+    "c25-buzzblast",
+    "c25-c25-mirror-push",
+    "c25-c25-ranger",
+    "c25-check-status",
+    "c25-check-todo",
+    "c25-cleanup-failed",
+    "c25-consolidate-obsidian",
+    "c25-constellation",
+    "c25-constellation-25",
+    "c25-constellation25",
+    "c25-constellation25-swarm",
+    "c25-create-home-symlinks",
+    "c25-dashboard",
+    "c25-deploy",
+    "c25-deploy-agents",
+    "c25-deploy-all",
+    "c25-deploy-linked2",
+    "c25-deploy-log-dialog",
+    "c25-deploy-sovereign",
+    "c25-deploy-to-github",
+    "c25-deploy-universe",
+    "c25-direct-agent-activation",
+    "c25-do",
+    "c25-final-sync",
+    "c25-find-and-run-everything",
+    "c25-find-videocourts",
+    "c25-fix-everything",
+    "c25-forensic-scan-365d",
+    "c25-fp-clean-forks",
+    "c25-fp-code-audit",
+    "c25-fp-consolidate",
+    "c25-generate-qr-affiliate",
+    "c25-git-autocommit",
+    "c25-inject-versedna",
+    "c25-install",
+    "c25-install-qrencode",
+    "c25-integrity-run",
+    "c25-key-rotate",
+    "c25-kre8tive-portfolio-build",
+    "c25-launch",
+    "c25-launch-agents",
+    "c25-launch-presskit",
+    "c25-launch-tunnel",
+    "c25-link-github",
+    "c25-mars-sharecrop",
+    "c25-meaningful-inventory",
+    "c25-meaningful-inventory-fixed",
+    "c25-package-portfolio",
+    "c25-parasol-termux",
+    "c25-ping-agents",
+    "c25-planetary-crawl-inject-loop",
+    "c25-pypi",
+    "c25-quick-deploy",
+    "c25-reactivate-planetary-agents",
+    "c25-rebuild-percellify",
+    "c25-recloak",
+    "_constellation_reports",
+    "_unified_build"
+  ]
+}

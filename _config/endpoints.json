@@ -1,0 +1,8 @@
+{
+  "platform_backend": "http://localhost:8080",
+  "sync_endpoint":    "http://localhost:8080/api/sync",
+  "build_endpoint":   "http://localhost:8080/api/build",
+  "agent_bus":        "http://localhost:8080/api/agents",
+  "health_check":     "http://localhost:8080/health",
+  "_note": "Replace localhost with your FacePrintPay backend URL"
+}

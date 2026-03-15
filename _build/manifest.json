@@ -1,0 +1,2012 @@
+{
+  "repos": {
+    "agentik": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/agentik",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 39,
+      "files": [
+        ".gitignore",
+        "AgentDetail.png",
+        "BiometricCheckout.png",
+        "BiometricMain.png",
+        "CommandCenter.png",
+        "CommandDashboard.png",
+        "DashboardMain.png",
+        "HeroLanding.png",
+        "ImplementationGuide.png",
+        "IntegrationsFlow.png",
+        "InvestorDeck.png",
+        "LICENSE",
+        "LearningDashboard.png",
+        "MissionDashboard.png",
+        "PlatformLanding.png",
+        "README.md",
+        "README.md.bak",
+        "RecordsLanding.png",
+        "SchedulerConsole.png",
+        "SovereignCommand.png",
+        "StandardsHub.png",
+        "StarDashboard.png",
+        "StargateDashboard.png",
+        "StargatePlatform.png",
+        "install.sh",
+        "ship-agentik.sh",
+        "thekre8tive",
+        "vercel.json",
+        ".github/workflows/faceprintpay-deploy.yml",
+        "docs/.force-pages-rebuild",
+        "docs/.nojekyll",
+        "docs/README.md",
+        "docs/deployment.md",
+        "docs/index.html",
+        "docs/bitpay/index.html",
+        "product/web/index.html",
+        "public/index.html",
+        "scripts/ship-agentik.sh",
+        "src/web/index.html"
+      ],
+      "cross_repo_refs": []
+    },
+    "ai-kre8tive-sovereign-genesis": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/ai-kre8tive-sovereign-genesis",
+      "stack": [
+        "node"
+      ],
+      "file_count": 24,
+      "files": [
+        ".fairlog.txt",
+        ".gitignore",
+        ".vercelignore",
+        "LICENSE",
+        "README.md",
+        "index.html",
+        "package-lock.json",
+        "package.json",
+        "server.js",
+        "vercel_repos.txt",
+        "vite.config.js",
+        ".github/workflows/alibabacloud.yml",
+        ".github/workflows/blank.yml",
+        ".github/workflows/deploy.yml",
+        ".github/workflows/ibm.yml",
+        "dist/index.html",
+        "dist/vite.svg",
+        "dist/assets/index-7a20abfc.css",
+        "dist/assets/index-7bb5a216.js",
+        "public/vite.svg",
+        "src/App.css",
+        "src/App.jsx",
+        "src/index.css",
+        "src/main.jsx"
+      ],
+      "cross_repo_refs": [
+        "aikre8tive"
+      ]
+    },
+    "ai-web-extensions": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/ai-web-extensions",
+      "stack": [
+        "node"
+      ],
+      "file_count": 5082,
+      "files": [
+        ".gitattributes",
+        ".gitignore",
+        ".gitlab-ci.yml",
+        "LICENSE.md",
+        "README.md",
+        "_redirects",
+        "eslint.config.mjs",
+        "package-lock.json",
+        "package.json",
+        ".github/FUNDING.yml",
+        ".github/dependabot.yml",
+        ".github/workflows/faceprintpay-deploy.yml",
+        ".husky/pre-commit",
+        "amazongpt/LICENSE.md",
+        "amazongpt/eslint.config.mjs",
+        "amazongpt/package-lock.json",
+        "amazongpt/package.json",
+        "amazongpt/assets/data/app.json",
+        "amazongpt/assets/images/badges/awesome/badge.svg",
+        "amazongpt/assets/images/badges/wolfram-award/gold-badge.png",
+        "amazongpt/assets/images/badges/wolfram-award/red-badge.png",
+        "amazongpt/assets/images/badges/wolfram-award/src.psd",
+        "amazongpt/assets/images/badges/wolfram-award/zh-cn/gold-badge.png",
+        "amazongpt/assets/images/badges/wolfram-award/zh-cn/red-badge.png",
+        "amazongpt/assets/images/banners/sponsor/$10/banner1660x260.png",
+        "amazongpt/assets/images/banners/sponsor/$10/banner830x130.png",
+        "amazongpt/assets/images/buttons/greasy-fork/help.svg",
+        "amazongpt/assets/images/buttons/greasy-fork/install/amazongpt.svg",
+        "amazongpt/assets/images/buttons/greasy-fork/install/this-script.svg",
+        "amazongpt/assets/images/buttons/greasy-fork/install/zh-cn/amazongpt.svg",
+        "amazongpt/assets/images/buttons/greasy-fork/install/zh-cn/this-script.svg",
+        "amazongpt/assets/images/icons/app/src.psd",
+        "amazongpt/assets/images/icons/app/black-gold-teal/icon128.png",
+        "amazongpt/assets/images/icons/app/black-gold-teal/icon48.png",
+        "amazongpt/assets/images/icons/app/black-gold-teal/icon500.png",
+        "amazongpt/assets/images/icons/app/black-gold-teal/icon64.png",
+        "amazongpt/assets/images/icons/app/black-gold-teal/icon64.png.b64",
+        "amazongpt/assets/images/icons/app/black/icon128.png",
+        "amazongpt/assets/images/icons/app/black/icon48.png",
+        "amazongpt/assets/images/icons/app/black/icon500.png",
+        "amazongpt/assets/images/icons/app/black/icon64.png",
+        "amazongpt/assets/images/icons/app/black/icon64.png.b64",
+        "amazongpt/assets/images/icons/app/white/icon128.png",
+        "amazongpt/assets/images/icons/app/white/icon48.png",
+        "amazongpt/assets/images/icons/app/white/icon500.png",
+        "amazongpt/assets/images/icons/app/white/icon64.png",
+        "amazongpt/assets/images/icons/app/white/icon64.png.b64",
+        "amazongpt/assets/images/icons/userscript-managers/orangemonkey/icon112.png",
+        "amazongpt/assets/images/icons/userscript-managers/orangemonkey/icon16.png",
+        "amazongpt/assets/images/icons/userscript-managers/orangemonkey/icon32.png",
+        "amazongpt/assets/images/icons/userscript-managers/orangemonkey/icon64.png",
+        "amazongpt/assets/images/icons/userscript-managers/tampermonkey/icon28.png",
+        "amazongpt/assets/images/icons/userscript-managers/violentmonkey/icon100.png",
+        "amazongpt/assets/images/icons/userscript-managers/violentmonkey/icon25.png",
+        "amazongpt/assets/images/icons/web-stores/greasy-fork/black/icon25.png",
+        "amazongpt/assets/images/icons/web-stores/greasy-fork/black/icon50.png",
+        "amazongpt/assets/images/icons/web-stores/greasy-fork/black/icon512.png",
+        "amazongpt/assets/images/icons/web-stores/greasy-fork/white/icon25.png",
+        "amazongpt/assets/images/icons/web-stores/greasy-fork/white/icon50.png",
+        "amazongpt/assets/images/icons/web-stores/greasy-fork/white/icon512.png"
+      ],
+      "cross_repo_refs": []
+    },
+    "aikre8tive": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/aikre8tive",
+      "stack": [
+        "node",
+        "python"
+      ],
+      "file_count": 91,
+      "files": [
+        ".env",
+        ".env.template",
+        ".gitignore",
+        "1basher.sh",
+        "README.md",
+        "index.html",
+        "package-lock.json",
+        "package.json",
+        "planetary_crawl_inject_loop.sh",
+        "requirements.txt",
+        "secure_github_auth.sh",
+        "sovereign_launch.sh",
+        "sync_test.txt",
+        "vercel.json",
+        ".github/workflows/deploy.yml",
+        ".github/workflows/main.yml",
+        ".github/workflows/vercel-matrix.yml",
+        ".vercel/README.txt",
+        ".vercel/project.json",
+        "agents/Recon.py",
+        "api/core.py",
+        "api/dwarfs.py",
+        "api/gateway.py",
+        "api/giants.py",
+        "api/health.py",
+        "api/moons.py",
+        "api/relay.py",
+        "apps/console/.gitignore",
+        "apps/quidpros/.gitignore",
+        "apps/vers3d/.gitignore",
+        "apps/yesquid/.gitignore",
+        "backend/agents/Callisto.py",
+        "backend/agents/Ceres.py",
+        "backend/agents/Charon.py",
+        "backend/agents/Deimos.py",
+        "backend/agents/Earth.py",
+        "backend/agents/Enceladus.py",
+        "backend/agents/Eris.py",
+        "backend/agents/Europa.py",
+        "backend/agents/Ganymede.py",
+        "backend/agents/Haumea.py",
+        "backend/agents/Io.py",
+        "backend/agents/Jupiter.py",
+        "backend/agents/Luna.py",
+        "backend/agents/Makemake.py",
+        "backend/agents/Mars.py",
+        "backend/agents/Mercury.py",
+        "backend/agents/Neptune.py",
+        "backend/agents/Phobos.py",
+        "backend/agents/Pluto.py",
+        "backend/agents/Saturn.py",
+        "backend/agents/Sun.py",
+        "backend/agents/Titan.py",
+        "backend/agents/Triton.py",
+        "backend/agents/Uranus.py",
+        "backend/agents/Venus.py",
+        "backend/agents/__init__.py",
+        "config/deployment_config.json",
+        "config/system_config.json",
+        "config/whisper_config.json"
+      ],
+      "cross_repo_refs": [
+        "AiKre8tive-"
+      ]
+    },
+    "AiKre8tive-": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/AiKre8tive-",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 3,
+      "files": [
+        ".gitignore",
+        "README.md",
+        ".github/workflows/faceprintpay-deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "aikre8tive-sovereign-genesis": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/aikre8tive-sovereign-genesis",
+      "stack": [
+        "node"
+      ],
+      "file_count": 23,
+      "files": [
+        ".fairlog.txt",
+        ".gitignore",
+        ".vercelignore",
+        "LICENSE",
+        "README.md",
+        "index.html",
+        "package-lock.json",
+        "package.json",
+        "vercel_repos.txt",
+        "vite.config.js",
+        ".github/workflows/alibabacloud.yml",
+        ".github/workflows/blank.yml",
+        ".github/workflows/deploy.yml",
+        ".github/workflows/ibm.yml",
+        "dist/index.html",
+        "dist/vite.svg",
+        "dist/assets/index-7a20abfc.css",
+        "dist/assets/index-7bb5a216.js",
+        "public/vite.svg",
+        "src/App.css",
+        "src/App.jsx",
+        "src/index.css",
+        "src/main.jsx"
+      ],
+      "cross_repo_refs": [
+        "aikre8tive"
+      ]
+    },
+    "AiKre8tive-Stargate": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/AiKre8tive-Stargate",
+      "stack": [
+        "node"
+      ],
+      "file_count": 177,
+      "files": [
+        ".gitignore",
+        "AiKre8tive_TermsOfService.txt",
+        "Dockerfile",
+        "README.md",
+        "Sovereign_Fallback_Key.txt",
+        "agent_loop.py",
+        "agent_memory.json",
+        "arcai_deploy.sh",
+        "broadcast_whisper_echo.sh",
+        "buzzblast.sh",
+        "deploy_agents.sh",
+        "echo_deploy_trigger.txt",
+        "echo_signal.txt",
+        "ecosystem.25agents.config.js",
+        "ecosystem.config.j",
+        "ecosystem.config.js",
+        "final_sync.sh",
+        "fix_aiapirepo.sh",
+        "generate_sovereign_files.py",
+        "git_autocommit.sh",
+        "index.html",
+        "inject_versedna.sh",
+        "kre8tive_file_tree.txt",
+        "kre8tive_tree_pretty.txt",
+        "launch_presskit.sh",
+        "next.config.js",
+        "package-lock.json",
+        "package.json",
+        "pushed_apis.json",
+        "reactivate_planetary_agents.sh",
+        "send_echo_trace.sh",
+        "sovereign_push_everywhere.sh",
+        "start_backend.sh",
+        "text.txt",
+        "vercel.json",
+        "vite.config.js",
+        "whisper_auto_loop.sh",
+        "ecosystem.config.js.bak",
+        ".github/workflows/deploy.yml",
+        "agents/agent_alpha.sh",
+        "agents/agent_beta.sh",
+        "agents/auto_deprecate_agent.py",
+        "agents/ping_agents.sh",
+        "agents/sec_auditx.py",
+        "agents/status.txt",
+        "agents/AiTrek/agent_config.json",
+        "agents/AlfAi/agent_config.json",
+        "agents/Alpi/agent_config.json",
+        "agents/CacheF/agent_config.json",
+        "agents/Chronos/agent_config.json",
+        "agents/ComandR/agent_config.json",
+        "agents/Echo/agent_config.json",
+        "agents/Explorer/agent_config.json",
+        "agents/Grail/agent_config.json",
+        "agents/Kinect/agent_config.json",
+        "agents/KoreSync/agent_config.json",
+        "agents/Ledger/agent_config.json",
+        "agents/MyBUY'o/agent_config.json",
+        "agents/Nexus/agent_config.json",
+        "agents/NoTeTaL/agent_config.json"
+      ],
+      "cross_repo_refs": [
+        "aikre8tive"
+      ]
+    },
+    "AiKre8tive_Sovereign_Genesis": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/AiKre8tive_Sovereign_Genesis",
+      "stack": [
+        "node"
+      ],
+      "file_count": 20,
+      "files": [
+        ".fairlog.txt",
+        ".gitignore",
+        ".vercelignore",
+        "LICENSE",
+        "README.md",
+        "index.html",
+        "package-lock.json",
+        "package.json",
+        "vercel_repos.txt",
+        "vite.config.js",
+        ".github/workflows/faceprintpay-deploy.yml",
+        "dist/index.html",
+        "dist/vite.svg",
+        "dist/assets/index-7a20abfc.css",
+        "dist/assets/index-7bb5a216.js",
+        "public/vite.svg",
+        "src/App.css",
+        "src/App.jsx",
+        "src/index.css",
+        "src/main.jsx"
+      ],
+      "cross_repo_refs": [
+        "aikre8tive"
+      ]
+    },
+    "AiMeta": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/AiMeta",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 22,
+      "files": [
+        ".gitignore",
+        "DEPLOYMENT.md",
+        "README.md",
+        "Verse.2",
+        "setup-node@v2",
+        "test-project.sh",
+        ".github/workflows/faceprintpay-deploy.yml",
+        "AIMetaverseAgents/main.py",
+        "AIMetaverseAgents/requirements.txt",
+        "AIMetaverseBackend/package-lock.json",
+        "AIMetaverseBackend/package.json",
+        "AIMetaverseBackend/src/index.js",
+        "AIMetaverseFrontend/package-lock.json",
+        "AIMetaverseFrontend/package.json",
+        "AIMetaverseFrontend/public/index.html",
+        "AIMetaverseFrontend/src/App.css",
+        "AIMetaverseFrontend/src/App.js",
+        "AIMetaverseFrontend/src/index.css",
+        "AIMetaverseFrontend/src/index.js",
+        "AIMetaverseFrontend/src/components/Agents.js",
+        "AIMetaverseFrontend/src/components/Home.js",
+        "AIMetaverseFrontend/src/components/Metaverse.js"
+      ],
+      "cross_repo_refs": []
+    },
+    "AiMetaverse": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/AiMetaverse",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 1,
+      "files": [
+        ".github/workflows/faceprintpay-deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "AiMetaverse-Orgin": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/AiMetaverse-Orgin",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 2,
+      "files": [
+        "index.html",
+        ".github/workflows/faceprintpay-deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "antora-ui-stargate": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/antora-ui-stargate",
+      "stack": [
+        "node"
+      ],
+      "file_count": 118,
+      "files": [
+        ".eslintrc",
+        ".gitignore",
+        ".stylelintrc",
+        "LICENSE",
+        "README.adoc",
+        "gulpfile.js",
+        "index.js",
+        "package-lock.json",
+        "package.json",
+        ".github/workflows/faceprintpay-deploy.yml",
+        "docs/antora.yml",
+        "docs/modules/ROOT/nav.adoc",
+        "docs/modules/ROOT/pages/add-fonts.adoc",
+        "docs/modules/ROOT/pages/admonition-styles.adoc",
+        "docs/modules/ROOT/pages/build-preview-ui.adoc",
+        "docs/modules/ROOT/pages/development-workflow.adoc",
+        "docs/modules/ROOT/pages/index.adoc",
+        "docs/modules/ROOT/pages/inline-text-styles.adoc",
+        "docs/modules/ROOT/pages/list-styles.adoc",
+        "docs/modules/ROOT/pages/prerequisites.adoc",
+        "docs/modules/ROOT/pages/set-up-project.adoc",
+        "docs/modules/ROOT/pages/sidebar-styles.adoc",
+        "docs/modules/ROOT/pages/style-guide.adoc",
+        "docs/modules/ROOT/pages/stylesheets.adoc",
+        "docs/modules/ROOT/pages/templates.adoc",
+        "docs/modules/ROOT/pages/ui-macro-styles.adoc",
+        "gulp.d/lib/create-task.js",
+        "gulp.d/lib/export-tasks.js",
+        "gulp.d/lib/gulp-prettier-eslint.js",
+        "gulp.d/tasks/build-preview-pages.js",
+        "gulp.d/tasks/build.js",
+        "gulp.d/tasks/format.js",
+        "gulp.d/tasks/index.js",
+        "gulp.d/tasks/lint-css.js",
+        "gulp.d/tasks/lint-js.js",
+        "gulp.d/tasks/pack.js",
+        "gulp.d/tasks/remove.js",
+        "gulp.d/tasks/serve.js",
+        "preview-src/404.adoc",
+        "preview-src/index.adoc",
+        "preview-src/multirepo-ssg.svg",
+        "preview-src/ui-model.yml",
+        "src/css/base.css",
+        "src/css/body.css",
+        "src/css/breadcrumbs.css",
+        "src/css/doc.css",
+        "src/css/footer.css",
+        "src/css/header.css",
+        "src/css/highlight.css",
+        "src/css/main.css",
+        "src/css/nav.css",
+        "src/css/page-versions.css",
+        "src/css/pagination.css",
+        "src/css/print.css",
+        "src/css/site.css",
+        "src/css/tabs.css",
+        "src/css/toc.css",
+        "src/css/toolbar.css",
+        "src/css/typeface-nunito.css",
+        "src/css/typeface-roboto-mono.css"
+      ],
+      "cross_repo_refs": []
+    },
+    "Apollo-11": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/Apollo-11",
+      "stack": [
+        "node"
+      ],
+      "file_count": 256,
+      "files": [
+        ".editorconfig",
+        ".gitignore",
+        ".markdownlint.yml",
+        "CONTRIBUTING.md",
+        "LICENSE.md",
+        "README.md",
+        "bun.lockb",
+        "package.json",
+        ".github/PULL_REQUEST_TEMPLATE.md",
+        ".github/labeler.yml",
+        ".github/ISSUE_TEMPLATE/Discussion.md",
+        ".github/ISSUE_TEMPLATE/Humour.md",
+        ".github/ISSUE_TEMPLATE/Proof_Comanche.md",
+        ".github/ISSUE_TEMPLATE/Proof_Luminary.md",
+        ".github/workflows/faceprintpay-deploy.yml",
+        "Comanche055/AGC_BLOCK_TWO_SELF-CHECK.agc",
+        "Comanche055/ALARM_AND_ABORT.agc",
+        "Comanche055/ANGLFIND.agc",
+        "Comanche055/ASSEMBLY_AND_OPERATION_INFORMATION.agc",
+        "Comanche055/AUTOMATIC_MANEUVERS.agc",
+        "Comanche055/CM_BODY_ATTITUDE.agc",
+        "Comanche055/CM_ENTRY_DIGITAL_AUTOPILOT.agc",
+        "Comanche055/CONIC_SUBROUTINES.agc",
+        "Comanche055/CONTRACT_AND_APPROVALS.agc",
+        "Comanche055/CSM_GEOMETRY.agc",
+        "Comanche055/DISPLAY_INTERFACE_ROUTINES.agc",
+        "Comanche055/DOWN-TELEMETRY_PROGRAM.agc",
+        "Comanche055/DOWNLINK_LISTS.agc",
+        "Comanche055/ENTRY_LEXICON.agc",
+        "Comanche055/ERASABLE_ASSIGNMENTS.agc",
+        "Comanche055/EXECUTIVE.agc",
+        "Comanche055/EXTENDED_VERBS.agc",
+        "Comanche055/FIXED_FIXED_CONSTANT_POOL.agc",
+        "Comanche055/FRESH_START_AND_RESTART.agc",
+        "Comanche055/GIMBAL_LOCK_AVOIDANCE.agc",
+        "Comanche055/GROUND_TRACKING_DETERMINATION_PROGRAM.agc",
+        "Comanche055/IMU_CALIBRATION_AND_ALIGNMENT.agc",
+        "Comanche055/IMU_COMPENSATION_PACKAGE.agc",
+        "Comanche055/IMU_MODE_SWITCHING_ROUTINES.agc",
+        "Comanche055/INFLIGHT_ALIGNMENT_ROUTINES.agc",
+        "Comanche055/INTEGRATION_INITIALIZATION.agc",
+        "Comanche055/INTER-BANK_COMMUNICATION.agc",
+        "Comanche055/INTERPRETER.agc",
+        "Comanche055/INTERPRETIVE_CONSTANTS.agc",
+        "Comanche055/INTERRUPT_LEAD_INS.agc",
+        "Comanche055/JET_SELECTION_LOGIC.agc",
+        "Comanche055/KALCMANU_STEERING.agc",
+        "Comanche055/KEYRUPT_UPRUPT.agc",
+        "Comanche055/LATITUDE_LONGITUDE_SUBROUTINES.agc",
+        "Comanche055/LUNAR_AND_SOLAR_EPHEMERIDES_SUBROUTINES.agc",
+        "Comanche055/LUNAR_LANDMARK_SELECTION_FOR_CM.agc",
+        "Comanche055/MAIN.agc",
+        "Comanche055/MEASUREMENT_INCORPORATION.agc",
+        "Comanche055/MYSUBS.agc",
+        "Comanche055/ORBITAL_INTEGRATION.agc",
+        "Comanche055/P11.agc",
+        "Comanche055/P20-P25.agc",
+        "Comanche055/P30-P37.agc",
+        "Comanche055/P32-P33_P72-P73.agc",
+        "Comanche055/P34-35_P74-75.agc"
+      ],
+      "cross_repo_refs": []
+    },
+    "bolt.new": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/bolt.new",
+      "stack": [
+        "node"
+      ],
+      "file_count": 138,
+      "files": [
+        ".editorconfig",
+        ".gitignore",
+        ".prettierignore",
+        ".prettierrc",
+        ".tool-versions",
+        "CONTRIBUTING.md",
+        "LICENSE",
+        "README.md",
+        "bindings.sh",
+        "eslint.config.mjs",
+        "load-context.ts",
+        "package.json",
+        "pnpm-lock.yaml",
+        "tsconfig.json",
+        "uno.config.ts",
+        "vercel.json",
+        "vite.config.ts",
+        "worker-configuration.d.ts",
+        "wrangler.toml",
+        ".github/ISSUE_TEMPLATE/bug_report.yml",
+        ".github/ISSUE_TEMPLATE/config.yml",
+        ".github/ISSUE_TEMPLATE/feature_request.md",
+        ".github/actions/setup-and-build/action.yaml",
+        ".github/workflows/faceprintpay-deploy.yml",
+        ".husky/commit-msg",
+        "app/entry.client.tsx",
+        "app/entry.server.tsx",
+        "app/root.tsx",
+        "app/components/chat/Artifact.tsx",
+        "app/components/chat/AssistantMessage.tsx",
+        "app/components/chat/BaseChat.module.scss",
+        "app/components/chat/BaseChat.tsx",
+        "app/components/chat/Chat.client.tsx",
+        "app/components/chat/CodeBlock.module.scss",
+        "app/components/chat/CodeBlock.tsx",
+        "app/components/chat/Markdown.module.scss",
+        "app/components/chat/Markdown.tsx",
+        "app/components/chat/Messages.client.tsx",
+        "app/components/chat/SendButton.client.tsx",
+        "app/components/chat/UserMessage.tsx",
+        "app/components/editor/codemirror/BinaryContent.tsx",
+        "app/components/editor/codemirror/CodeMirrorEditor.tsx",
+        "app/components/editor/codemirror/cm-theme.ts",
+        "app/components/editor/codemirror/indent.ts",
+        "app/components/editor/codemirror/languages.ts",
+        "app/components/header/Header.tsx",
+        "app/components/header/HeaderActionButtons.client.tsx",
+        "app/components/sidebar/HistoryItem.tsx",
+        "app/components/sidebar/Menu.client.tsx",
+        "app/components/sidebar/date-binning.ts",
+        "app/components/ui/Dialog.tsx",
+        "app/components/ui/IconButton.tsx",
+        "app/components/ui/LoadingDots.tsx",
+        "app/components/ui/PanelHeader.tsx",
+        "app/components/ui/PanelHeaderButton.tsx",
+        "app/components/ui/Slider.tsx",
+        "app/components/ui/ThemeSwitch.tsx",
+        "app/components/workbench/EditorPanel.tsx",
+        "app/components/workbench/FileBreadcrumb.tsx",
+        "app/components/workbench/FileTree.tsx"
+      ],
+      "cross_repo_refs": []
+    },
+    "build-agentic-software-w-coral-os-agents": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/build-agentic-software-w-coral-os-agents",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 24,
+      "files": [
+        ".gitignore",
+        "README.md",
+        "adding-custom-agents.md",
+        "connecting-with-coral-studio.md",
+        "docker-guide.md",
+        "guide-list.md",
+        "orchestration-registry.md",
+        "running-coral-server.md",
+        "sessions.md",
+        ".github/workflows/faceprintpay-deploy.yml",
+        ".idea/.gitignore",
+        ".idea/CoralDocs-main.iml",
+        ".idea/material_theme_project_new.xml",
+        ".idea/misc.xml",
+        ".idea/modules.xml",
+        ".idea/vcs.xml",
+        "assets/gifs/AgentTerminalRunning.gif",
+        "assets/gifs/Coralserver.gif",
+        "assets/gifs/SendMesageAPi.gif",
+        "assets/gifs/coral-example-yt.png",
+        "assets/gifs/creating_session.gif",
+        "assets/gifs/creating_session_api.gif",
+        "assets/gifs/creating_thread.gif",
+        "assets/gifs/updating_the_application_yaml.gif"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-1basher": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-1basher",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 5,
+      "files": [
+        "1Basher.sh",
+        "1basher.sh",
+        "README.md",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-agent-api": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-agent-api",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        ".gitignore",
+        "README.md",
+        ".github/workflows/faceprintpay-deploy.yml",
+        "public/index.html"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-agent-automation": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-agent-automation",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        ".gitignore",
+        "README.md",
+        ".github/workflows/faceprintpay-deploy.yml",
+        "public/index.html"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-agent-core": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-agent-core",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 26,
+      "files": [
+        ".fairlog.txt",
+        ".gitignore",
+        "README.md",
+        "vercel.json",
+        ".github/workflows/faceprintpay-deploy.yml",
+        ".pytest_cache/.gitignore",
+        ".pytest_cache/CACHEDIR.TAG",
+        ".pytest_cache/README.md",
+        ".pytest_cache/v/cache/nodeids",
+        ".pytest_cache/v/cache/stepwise",
+        ".vscode/Untitled-1.ipynb",
+        ".vscode/launch.json",
+        ".vscode/settings.json",
+        "backend/index.js",
+        "backend/package.json",
+        "backend/config/config.js",
+        "backend/middleware/auth.js",
+        "backend/middleware/errorHandler.js",
+        "backend/routes/arxiv.js",
+        "backend/routes/authentication.js",
+        "backend/routes/graphql.js",
+        "backend/routes/payment.js",
+        "backend/routes/search.js",
+        "backend/routes/upload.js",
+        "backend/routes/weather.js",
+        "public/index.html"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-agent-dashboard": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-agent-dashboard",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        ".gitignore",
+        "README.md",
+        ".github/workflows/faceprintpay-deploy.yml",
+        "public/index.html"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-agent-deploy": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-agent-deploy",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 24,
+      "files": [
+        ".fairlog.txt",
+        ".gitignore",
+        "README.md",
+        ".devcontainer/devcontainer.json",
+        ".github/workflows/faceprintpay-deploy.yml",
+        "ai_metaverse/README.md",
+        "ai_metaverse/__init__.py",
+        "ai_metaverse/config.py",
+        "ai_metaverse/main.py",
+        "ai_metaverse/orchestrator.py",
+        "ai_metaverse/requirements.txt",
+        "ai_metaverse/setup.py",
+        "ai_metaverse/assistants/__init__.py",
+        "ai_metaverse/assistants/base.py",
+        "ai_metaverse/assistants/earth.py",
+        "ai_metaverse/assistants/moon.py",
+        "ai_metaverse/assistants/sun.py",
+        "ai_metaverse/examples/__init__.py",
+        "ai_metaverse/examples/run_examples.py",
+        "ai_metaverse/examples/tasks/__init__.py",
+        "ai_metaverse/examples/tasks/example_tasks.json",
+        "ai_metaverse/setup/__init__.py",
+        "ai_metaverse/setup/initialize_resources.py",
+        "public/index.html"
+      ],
+      "cross_repo_refs": [
+        "AiMetaverse",
+        "AiMeta"
+      ]
+    },
+    "c25-agent-integrations": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-agent-integrations",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        ".gitignore",
+        "README.md",
+        ".github/workflows/faceprintpay-deploy.yml",
+        "public/index.html"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-agent-pipeline": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-agent-pipeline",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 5,
+      "files": [
+        ".gitignore",
+        "README.md",
+        ".github/workflows/faceprintpay-deploy.yml",
+        ".vscode/launch.json",
+        "public/index.html"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-agent-starter": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-agent-starter",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "agent-starter.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-agents": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-agents",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "agents.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-arcai-copy-1": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-arcai-copy-1",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "arcai_copy_1.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-arcai-copy-2": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-arcai-copy-2",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "arcai_copy_2.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-arcai-copy-3": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-arcai-copy-3",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "arcai_copy_3.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-arcai-copy-4": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-arcai-copy-4",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "arcai_copy_4.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-arcai-deploy": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-arcai-deploy",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "arcai_deploy.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-arcai-original": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-arcai-original",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "arcai_original.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-arcai-original-oldest": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-arcai-original-oldest",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "arcai_original_oldest.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-archive-agentik": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-archive-agentik",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "archive-agentik.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-backfill-artifacts-from-done": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-backfill-artifacts-from-done",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "backfill_artifacts_from_done.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-bio-push": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-bio-push",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "bio_push.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-bioauth": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-bioauth",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "bioauth.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-blackbox-github-update": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-blackbox-github-update",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "blackbox-github-update.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-broadcast-whisper-echo": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-broadcast-whisper-echo",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "broadcast_whisper_echo.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-build": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-build",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "build.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-build-bash": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-build-bash",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "build.bash",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-build-broccoli": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-build-broccoli",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "build_broccoli.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-build-fixer-agent": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-build-fixer-agent",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "build-fixer-agent.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-build-memoria": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-build-memoria",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "build-memoria.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-build-precedence-dossier": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-build-precedence-dossier",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "build_precedence_dossier.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-buzzblast": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-buzzblast",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "buzzblast.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-c25-mirror-push": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-c25-mirror-push",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 0,
+      "files": [],
+      "cross_repo_refs": []
+    },
+    "c25-c25-ranger": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-c25-ranger",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "c25_ranger.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-check-status": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-check-status",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "check-status.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-check-todo": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-check-todo",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "check_todo.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-cleanup-failed": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-cleanup-failed",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "cleanup-failed.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-consolidate-obsidian": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-consolidate-obsidian",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "consolidate_obsidian.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-constellation": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-constellation",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "constellation.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-constellation-25": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-constellation-25",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "constellation-25.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-constellation25": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-constellation25",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "constellation25.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-constellation25-swarm": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-constellation25-swarm",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "constellation25-swarm.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-create-home-symlinks": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-create-home-symlinks",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "create_home_symlinks.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-dashboard": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-dashboard",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "dashboard.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-deploy": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-deploy",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "deploy.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-deploy-agents": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-deploy-agents",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 5,
+      "files": [
+        "README.md",
+        "deploy-agents.sh",
+        "deploy_agents.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-deploy-all": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-deploy-all",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "deploy-all.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-deploy-linked2": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-deploy-linked2",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "deploy_linked2.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-deploy-log-dialog": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-deploy-log-dialog",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "deploy_log_dialog.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-deploy-sovereign": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-deploy-sovereign",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "deploy_sovereign.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-deploy-to-github": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-deploy-to-github",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "deploy-to-github.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-deploy-universe": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-deploy-universe",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "DEPLOY_UNIVERSE.sh",
+        "README.md",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-direct-agent-activation": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-direct-agent-activation",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "direct_agent_activation.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-do": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-do",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "do.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-final-sync": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-final-sync",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "final_sync.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-find-and-run-everything": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-find-and-run-everything",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "find_and_run_everything.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-find-videocourts": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-find-videocourts",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "find_videocourts.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-fix-everything": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-fix-everything",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "fix-everything.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-forensic-scan-365d": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-forensic-scan-365d",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "forensic_scan_365d.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-fp-clean-forks": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-fp-clean-forks",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "fp-clean-forks.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-fp-code-audit": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-fp-code-audit",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "fp-code-audit.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-fp-consolidate": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-fp-consolidate",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "fp-consolidate.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-generate-qr-affiliate": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-generate-qr-affiliate",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "generate_qr_affiliate.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-git-autocommit": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-git-autocommit",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "git_autocommit.sh",
+        "index.html",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-inject-versedna": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-inject-versedna",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "index.html",
+        "inject_versedna.sh",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-install": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-install",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "index.html",
+        "install.sh",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-install-qrencode": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-install-qrencode",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "index.html",
+        "install_qrencode.sh",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-integrity-run": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-integrity-run",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "index.html",
+        "integrity_run.sh",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-key-rotate": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-key-rotate",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "index.html",
+        "key_rotate.sh",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-kre8tive-portfolio-build": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-kre8tive-portfolio-build",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "index.html",
+        "kre8tive_portfolio_build.sh",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-launch": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-launch",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "index.html",
+        "launch.sh",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-launch-agents": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-launch-agents",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "index.html",
+        "launch_agents.sh",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-launch-presskit": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-launch-presskit",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "index.html",
+        "launch_presskit.sh",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-launch-tunnel": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-launch-tunnel",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "index.html",
+        "launch_tunnel.sh",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-link-github": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-link-github",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "index.html",
+        "link-github.sh",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-mars-sharecrop": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-mars-sharecrop",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "index.html",
+        "mars_sharecrop.sh",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-meaningful-inventory": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-meaningful-inventory",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "index.html",
+        "meaningful_inventory.sh",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-meaningful-inventory-fixed": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-meaningful-inventory-fixed",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "index.html",
+        "meaningful_inventory_fixed.sh",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-package-portfolio": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-package-portfolio",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "index.html",
+        "package-portfolio.sh",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-parasol-termux": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-parasol-termux",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "index.html",
+        "parasol-termux.sh",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-ping-agents": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-ping-agents",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "index.html",
+        "ping_agents.sh",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-planetary-crawl-inject-loop": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-planetary-crawl-inject-loop",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "index.html",
+        "planetary_crawl_inject_loop.sh",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-pypi": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-pypi",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "index.html",
+        "pypi.sh",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-quick-deploy": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-quick-deploy",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "index.html",
+        "quick-deploy.sh",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-reactivate-planetary-agents": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-reactivate-planetary-agents",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "index.html",
+        "reactivate_planetary_agents.sh",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-rebuild-percellify": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-rebuild-percellify",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "index.html",
+        "rebuild_percellify.sh",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "c25-recloak": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/c25-recloak",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 4,
+      "files": [
+        "README.md",
+        "index.html",
+        "recloak.sh",
+        ".github/workflows/deploy.yml"
+      ],
+      "cross_repo_refs": []
+    },
+    "_constellation_reports": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/_constellation_reports",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 1,
+      "files": [
+        "master_log.txt"
+      ],
+      "cross_repo_refs": []
+    },
+    "_unified_build": {
+      "path": "/data/data/com.termux/files/home/github-repos/Constillation25/_unified_build",
+      "stack": [
+        "unknown"
+      ],
+      "file_count": 7100,
+      "files": [
+        "timeline.json",
+        "manifest.json",
+        "pruned_manifest.json",
+        "index.json",
+        "history/AiKre8tive-_history.json",
+        "history/AiKre8tive-Stargate_history.json",
+        "history/AiKre8tive_Sovereign_Genesis_history.json",
+        "history/AiMeta_history.json",
+        "history/AiMetaverse_history.json",
+        "history/AiMetaverse-Orgin_history.json",
+        "history/Apollo-11_history.json",
+        "history/agentik_history.json",
+        "history/ai-kre8tive-sovereign-genesis_history.json",
+        "history/ai-web-extensions_history.json",
+        "history/aikre8tive_history.json",
+        "history/aikre8tive-sovereign-genesis_history.json",
+        "history/antora-ui-stargate_history.json",
+        "history/bolt.new_history.json",
+        "history/build-agentic-software-w-coral-os-agents_history.json",
+        "history/c25-1basher_history.json",
+        "history/c25-agent-api_history.json",
+        "history/c25-agent-automation_history.json",
+        "history/c25-agent-core_history.json",
+        "history/c25-agent-dashboard_history.json",
+        "history/c25-agent-deploy_history.json",
+        "history/c25-agent-integrations_history.json",
+        "history/c25-agent-pipeline_history.json",
+        "history/c25-agent-starter_history.json",
+        "history/c25-agents_history.json",
+        "history/c25-arcai-copy-1_history.json",
+        "history/c25-arcai-copy-2_history.json",
+        "history/c25-arcai-copy-3_history.json",
+        "history/c25-arcai-copy-4_history.json",
+        "history/c25-arcai-deploy_history.json",
+        "history/c25-arcai-original_history.json",
+        "history/c25-arcai-original-oldest_history.json",
+        "history/c25-archive-agentik_history.json",
+        "history/c25-backfill-artifacts-from-done_history.json",
+        "history/c25-bio-push_history.json",
+        "history/c25-bioauth_history.json",
+        "history/c25-blackbox-github-update_history.json",
+        "history/c25-broadcast-whisper-echo_history.json",
+        "history/c25-build_history.json",
+        "history/c25-build-bash_history.json",
+        "history/c25-build-broccoli_history.json",
+        "history/c25-build-fixer-agent_history.json",
+        "history/c25-build-memoria_history.json",
+        "history/c25-build-precedence-dossier_history.json",
+        "history/c25-buzzblast_history.json",
+        "history/c25-c25-ranger_history.json",
+        "history/c25-check-status_history.json",
+        "history/c25-check-todo_history.json",
+        "history/c25-cleanup-failed_history.json",
+        "history/c25-consolidate-obsidian_history.json",
+        "history/c25-constellation_history.json",
+        "history/c25-constellation-25_history.json",
+        "history/c25-constellation25_history.json",
+        "history/c25-constellation25-swarm_history.json",
+        "history/c25-create-home-symlinks_history.json",
+        "history/c25-dashboard_history.json"
+      ],
+      "cross_repo_refs": [
+        "AiKre8tive-Stargate",
+        "bolt.new",
+        "AiMeta",
+        "c25-agent-core",
+        "antora-ui-stargate",
+        "ai-web-extensions",
+        "AiKre8tive_Sovereign_Genesis",
+        "AiKre8tive-",
+        "ai-kre8tive-sovereign-genesis",
+        "AiMetaverse",
+        "aikre8tive",
+        "c25-agent-deploy"
+      ]
+    }
+  },
+  "total_files": 13502,
+  "timestamp": "2026-03-04T19:09:52.504999+00:00"
+}
