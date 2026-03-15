@@ -1,0 +1,1 @@
+UI rule: max DOM depth 12, lazy images, no render-blocking JS
