@@ -1,0 +1,34 @@
+# Nested git repos - push these separately
+AiKre8tive-/
+AiKre8tive-Stargate/
+AiKre8tive_Sovereign_Genesis/
+AiMeta/
+AiMetaverse/
+AiMetaverse-Orgin/
+Apollo-11/
+agentik/
+ai-web-extensions/
+ai-kre8tive-sovereign-genesis/
+aikre8tive/
+aikre8tive-sovereign-genesis/
+antora-ui-stargate/
+bolt.new/
+build-agentic-software-w-coral-os-agents/
+c25-*/
+constellation25/
+_tmp_orange/
+
+# Never commit these
+node_modules/
+sovereign_gtp/backend/node_modules/
+venvs/
+*.tar.gz
+.env
+.env.tokens
+.env.local
+
+# Training data (too large)
+_unified_build/corpus/
+_unified_build/pruned/
+_unified_build/training_dataset/
+_unified_build/history/

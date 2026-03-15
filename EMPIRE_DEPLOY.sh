@@ -1,5 +1,5 @@
 #!/bin/bash
-TOKEN="GITHUB_TOKEN_REMOVED"
+TOKEN="${GITHUB_TOKEN}"
 OWNER="FacePrintPay"
 LOG=~/EMPIRE_DEPLOY_$(date +%Y%m%d_%H%M%S).log
 DEST=~/constellation25-mono
