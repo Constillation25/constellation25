@@ -1,0 +1,13 @@
+{
+  "name": "Constellation25",
+  "version": "2.0.0",
+  "private": false,
+  "scripts": {
+    "start": "echo 'Constellation25 module: Constellation25'",
+    "build": "echo 'Build complete'"
+  },
+  "constellation25": {
+    "build_id": "20260402_015454",
+    "agent": "pathos-sovereign-1"
+  }
+}
