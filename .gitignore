@@ -1,2 +1,7 @@
-.vercel
-.env*.local
+node_modules/
+*.log
+.env
+.vercel/
+dist/
+build/
+*.tmp
