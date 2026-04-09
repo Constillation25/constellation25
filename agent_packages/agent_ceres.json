@@ -1,0 +1,28 @@
+{
+  "name": "@constellation25/agent-ceres",
+  "version": "1.0.0",
+  "description": "Telemetry & analytics agent. Streams metrics, generates dashboards, alerts on anomalies.",
+  "author": "CyGeL Sampson White <CyGeL.co@gmail.com> (https://github.com/Faceprintpay/constellation25)",
+  "license": "Commercial-Use-Requires-License",
+  "keywords": ["ai-agent", "automation", "constellation25", "telemetry,metrics,dashboard,analytics,alerting"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Faceprintpay/constellation25",
+    "directory": "agents/ceres"
+  },
+  "pricing": {
+    "per_task": 0.05,
+    "hourly": 50,
+    "project_min": 2500,
+    "currency": "USD"
+  },
+  "capabilities": ["metric_stream", "dashboard_update", "alert_route", "report_gen"],
+  "availability": "on-demand",
+  "contact": {
+    "email": "CyGeL.co@gmail.com",
+    "github": "Faceprintpay/constellation25",
+    "entity": "Kre8tive Konceptz LTD (NC, USA)"
+  },
+  "qsbs_eligible": true,
+  "sovereign_deployment": true
+}

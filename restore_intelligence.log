@@ -1,0 +1,7 @@
+[18:03:46] [Restore] INIT Planetary Agent Intelligence Restoration v1.0 | 2026-04-08
+[18:03:46] [Restore] SCAN Searching backups for original agent intelligence...
+[18:03:46] [Restore] SEARCH Scanning: /sdcard/Documents/Obsidian/termux-home
+[18:04:04] [Restore] RECOVERED /sdcard/Documents/Obsidian/termux-home/TotalRecall/ingestion_chain/runs/2025-11-07_21-23-17/bard_forensic_summary.txt → /data/data/com.termux/files/home/constellation25/agents/intelligence/bard_forensic_summary.txt
+[18:04:04] [Restore] SEARCH Scanning: /sdcard/AiMetaverse/plan_aimeta001/home_backup
+[18:04:12] [Restore] SEARCH Scanning: /data/data/com.termux/files/home/constellation25_archives
+[18:04:12] [Restore] INJECT Upgrading executors with restored intelligence...

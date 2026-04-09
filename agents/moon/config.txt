@@ -1,0 +1,4 @@
+Agent: moon
+Role: Debug
+Status: Active
+Created: Thu Apr  9 13:47:38 EDT 2026

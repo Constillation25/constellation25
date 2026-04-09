@@ -1,0 +1,28 @@
+{
+  "name": "@constellation25/agent-tethys",
+  "version": "1.0.0",
+  "description": "Localization specialist. Translates content, adapts for regions, manages i18n.",
+  "author": "CyGeL Sampson White <CyGeL.co@gmail.com> (https://github.com/Faceprintpay/constellation25)",
+  "license": "Commercial-Use-Requires-License",
+  "keywords": ["ai-agent", "automation", "constellation25", "localization,translation,i18n,region,adapt"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Faceprintpay/constellation25",
+    "directory": "agents/tethys"
+  },
+  "pricing": {
+    "per_task": 0.05,
+    "hourly": 50,
+    "project_min": 2500,
+    "currency": "USD"
+  },
+  "capabilities": ["translate_content", "region_adapt", "i18n_manage", "locale_test"],
+  "availability": "on-demand",
+  "contact": {
+    "email": "CyGeL.co@gmail.com",
+    "github": "Faceprintpay/constellation25",
+    "entity": "Kre8tive Konceptz LTD (NC, USA)"
+  },
+  "qsbs_eligible": true,
+  "sovereign_deployment": true
+}

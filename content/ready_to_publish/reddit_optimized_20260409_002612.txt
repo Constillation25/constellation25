@@ -1,0 +1,20 @@
+=== PLATFORM: REDDIT ===
+Optimized: 2026-04-09T00:26:12Z
+Framework: Value-First Insight
+Limits: Transparent Experience
+Notes: Resource Link:Community CTA|No direct promo|🛡️ Subreddit-compliant
+
+📝 OPTIMIZED COPY:
+[Apply Value-First Insight to source material. Maintain platform voice. Front-load value. Place affiliate link at natural decision point.]
+
+🔗 TRACKED LINK:
+https://youraffiliatelink.com/offer?utm_source=reddit&utm_medium=social&utm_campaign=c25_revenue_sprint_20260409
+
+⚖️ FTC DISCLOSURE:
+"This post contains affiliate links. I may earn a commission at no extra cost to you if you purchase through them."
+
+📊 PUBLISH CHECKLIST:
+[ ] Verify UTM resolves
+[ ] Add platform-specific media
+[ ] Schedule during peak engagement window
+[ ] Monitor click-through rate (CTR) for 24h

@@ -1,0 +1,28 @@
+{
+  "name": "@constellation25/agent-vesta",
+  "version": "1.0.0",
+  "description": "Data curation specialist. Filters, tags, and prepares training datasets.",
+  "author": "CyGeL Sampson White <CyGeL.co@gmail.com> (https://github.com/Faceprintpay/constellation25)",
+  "license": "Commercial-Use-Requires-License",
+  "keywords": ["ai-agent", "automation", "constellation25", "data,curation,training,dataset,filter"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Faceprintpay/constellation25",
+    "directory": "agents/vesta"
+  },
+  "pricing": {
+    "per_task": 0.05,
+    "hourly": 50,
+    "project_min": 2500,
+    "currency": "USD"
+  },
+  "capabilities": ["data_filter", "tag_assign", "dataset_prep", "quality_check"],
+  "availability": "on-demand",
+  "contact": {
+    "email": "CyGeL.co@gmail.com",
+    "github": "Faceprintpay/constellation25",
+    "entity": "Kre8tive Konceptz LTD (NC, USA)"
+  },
+  "qsbs_eligible": true,
+  "sovereign_deployment": true
+}

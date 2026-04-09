@@ -1,0 +1,4 @@
+Agent: jupiter
+Role: Documentation
+Status: Active
+Created: Thu Apr  9 13:47:50 EDT 2026

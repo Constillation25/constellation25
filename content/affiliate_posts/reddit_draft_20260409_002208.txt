@@ -1,0 +1,13 @@
+=== PLATFORM: REDDIT ===
+Generated: 2026-04-09T00:22:09Z
+Source: youtube_script_v1.txt
+Status: Draft | Ready for LLM Polish
+
+📝 CORE COPY:
+[Leverage key value proposition from source script. Focus on pain-point → solution → affiliate CTA.]
+
+🔗 TRACKED LINK:
+https://youraffiliatelink.com/offer?utm_source=reddit&utm_medium=social&utm_campaign=c25_revenue_sprint_20260409
+
+🏷️ TAGS: #AIAutomation #PassiveIncome #TechWorkflow #Constellation25
+✅ CTA: "Tap the link to access the full system. Limited spots open."

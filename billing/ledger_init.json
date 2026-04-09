@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "currency": "USD",
+  "pricing_model": "per_task_completion",
+  "agents": {
+    "Agent_Earth": {"rate": 0.05, "status": "active"},
+    "Agent_Neptune": {"rate": 0.05, "status": "active"},
+    "Agent_Jupiter": {"rate": 0.05, "status": "active"},
+    "Agent_Ceres": {"rate": 0.05, "status": "active"}
+  }
+}

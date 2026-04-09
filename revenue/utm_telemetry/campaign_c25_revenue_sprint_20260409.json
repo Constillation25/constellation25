@@ -1,0 +1,9 @@
+{
+  "campaign": "c25_revenue_sprint_20260409",
+  "created_at": "2026-04-09T00:25:05+00:00",
+  "platforms": ["twitter", "linkedin", "reddit", "facebook", "medium"],
+  "clicks": [],
+  "revenue_target": 1000.00,
+  "current_accrued": 525.80,
+  "gap_remaining": 474.20
+}

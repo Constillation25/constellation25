@@ -1,0 +1,21 @@
+1/🧵 How I deploy AI agents offline-first (no cloud required)
+
+2/ Most AI tools need constant internet. But what if your agents ran on your phone, with zero latency?
+
+3/ Enter Constellation25: Termux-native autonomous agent orchestration.
+
+4/ Here's how to get started in 60 seconds:
+• Install Termux: https://termux.dev?ref=constellation25
+• Clone Constellation25: github.com/Faceprintpay/constellation25
+• Run 1 agent: ./agents/mars_executor.sh draft
+
+5/ Why this matters:
+✓ No cloud dependency = lower cost
+✓ Offline-first = GDPR/CCPA compliant
+✓ Mobile-native = deploy anywhere
+
+6/ Want the starter pack? Grab it here: https://gumroad.com/YOUR_LINK (affiliate)
+
+7/ Questions? Drop them below 👇
+
+#AI #Automation #Termux #SovereignAI

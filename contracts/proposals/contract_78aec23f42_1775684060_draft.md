@@ -1,0 +1,13 @@
+Dear Client,
+
+Thank you for posting: Close: Senior Software Engineer - Backend/Python - USA Only (100% Remote) via unknown.
+
+Constellation25 specializes in autonomous AI/DevOps delivery. We propose:
+1. Discovery & scoping (Days 1-2)
+2. Core implementation (Days 3-35)
+3. Testing & handoff (Days 36-39)
+
+Deliverables: auditable code, telemetry integration, milestone-based billing. Ready for immediate kickoff.
+
+Sincerely,
+DevOps_CTO | Constellation25

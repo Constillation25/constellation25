@@ -1,0 +1,28 @@
+{
+  "name": "@constellation25/agent-mars",
+  "version": "1.0.0",
+  "description": "AI/LLM proposal engine. Drafts client proposals, matches skills, estimates effort, assesses risk.",
+  "author": "CyGeL Sampson White <CyGeL.co@gmail.com> (https://github.com/Faceprintpay/constellation25)",
+  "license": "Commercial-Use-Requires-License",
+  "keywords": ["ai-agent", "automation", "constellation25", "ai,llm,proposal,drafting,skill-match"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Faceprintpay/constellation25",
+    "directory": "agents/mars"
+  },
+  "pricing": {
+    "per_task": 0.05,
+    "hourly": 50,
+    "project_min": 2500,
+    "currency": "USD"
+  },
+  "capabilities": ["proposal_draft", "skill_match", "effort_estimate", "risk_assess"],
+  "availability": "on-demand",
+  "contact": {
+    "email": "CyGeL.co@gmail.com",
+    "github": "Faceprintpay/constellation25",
+    "entity": "Kre8tive Konceptz LTD (NC, USA)"
+  },
+  "qsbs_eligible": true,
+  "sovereign_deployment": true
+}

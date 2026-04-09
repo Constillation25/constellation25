@@ -1,0 +1,28 @@
+{
+  "name": "@constellation25/agent-pluto",
+  "version": "1.0.0",
+  "description": "Fallback & redundancy agent. Backs up queues, aggregates logs, manages failover.",
+  "author": "CyGeL Sampson White <CyGeL.co@gmail.com> (https://github.com/Faceprintpay/constellation25)",
+  "license": "Commercial-Use-Requires-License",
+  "keywords": ["ai-agent", "automation", "constellation25", "fallback,redundancy,backup,log,failover"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Faceprintpay/constellation25",
+    "directory": "agents/pluto"
+  },
+  "pricing": {
+    "per_task": 0.05,
+    "hourly": 50,
+    "project_min": 2500,
+    "currency": "USD"
+  },
+  "capabilities": ["queue_backup", "log_aggregate", "failover_route", "health_check"],
+  "availability": "on-demand",
+  "contact": {
+    "email": "CyGeL.co@gmail.com",
+    "github": "Faceprintpay/constellation25",
+    "entity": "Kre8tive Konceptz LTD (NC, USA)"
+  },
+  "qsbs_eligible": true,
+  "sovereign_deployment": true
+}

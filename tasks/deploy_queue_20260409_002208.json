@@ -1,0 +1,9 @@
+{
+  "pipeline": "affiliate_content_deploy",
+  "batch_timestamp": "20260409_002208",
+  "platforms": "twitter","linkedin","reddit","facebook","medium",
+  "utm_campaign": "c25_revenue_sprint_20260409",
+  "revenue_gap_target": 474.20,
+  "agent_routing": ["PA-07", "PA-08", "PA-03", "PA-09", "PA-10"],
+  "timestamp": "2026-04-09T00:23:40Z"
+}

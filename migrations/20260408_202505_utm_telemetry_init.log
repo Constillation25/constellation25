@@ -1,0 +1,6 @@
+--- TELEMETRY INITIALIZATION ---
+Timestamp: 2026-04-09T00:25:05+00:00
+Campaign: c25_revenue_sprint_20260409
+Tracking Schema: JSON flat-file (Termux optimized)
+DB Path: /data/data/com.termux/files/home/constellation25/revenue/utm_telemetry/campaign_c25_revenue_sprint_20260409.json
+Status: ACTIVE

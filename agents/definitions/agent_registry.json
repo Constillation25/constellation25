@@ -1,0 +1,66 @@
+{
+  "version": "1.0",
+  "protocol": "#C25",
+  "agents": {
+    "Agent_Earth": {
+      "role": "Filesystem & I/O Manager",
+      "capabilities": ["file_scan", "archive_create", "symlink_manage", "storage_quota"],
+      "guardrails": ["no_delete_without_confirm", "respect_termux_perms"],
+      "priority_queue": "critical"
+    },
+    "Agent_Neptune": {
+      "role": "Security & Compliance Auditor",
+      "capabilities": ["url_validate", "tos_check", "scam_detect", "license_verify"],
+      "guardrails": ["flag_suspicious", "require_human_approval"],
+      "priority_queue": "high"
+    },
+    "Agent_Jupiter": {
+      "role": "Orchestration & Scheduler",
+      "capabilities": ["task_dispatch", "rate_limit", "retry_logic", "scale_workers"],
+      "guardrails": ["max_concurrent=10", "backoff_on_failure"],
+      "priority_queue": "high"
+    },
+    "Agent_Ceres": {
+      "role": "Telemetry & Analytics",
+      "capabilities": ["metric_stream", "dashboard_update", "alert_route", "report_gen"],
+      "guardrails": ["anonymize_pii", "encrypt_in_transit"],
+      "priority_queue": "standard"
+    },
+    "Agent_Mars": {
+      "role": "AI/LLM Proposal Engine",
+      "capabilities": ["skill_match", "proposal_draft", "effort_estimate", "risk_assess"],
+      "guardrails": ["no_auto_submit", "human_review_required"],
+      "priority_queue": "critical"
+    },
+    "Agent_Venus": {
+      "role": "Payment & Financial Routing",
+      "capabilities": ["escrow_setup", "invoice_gen", "payout_route", "reconcile"],
+      "guardrails": ["verify_payment_before_delivery", "audit_trail"],
+      "priority_queue": "critical"
+    },
+    "Agent_Saturn": {
+      "role": "Engineering Ops & Delivery",
+      "capabilities": ["repo_init", "ci_cd_setup", "deliverable_package", "version_tag"],
+      "guardrails": ["test_before_deploy", "rollback_on_failure"],
+      "priority_queue": "high"
+    },
+    "Agent_Mercury": {
+      "role": "Performance Optimizer",
+      "capabilities": ["pipeline_profile", "cache_optimize", "io_reduce", "parallelize"],
+      "guardrails": ["no_break_determinism"],
+      "priority_queue": "standard"
+    },
+    "Agent_Uranus": {
+      "role": "Cryptographic & Secrets Manager",
+      "capabilities": ["key_rotate", "env_encrypt", "secret_inject", "sign_artifact"],
+      "guardrails": ["never_log_secrets", "hardware_backed_if_available"],
+      "priority_queue": "critical"
+    },
+    "Agent_Pluto": {
+      "role": "Fallback & Redundancy",
+      "capabilities": ["queue_backup", "log_aggregate", "failover_route", "health_check"],
+      "guardrails": ["alert_on_failover", "preserve_state"],
+      "priority_queue": "low"
+    }
+  }
+}
