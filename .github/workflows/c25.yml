@@ -1,0 +1,9 @@
+name: C25 Health
+on: [push, workflow_dispatch]
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Online
+        run: echo "C25 online"
