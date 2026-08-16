@@ -1,0 +1,7 @@
+{
+    "id": 1,
+    "name": "Information Gathering",
+    "tools": ["nmap", "whois", "dig", "nslookup"],
+    "status": "available",
+    "integrated": true
+}

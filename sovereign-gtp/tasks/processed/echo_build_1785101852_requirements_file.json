@@ -1,0 +1,9 @@
+{
+  "task_id": "build_1785101852_requirements_file",
+  "agent": "echo",
+  "type": "requirements_file",
+  "priority": "high",
+  "created": "20260726T213732Z",
+  "payload": "Scan the real Python files in sovereign-gtp/ and aias_stack/ and produce a minimal requirements.txt with only the packages that are actually imported. Do not invent dependencies.",
+  "status": "pending"
+}

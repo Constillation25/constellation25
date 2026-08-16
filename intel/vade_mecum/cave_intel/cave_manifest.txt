@@ -1,0 +1,7 @@
+=========================================
+C25 CAVE DISCOVERY LOG
+Timestamp: Wed Aug 12 11:30:52 EDT 2026
+Bearing from Main House:  degrees
+GPS Coordinates: , 
+Status: Undisturbed, direct sight-line to 1902 Hotel.
+=========================================

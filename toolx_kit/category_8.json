@@ -1,0 +1,7 @@
+{
+    "id": 8,
+    "name": "Sniffing & Spoofing",
+    "tools": ["wireshark", "tcpdump", "ettercap"],
+    "status": "available",
+    "integrated": true
+}

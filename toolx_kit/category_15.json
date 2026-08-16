@@ -1,0 +1,7 @@
+{
+    "id": 15,
+    "name": "Termux OS",
+    "tools": ["termux-api", "termux-widget"],
+    "status": "available",
+    "integrated": true
+}

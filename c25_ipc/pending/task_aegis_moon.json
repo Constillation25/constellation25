@@ -1,0 +1,13 @@
+{
+  "task_id": "'"$TASK_ID"'",
+  "timestamp": "'"$TIMESTAMP"'",
+  "agents": ["Aegis", "Moon"],
+  "priority": "CRITICAL",
+  "action": "APPLY_SCRAPING_GUARDRAILS",
+  "payload": {
+    "rate_limit_rps": 2,
+    "user_agent_rotation": true,
+    "cache_ttl_seconds": 86400,
+    "cache_backend": "sqlite"
+  }
+}

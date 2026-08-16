@@ -1,0 +1,6 @@
+<!-- user_guide - Helio Agent -->
+<!-- Payload: Write a short USER_GUIDE.md explaining how to start the mesh, drop a task, check status, and stop the system. Use only commands and paths that actually exist today. -->
+<!-- Generated: 2026-07-26T17:39:16.492989 -->
+<div class="placeholder p-8 bg-slate-100 rounded text-center">
+  <p class="text-slate-600">UI component placeholder for: Write a short USER_GUIDE.md explaining how to start the mesh, drop a task, check status, and stop the system. Use only commands and paths that actually exist today.</p>
+</div>

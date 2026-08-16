@@ -1,0 +1,9 @@
+{
+  "task_id": "build_1785101876_improve_helio",
+  "agent": "helio",
+  "type": "improve_helio",
+  "priority": "high",
+  "created": "20260726T213756Z",
+  "payload": "Replace the hard-coded HTML string templates in helio.py with a clearer structure: if the payload asks for something you cannot do, return a clear 'not implemented' message instead of fake HTML. Keep the BaseAgent inheritance.",
+  "status": "pending"
+}

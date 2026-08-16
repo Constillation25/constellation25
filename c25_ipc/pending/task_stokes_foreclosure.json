@@ -1,0 +1,25 @@
+{
+  "task_id": "c25-re-20260725-001",
+  "priority": "high",
+  "requested_by": "CyGeL",
+  "assigned_agents": ["Jupiter", "Mercury", "Saturn", "Earth"],
+  "objective": "Entity setup and funding for Stokes County tax foreclosure portfolio",
+  "portfolio": [
+    {"address": "0 Fir St, Danbury", "parcel": "693602988120", "base_bid": 8100, "type": "Acreage"},
+    {"address": "2730 Hickory Fork Rd, Walnut Cove", "parcel": "698400059889", "base_bid": 10200, "type": "Residential Home"},
+    {"address": "Mount Drive, Westfield", "parcel": "693602699395", "base_bid": 8000, "type": "Residential Vacant Lot"},
+    {"address": "0 Pratt Road, Dobson", "parcel": "597304525871", "base_bid": 17400, "type": "Acreage"},
+    {"address": "Torys Den Road, Danbury", "parcel": "692601050732", "base_bid": 6700, "type": "Residential Vacant Lot"}
+  ],
+  "financials": {
+    "total_base_bid": 50400,
+    "target_funding": 60000,
+    "buffer_reason": "5% upset bid increments + closing costs"
+  },
+  "agent_instructions": {
+    "Jupiter": "Draft LLC docs and validate NC Commissioner's Deed workflow.",
+    "Mercury": "Identify 3 private/hard money lenders for $60k deployment.",
+    "Saturn": "Initialize ledger for parcel tracking and deed storage.",
+    "Earth": "Confirm directory scaffolding and monitor IPC queue."
+  }
+}

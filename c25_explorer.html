@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>C25 Sovereign File Explorer</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0d1117; color: #c9d1d9; height: 100vh; display: flex; overflow: hidden; }
+.sidebar { width: 300px; min-width: 250px; background: #161b22; border-right: 1px solid #30363d; display: flex; flex-direction: column; }
+.sidebar-header { padding: 16px; border-bottom: 1px solid #30363d; font-weight: 600; font-size: 14px; display: flex; align-items: center; gap: 8px; }
+.file-tree { flex: 1; overflow-y: auto; padding: 8px 0; }
+.tree-item { padding: 4px 16px; cursor: pointer; font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: flex; align-items: center; gap: 6px; }
+.tree-item:hover { background: #1f242c; }
+.tree-item.active { background: #1f6feb33; color: #58a6ff; }
+.tree-item.folder { color: #8b949e; }
+.tree-item .icon { width: 16px; text-align: center; flex-shrink: 0; }
+.editor { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+.editor-header { padding: 12px 20px; border-bottom: 1px solid #30363d; font-size: 13px; color: #8b949e; display: flex; justify-content: space-between; align-items: center; }
+.editor-content { flex: 1; overflow: auto; padding: 20px; }
+pre { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 13px; line-height: 1.6; tab-size: 2; }
+.line-num { color: #6e7681; user-select: none; display: inline-block; width: 45px; text-align: right; margin-right: 16px; }
+.upload-area { padding: 40px; text-align: center; border: 2px dashed #30363d; border-radius: 8px; margin: 40px; cursor: pointer; transition: border-color 0.2s; }
+.upload-area:hover { border-color: #58a6ff; }
+.upload-area h2 { margin-bottom: 8px; color: #c9d1d9; }
+.upload-area p { color: #8b949e; font-size: 13px; }
+.hidden { display: none !important; }
+.search-box { margin: 8px 16px; padding: 6px 10px; background: #0d1117; border: 1px solid #30363d; border-radius: 6px; color: #c9d1d9; font-size: 12px; width: calc(100% - 32px); }
+</style>
+</head>
+<body>
+<div class="sidebar">
+  <div class="sidebar-header"> Constellation25 Explorer</div>
+  <input type="text" class="search-box" id="searchBox" placeholder="Filter files...">
+  <div class="file-tree" id="fileTree"></div>
+</div>
+<div class="editor">
+  <div class="editor-header" id="editorHeader">
+    <span>Select a file to view its contents</span>
+  </div>
+  <div class="editor-content" id="editorContent">
+    <div class="upload-area" id="uploadArea">
+      <h2> Open C25 Repository</h2>
+      <p>Click here or drag & drop your ~/constellation25 folder<br>to browse files like GitHub</p>
+      <p style="margin-top:12px;font-size:11px;color:#6e7681;">Uses File System Access API • Files never leave your device</p>
+    </div>
+    <pre id="codeDisplay" class="hidden"></pre>
+  </div>
+</div>
+<script>
+const FILE_ICONS = { sh:'⚙️', bash:'⚙️', py:'🐍', js:'📜', ts:'📘', json:'{}', yml:'📋', yaml:'📋', md:'📝', html:'🌐', css:'🎨', txt:'📄', dockerfile:'', gitignore:'🔒' };
+const LANG_MAP = { sh:'bash', bash:'bash', py:'python', js:'javascript', ts:'typescript', json:'json', yml:'yaml', yaml:'yaml', md:'markdown', html:'html', css:'css', txt:'text' };
+
+let allFiles = [];
+let currentHandle = null;
+
+// AUTO-INJECT PATCHED
+  try {
+    const dirHandle = await window.showDirectoryPicker();
+    await loadDirectory(dirHandle);
+  } catch(e) { console.log('User cancelled or API not supported'); }
+});
+
+// Drag and drop support
+document.getElementById('uploadArea').addEventListener('dragover', e => { e.preventDefault(); e.currentTarget.style.borderColor='#58a6ff'; });
+document.getElementById('uploadArea').addEventListener('dragleave', e => { e.currentTarget.style.borderColor='#30363d'; });
+document.getElementById('uploadArea').addEventListener('drop', async e => {
+  e.preventDefault();
+  e.currentTarget.style.borderColor='#30363d';
+  const items = e.dataTransfer.items;
+  if (items && items[0].webkitGetAsEntry) {
+    const entry = items[0].webkitGetAsEntry();
+    if (entry.isDirectory) await loadFileSystemEntry(entry);
+  }
+});
+
+async function loadDirectory(dirHandle, path='') {
+  allFiles = [];
+  document.getElementById('uploadArea').classList.add('hidden');
+  document.getElementById('codeDisplay').classList.remove('hidden');
+  await traverseDirectory(dirHandle, path);
+  renderTree();
+}
+
+async function loadFileSystemEntry(entry, path='') {
+  allFiles = [];
+  document.getElementById('uploadArea').classList.add('hidden');
+  document.getElementById('codeDisplay').classList.remove('hidden');
+  await traverseEntry(entry, path);
+  renderTree();
+}
+
+async function traverseDirectory(handle, path) {
+  for await (const entry of handle.values()) {
+    const fullPath = path ? `${path}/${entry.name}` : entry.name;
+    if (entry.kind === 'directory') {
+      if (!['node_modules','.git','c25_ipc','logs'].includes(entry.name)) {
+        await traverseDirectory(entry, fullPath);
+      }
+    } else {
+      const ext = entry.name.split('.').pop().toLowerCase();
+      if (['sh','bash','py','js','ts','json','yml','yaml','md','html','css','txt','dockerfile','gitignore','readme'].includes(ext) || entry.name.toLowerCase().startsWith('readme')) {
+        allFiles.push({ name: entry.name, path: fullPath, handle: entry, ext });
+      }
+    }
+  }
+}
+
+async function traverseEntry(entry, path) {
+  if (entry.isDirectory) {
+    if (!['node_modules','.git','c25_ipc','logs'].includes(entry.name)) {
+      const reader = entry.createReader();
+      const entries = await new Promise(resolve => { const arr=[]; (function read(){ reader.readEntries(e=>{ if(!e.length){resolve(arr);}else{arr.push(...e);read();}});})(); });
+      for (const e of entries) await traverseEntry(e, path ? `${path}/${entry.name}` : entry.name);
+    }
+  } else {
+    const ext = entry.name.split('.').pop().toLowerCase();
+    if (['sh','bash','py','js','ts','json','yml','yaml','md','html','css','txt','dockerfile','gitignore','readme'].includes(ext) || entry.name.toLowerCase().startsWith('readme')) {
+      allFiles.push({ name: entry.name, path: path ? `${path}/${entry.name}` : entry.name, entry, ext });
+    }
+  }
+}
+
+function renderTree(filter='') {
+  const tree = document.getElementById('fileTree');
+  tree.innerHTML = '';
+  const filtered = filter ? allFiles.filter(f => f.path.toLowerCase().includes(filter.toLowerCase())) : allFiles;
+  
+  // Group by directory
+  const dirs = {};
+  filtered.forEach(f => {
+    const parts = f.path.split('/');
+    const dir = parts.slice(0,-1).join('/') || '/';
+    if (!dirs[dir]) dirs[dir] = [];
+    dirs[dir].push(f);
+  });
+  
+  Object.keys(dirs).sort().forEach(dir => {
+    if (dir !== '/') {
+      const folderEl = document.createElement('div');
+      folderEl.className = 'tree-item folder';
+      folderEl.innerHTML = `<span class="icon">📁</span> ${dir}`;
+      tree.appendChild(folderEl);
+    }
+    dirs[dir].sort((a,b) => a.name.localeCompare(b.name)).forEach(file => {
+      const el = document.createElement('div');
+      el.className = 'tree-item';
+      const icon = FILE_ICONS[file.ext] || FILE_ICONS[file.name.toLowerCase()] || '📄';
+      el.innerHTML = `<span class="icon">${icon}</span> ${file.name}`;
+      el.addEventListener('click', () => openFile(file, el));
+      tree.appendChild(el);
+    });
+Boss, understood. You want a **GitHub-style File Explorer** in pure HTML/JS that runs locally in Termux. No Docker, no build step. Just a single `index.html` that reads your filesystem via the File System Access API (or fallback file input), renders a clickable tree, and displays syntax-highlighted code on click.
+
+### 🛠️ Atomic GitHub-Style HTML Explorer
+Run this **exact block** in Termux. It generates a self-contained `c25_explorer.html` that you can open directly in Chrome/Firefox on Android. Click any file → see highlighted code instantly.
+
+```bash
+#!/usr/bin/env bash
+set -euo pipefail
+
+C25_ROOT="${HOME}/constellation25"
+EXPLORER_FILE="${C25_ROOT}/c25_explorer.html"
+
+echo "🌐 [C25-Venus] Generating GitHub-style HTML file explorer..."
+
+# Generate the complete self-contained HTML explorer
+cat << 'HTMLEOF' > "$EXPLORER_FILE"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>C25 Sovereign File Explorer</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0d1117; color: #c9d1d9; height: 100vh; display: flex; overflow: hidden; }
+.sidebar { width: 300px; min-width: 250px; background: #161b22; border-right: 1px solid #30363d; display: flex; flex-direction: column; }
+.sidebar-header { padding: 16px; border-bottom: 1px solid #30363d; font-weight: 600; font-size: 14px; display: flex; align-items: center; gap: 8px; }
+.file-tree { flex: 1; overflow-y: auto; padding: 8px 0; }
+.tree-item { padding: 4px 16px; cursor: pointer; font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: flex; align-items: center; gap: 6px; }
+.tree-item:hover { background: #1f242c; }
+.tree-item.active { background: #1f6feb33; color: #58a6ff; }
+.tree-item.folder { color: #8b949e; }
+.tree-item .icon { width: 16px; text-align: center; flex-shrink: 0; }
+.editor { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+.editor-header { padding: 12px 20px; border-bottom: 1px solid #30363d; font-size: 13px; color: #8b949e; display: flex; justify-content: space-between; align-items: center; }
+.editor-content { flex: 1; overflow: auto; padding: 20px; }
+pre { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 13px; line-height: 1.6; tab-size: 2; }
+.line-num { color: #6e7681; user-select: none; display: inline-block; width: 45px; text-align: right; margin-right: 16px; }
+.upload-area { padding: 40px; text-align: center; border: 2px dashed #30363d; border-radius: 8px; margin: 40px; cursor: pointer; transition: border-color 0.2s; }
+.upload-area:hover { border-color: #58a6ff; }
+.upload-area h2 { margin-bottom: 8px; color: #c9d1d9; }
+.upload-area p { color: #8b949e; font-size: 13px; }
+.hidden { display: none !important; }
+.search-box { margin: 8px 16px; padding: 6px 10px; background: #0d1117; border: 1px solid #30363d; border-radius: 6px; color: #c9d1d9; font-size: 12px; width: calc(100% - 32px); }
+</style>
+</head>
+<body>
+<div class="sidebar">
+  <div class="sidebar-header"> Constellation25 Explorer</div>
+  <input type="text" class="search-box" id="searchBox" placeholder="Filter files...">
+  <div class="file-tree" id="fileTree"></div>
+</div>
+<div class="editor">
+  <div class="editor-header" id="editorHeader">
+    <span>Select a file to view its contents</span>
+  </div>
+  <div class="editor-content" id="editorContent">
+    <div class="upload-area" id="uploadArea">
+      <h2> Open C25 Repository</h2>
+      <p>Click here or drag & drop your ~/constellation25 folder<br>to browse files like GitHub</p>
+      <p style="margin-top:12px;font-size:11px;color:#6e7681;">Uses File System Access API • Files never leave your device</p>
+    </div>
+    <pre id="codeDisplay" class="hidden"></pre>
+  </div>
+</div>
+<script>
+const FILE_ICONS = { sh:'⚙️', bash:'⚙️', py:'🐍', js:'📜', ts:'📘', json:'{}', yml:'📋', yaml:'📋', md:'📝', html:'🌐', css:'🎨', txt:'📄', dockerfile:'', gitignore:'🔒' };
+const LANG_MAP = { sh:'bash', bash:'bash', py:'python', js:'javascript', ts:'typescript', json:'json', yml:'yaml', yaml:'yaml', md:'markdown', html:'html', css:'css', txt:'text' };
+
+let allFiles = [];
+let currentHandle = null;
+
+// AUTO-INJECT PATCHED
+  try {
+    const dirHandle = await window.showDirectoryPicker();
+    await loadDirectory(dirHandle);
+  } catch(e) { console.log('User cancelled or API not supported'); }
+});
+
+// Drag and drop support
+document.getElementById('uploadArea').addEventListener('dragover', e => { e.preventDefault(); e.currentTarget.style.borderColor='#58a6ff'; });
+document.getElementById('uploadArea').addEventListener('dragleave', e => { e.currentTarget.style.borderColor='#30363d'; });
+document.getElementById('uploadArea').addEventListener('drop', async e => {
+  e.preventDefault();
+  e.currentTarget.style.borderColor='#30363d';
+  const items = e.dataTransfer.items;
+  if (items && items[0].webkitGetAsEntry) {
+    const entry = items[0].webkitGetAsEntry();
+    if (entry.isDirectory) await loadFileSystemEntry(entry);
+  }
+});
+
+async function loadDirectory(dirHandle, path='') {
+  allFiles = [];
+  document.getElementById('uploadArea').classList.add('hidden');
+  document.getElementById('codeDisplay').classList.remove('hidden');
+  await traverseDirectory(dirHandle, path);
+  renderTree();
+}
+
+async function loadFileSystemEntry(entry, path='') {
+  allFiles = [];
+  document.getElementById('uploadArea').classList.add('hidden');
+  document.getElementById('codeDisplay').classList.remove('hidden');
+  await traverseEntry(entry, path);
+  renderTree();
+}
+
+async function traverseDirectory(handle, path) {
+  for await (const entry of handle.values()) {
+    const fullPath = path ? `${path}/${entry.name}` : entry.name;
+    if (entry.kind === 'directory') {
+      if (!['node_modules','.git','c25_ipc','logs'].includes(entry.name)) {
+        await traverseDirectory(entry, fullPath);
+      }
+    } else {
+      const ext = entry.name.split('.').pop().toLowerCase();
+      if (['sh','bash','py','js','ts','json','yml','yaml','md','html','css','txt','dockerfile','gitignore','readme'].includes(ext) || entry.name.toLowerCase().startsWith('readme')) {
+        allFiles.push({ name: entry.name, path: fullPath, handle: entry, ext });
+      }
+    }
+  }
+}
+
+async function traverseEntry(entry, path) {
+  if (entry.isDirectory) {
+    if (!['node_modules','.git','c25_ipc','logs'].includes(entry.name)) {
+      const reader = entry.createReader();
+      const entries = await new Promise(resolve => { const arr=[]; (function read(){ reader.readEntries(e=>{ if(!e.length){resolve(arr);}else{arr.push(...e);read();}});})(); });
+      for (const e of entries) await traverseEntry(e, path ? `${path}/${entry.name}` : entry.name);
+    }
+  } else {
+    const ext = entry.name.split('.').pop().toLowerCase();
+    if (['sh','bash','py','js','ts','json','yml','yaml','md','html','css','txt','dockerfile','gitignore','readme'].includes(ext) || entry.name.toLowerCase().startsWith('readme')) {
+      allFiles.push({ name: entry.name, path: path ? `${path}/${entry.name}` : entry.name, entry, ext });
+    }
+  }
+}
+
+function renderTree(filter='') {
+  const tree = document.getElementById('fileTree');
+  tree.innerHTML = '';
+  const filtered = filter ? allFiles.filter(f => f.path.toLowerCase().includes(filter.toLowerCase())) : allFiles;
+  
+  // Group by directory
+  const dirs = {};
+  filtered.forEach(f => {
+    const parts = f.path.split('/');
+    const dir = parts.slice(0,-1).join('/') || '/';
+    if (!dirs[dir]) dirs[dir] = [];
+    dirs[dir].push(f);
+  });
+  
+  Object.keys(dirs).sort().forEach(dir => {
+    if (dir !== '/') {
+      const folderEl = document.createElement('div');
+      folderEl.className = 'tree-item folder';
+      folderEl.innerHTML = `<span class="icon">📁</span> ${dir}`;
+      tree.appendChild(folderEl);
+    }
+    dirs[dir].sort((a,b) => a.name.localeCompare(b.name)).forEach(file => {
+      const el = document.createElement('div');
+      el.className = 'tree-item';
+      const icon = FILE_ICONS[file.ext] || FILE_ICONS[file.name.toLowerCase()] || '📄';
+      el.innerHTML = `<span class="icon">${icon}</span> ${file.name}`;
+      el.addEventListener('click', () => openFile(file, el));
+      tree.appendChild(el);
+    });
+  });
+}
+
+async function openFile(file, element) {
+  document.querySelectorAll('.tree-item').forEach(el => el.classList.remove('active'));
+  element.classList.add('active');
+  
+  let content = '';
+  try {
+    if (file.handle) {
+      const fileObj = await file.handle.getFile();
+      content = await fileObj.text();
+    } else if (file.entry) {
+      content = await new Promise((resolve, reject) => {
+        file.entry.file(f => { const r = new FileReader(); r.onload = () => resolve(r.result); r.onerror = reject; r.readAsText(f); }, reject);
+      });
+    }
+  } catch(e) { content = `Error reading file: ${e.message}`; }
+  
+  document.getElementById('editorHeader').innerHTML = `<span>${file.path}</span><span style="color:#6e7681">${content.split('\n').length} lines</span>`;
+  
+  const lang = LANG_MAP[file.ext] || 'text';
+  const escaped = content.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  const lines = escaped.split('\n').map((line, i) => 
+    `<span class="line-num">${i+1}</span>${highlightSyntax(line, lang)}`
+  ).join('\n');
+  
+  document.getElementById('codeDisplay').innerHTML = `<pre><code>${lines}</code></pre>`;
+}
+
+function highlightSyntax(line, lang) {
+  // Basic syntax highlighting
+  if (lang === 'bash' || lang === 'python') {
+    line = line.replace(/(#.*)/g, '<span style="color:#6a9955">$1</span>');
+    line = line.replace(/\b(function|def|class|if|else|elif|for|while|return|import|from|export|const|let|var|async|await)\b/g, '<span style="color:#569cd6">$1</span>');
+    line = line.replace(/(["'])(?:(?!\1).)*\1/g, '<span style="color:#ce9178">$&</span>');
+  }
+  if (lang === 'json') {
+    line = line.replace(/(".*?")(\s*:)/g, '<span style="color:#9cdcfe">$1</span>$2');
+    line = line.replace(/:\s*(".*?")/g, ': <span style="color:#ce9178">$1</span>');
+  }
+  if (lang === 'markdown') {
+    line = line.replace(/^(#{1,6}\s.*)/g, '<span style="color:#569cd6;font-weight:bold">$1</span>');
+    line = line.replace(/(\*\*.*?\*\*)/g, '<span style="color:#ce9178;font-weight:bold">$1</span>');
+  }
+  return line;
+}
+
+document.getElementById('searchBox').addEventListener('input', e => renderTree(e.target.value));
+</script>
+
+<script>
+// Auto-inject files from localhost:8081
+(async function() {
+  try {
+    const res = await fetch("http://localhost:8081/api/files");
+    if (!res.ok) throw new Error("Index server unavailable");
+    const files = await res.json();
+    document.getElementById("uploadArea").classList.add("hidden");
+    document.getElementById("codeDisplay").classList.remove("hidden");
+    
+    // Populate allFiles array for existing renderTree function
+    window.allFiles = files.map(f => ({...f, handle: null, entry: null}));
+    if (typeof window.renderTree === 'function') {
+      window.renderTree("");
+    }
+    console.log(`✅ Auto-injected ${files.length} files from C25 repo`);
+  } catch(e) {
+    console.warn("⚠️ Auto-inject failed:", e.message);
+    document.getElementById("uploadArea").classList.remove("hidden");
+  }
+})();
+</script>
+
+</body>
+</html>

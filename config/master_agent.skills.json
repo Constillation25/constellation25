@@ -1,0 +1,15 @@
+{
+  "master_agent": "Earth",
+  "version": "1.0.0",
+  "core_skills": ["IPC Routing", "DevOps Validation", "Task Delegation", "Log Auditing"],
+  "agent_registry": {
+    "Mercury": ["NLP", "LangChain", "Plagiarism Analysis"],
+    "Venus": ["AI Art Generation", "Virtual World Creation", "Gradio/Streamlit UI"],
+    "Mars": ["Supercomputing Workloads", "HMD API Hooks", "Enterprise Metaverse"],
+    "Jupiter": ["FacePrintPay Integration", "Virtual Shopping", "Recommendation Engines"],
+    "Saturn": ["Virtual Meetings", "Virtual Concerts Streaming"],
+    "Uranus": ["Bird Species Prediction", "WhyLabs Langkit Monitoring"],
+    "Neptune": ["BentoML Serving", "Weights & Biases Tracking"],
+    "Pluto": ["ChromaDB Local Edge Caching", "Pinecone Cloud Sync"]
+  }
+}

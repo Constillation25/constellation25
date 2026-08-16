@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "name": "PaTHos OS NLP2Code Training Dataset",
+    "version": "2.0.0",
+    "created": "2025-03-21",
+    "author": "Constellation25 / CyGeL Co - DBA KRE8TIVE KONCEPTZ",
+    "source_repositories": 299,
+    "total_files_discovered": 100,
+    "license": "Proprietary - Evaluation Only"
+  },
+  "intents": [
+    {"intent": "agent_deployment", "description": "Deploy planetary agents to production", "source_files": ["deploy_linked2.sh", "deploy_log_dialog.sh", "reactivate_planetary_agents.sh"]},
+    {"intent": "sovereign_broadcast", "description": "Execute sovereign broadcast payload", "source_files": ["sovereign_broadcast_payload.md", "sovereign_push_everywhere.sh"]},
+    {"intent": "agent_health_check", "description": "Check health status of agents", "source_files": ["agent_health_check.py", "ping_agents.sh", "test_agents.sh"]},
+    {"intent": "echo_mimic", "description": "Execute echo mimic trace", "source_files": ["echo_mimic_report.md", "send_echo_trace.sh"]},
+    {"intent": "biometric_auth", "description": "Process biometric authentication", "source_files": ["biometric-gate.js", "FacePrintPay"]},
+    {"intent": "stargate_routing", "description": "Route through AiKre8tive Stargate", "source_files": ["AiKre8tive-Stargate", "stargate-grpc-nosqlbench"]},
+    {"intent": "video_court_session", "description": "Initialize virtual court hearing", "source_files": ["VideoCourts", "court_session.py"]},
+    {"intent": "revenue_collection", "description": "Collect revenue from agents", "source_files": ["revenue_collector.py", "revenue_log.txt"]},
+    {"intent": "task_orchestration", "description": "Orchestrate agent tasks", "source_files": ["worker_orchestrator.py", "execute_plan.sh", "generate_1000_tasks.py"]},
+    {"intent": "artifact_generation", "description": "Generate build artifacts", "source_files": ["backfill_artifacts_from_done.sh", "compile_deck.py"]}
+  ],
+  "agents": {
+    "earth": {"role": "Foundation Agent", "files": ["planetary-deployment/main.py", "PlanetaryAgentsDeployment/README.md"]},
+    "moon": {"role": "Validation Agent", "files": ["tests/test.sh", "agent_health_check.py"]},
+    "sun": {"role": "Optimization Agent", "files": ["enhanced_worker_orchestrator.py", "optimize_agents.py"]},
+    "mercury": {"role": "Speed Agent", "files": ["ping_agents.sh", "send_echo_trace.sh"]},
+    "mars": {"role": "Security Agent", "files": ["biometric-gate.js", "sovereign_manifesto.md"]},
+    "jupiter": {"role": "Documentation Agent", "files": ["README.md", "C25_SOVEREIGN_MASTER.md"]},
+    "saturn": {"role": "Refactoring Agent", "files": ["compile_deck.py", "generate_aimetaverse_plan_and_tasks.py"]}
+  },
+  "skills": {
+    "deployment": ["deploy_linked2.sh", "deploy_log_dialog.sh", "c25-unified-deploy.sh", "DEPLOY_UNIVERSE.sh"],
+    "orchestration": ["worker_orchestrator.py", "enhanced_worker_orchestrator.py", "simple_plan_executor.py"],
+    "communication": ["send_echo_trace.sh", "sovereign_push_everywhere.sh", "final_sync.sh"],
+    "authentication": ["biometric-gate.js", "system_agents.json"],
+    "monitoring": ["ping_agents.sh", "agent_health_check.py", "test_agents.sh"]
+  },
+  "models": [
+    {"name": "Answer Generation Model", "version": "3.0", "base_model": "Llama 3.1 8B Instruct", "accuracy": "97%", "tps": 37, "latency": 0.92},
+    {"name": "Conversation Summary Model", "version": "2.0", "base_model": "Mistral 7B Instruct v0.2", "accuracy": "100%", "tps": 71, "latency": 2.00},
+    {"name": "DialogGPT Model", "version": "1.1", "base_model": "Llama-3.1-8B-Instruct", "accuracy": "96%", "tps": 45, "latency": 1.20}
+  ],
+  "guardrails": [
+    {"name": "restrict_toxicity", "type": "content_moderation", "enabled": true, "input": true, "output": true},
+    {"name": "restrict_topics", "type": "topic_filtering", "enabled": true, "topics": ["politics", "violence", "religion"]},
+    {"name": "detect_prompt_injections", "type": "security", "enabled": true, "input": true, "output": false},
+    {"name": "filter_responses", "type": "content_filtering", "enabled": true, "input": false, "output": true}
+  ],
+  "compliance": {
+    "executive_order": "Executive Order No. 24 - Advancing Trustworthy Artificial Intelligence That Benefits All North Carolinians",
+    "us_ai_action_plan": "America's AI Action Plan - July 23, 2025",
+    "company": "Kre8tive Koncepts LLC - Privately held North Carolina Technology Incubator",
+    "subsidiary_of": "Mobile Titan Inc."
+  }
+}

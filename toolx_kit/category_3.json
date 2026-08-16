@@ -1,0 +1,7 @@
+{
+    "id": 3,
+    "name": "Exploitation Tools",
+    "tools": ["metasploit", "exploitdb"],
+    "status": "available",
+    "integrated": true
+}

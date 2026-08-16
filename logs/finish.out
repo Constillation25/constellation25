@@ -1,0 +1,19 @@
+nohup: ignoring input
+CyGeL-White
+cygel@kre8tive.space
+[FIN] A: repo list recovery (history + .git dirs + token API)
+/data/data/com.termux/files/home/constellation25/scripts/c25-finish.sh: line 10: /tmp/repos.all: Permission denied
+/data/data/com.termux/files/home/constellation25/scripts/c25-finish.sh: line 12: /tmp/repos.all: Permission denied
+/data/data/com.termux/files/home/constellation25/scripts/c25-finish.sh: line 13: /tmp/repos.all: Permission denied
+/data/data/com.termux/files/home/constellation25/scripts/c25-finish.sh: line 14: /tmp/repos.all: Permission denied
+[FIN] no token - recovery only
+grep: /tmp/repos.all: No such file or directory
+[FIN] repos listed: 0
+[FIN] B: clone x8
+xargs: warning: options --max-args and --replace/-I/-i are mutually exclusive, ignoring previous --max-args value
+[FIN] repos local: 2
+[FIN] C: universe build
+[FIN] UNIVERSE FAIL
+[FIN] D: vaults
+[FIN] E: distribute + push
+[FIN] DONE repos:2 fails:4

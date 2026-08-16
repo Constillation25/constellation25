@@ -1,0 +1,7 @@
+{
+    "id": 6,
+    "name": "Web Hacking",
+    "tools": ["burp", "zap", "wfuzz"],
+    "status": "available",
+    "integrated": true
+}

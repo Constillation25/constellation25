@@ -1,0 +1,9 @@
+{
+  "task_id": "build_1785101876_smoke_test",
+  "agent": "echo",
+  "type": "smoke_test",
+  "priority": "high",
+  "created": "20260726T213756Z",
+  "payload": "Create a simple smoke_test.sh that: 1) starts the mesh, 2) drops one test task, 3) waits and checks for an output artifact, 4) stops the mesh. Use only existing scripts and paths.",
+  "status": "pending"
+}

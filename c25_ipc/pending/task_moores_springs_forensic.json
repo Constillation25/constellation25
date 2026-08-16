@@ -1,0 +1,17 @@
+{
+  "task_id": "c25-re-20260725-002",
+  "priority": "critical",
+  "requested_by": "CyGeL",
+  "assigned_agents": ["Neptune", "Saturn", "Jupiter", "Earth"],
+  "target_property": {
+    "address": "1805 Moores Springs Rd, Danbury, NC 27016",
+    "county": "Stokes",
+    "last_known_tax_status": "Unpaid since ~2000"
+  },
+  "agent_instructions": {
+    "Neptune": "Scrape Stokes County Register of Deeds and NC State Archives for probate, heir property, or deed activity post-2000. Identify potential owners.",
+    "Saturn": "Query Stokes County Tax Administration for exact Parcel ID, current assessed value, and total delinquent tax balance.",
+    "Jupiter": "Prepare a Quiet Title Action contingency brief for heir property acquisition.",
+    "Earth": "Validate directory scaffolding and monitor IPC queue for agent responses."
+  }
+}

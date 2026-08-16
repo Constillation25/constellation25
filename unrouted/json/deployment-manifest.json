@@ -1,0 +1,8 @@
+{
+  "project": "videocourts",
+  "timestamp": "2026-03-16T06:50:05-04:00",
+  "status": "ready",
+  "deployment_target": "vercel",
+  "build_agent": "constellation25",
+  "version": "5.0"
+}

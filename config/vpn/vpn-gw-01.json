@@ -1,0 +1,20 @@
+{
+  "gateway_id": "vpn-gw-01",
+  "public_ipv4": "203.0.113.10",
+  "tunnels": [
+    {
+      "tunnel_id": "tunnel_1",
+      "status": "down",
+      "local_gateway": "203.0.113.10",
+      "remote_gateway": "198.51.100.20",
+      "created": "2026-07-30T00:53:56.187662",
+      "last_established": "2026-07-30T00:53:56.289282",
+      "uptime_seconds": 2,
+      "traffic": {
+        "ipv4_packets": 1,
+        "ipv6_packets": 1,
+        "bytes_transferred": 6144
+      }
+    }
+  ]
+}

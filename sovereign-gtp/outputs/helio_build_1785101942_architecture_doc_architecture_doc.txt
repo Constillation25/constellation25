@@ -1,0 +1,6 @@
+<!-- architecture_doc - Helio Agent -->
+<!-- Payload: Create a clean ARCHITECTURE.md that accurately describes the current Constellation25 system: BaseAgent, TotalRecall logger, IntelligentRouter, JSON IPC, boot_mesh.sh, and the existing agents (helio, vault, echo). Do not invent features that do not exist. Output pure Markdown. -->
+<!-- Generated: 2026-07-26T17:39:16.491696 -->
+<div class="placeholder p-8 bg-slate-100 rounded text-center">
+  <p class="text-slate-600">UI component placeholder for: Create a clean ARCHITECTURE.md that accurately describes the current Constellation25 system: BaseAgent, TotalRecall logger, IntelligentRouter, JSON IPC, boot_mesh.sh, and the existing agents (helio, vault, echo). Do not invent features that do not exist. Output pure Markdown.</p>
+</div>

@@ -1,0 +1,13 @@
+{
+  "task_id": "'"$TASK_ID"'",
+  "timestamp": "'"$TIMESTAMP"'",
+  "agents": ["Neptune", "Ceres"],
+  "priority": "MEDIUM",
+  "action": "CLEAN_AND_MIGRATE",
+  "payload": {
+    "input_dir": "~/constellation25/corpus/raw_html",
+    "output_dir": "~/constellation25/corpus/cleaned_text",
+    "db_action": "generate_migration",
+    "schema_targets": ["curriculum", "books", "quizzes"]
+  }
+}

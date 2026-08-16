@@ -1,0 +1,42 @@
+{
+  "name": "constellation25",
+  "version": "1.0.0",
+  "description": "17-Agent Sovereign AI Platform — The enterprise AI system that runs on your device",
+  "main": "src/index.js",
+  "bin": {
+    "c25": "./c25_master_control.sh",
+    "constellation25": "./c25_master_control.sh"
+  },
+  "scripts": {
+    "start": "bash c25_master_control.sh",
+    "install-agents": "bash install.sh",
+    "status": "bash status_agents.sh",
+    "test": "bash agents/history_scanner.sh"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "termux",
+    "sovereign",
+    "constellation25",
+    "bioauth",
+    "readdo",
+    "totalrecall",
+    "llm",
+    "multi-agent",
+    "enterprise"
+  ],
+  "author": "Cygel White <CyGeL.co@gmail.com> (https://github.com/Constillation25)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Constillation25/constellation25.git"
+  },
+  "homepage": "https://github.com/Constillation25/constellation25#readme",
+  "bugs": {
+    "url": "https://github.com/Constillation25/constellation25/issues"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

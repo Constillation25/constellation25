@@ -1,0 +1,192 @@
+{
+  "title": "TOTALRECALL BUILDER MESH - SYSTEM REPORT",
+  "generated_at": "2026-07-29T22:58:08.352629",
+  "orchestrator_id": "orch-1785380288",
+  "status": {
+    "orchestrator": {
+      "id": "orch-1785380288",
+      "started_at": "2026-07-29T22:58:08.295124",
+      "operations": 8
+    },
+    "node_mesh": {
+      "mesh_name": "totalrecall-builder-mesh",
+      "total_nodes": 1,
+      "active_nodes": 1,
+      "idle_nodes": 0,
+      "total_tasks_completed": 0,
+      "total_tasks_failed": 0,
+      "success_rate": "0.0%",
+      "nodes": [
+        {
+          "node_id": "node-77d7e65d",
+          "node_type": "orchestrator",
+          "hostname": "localhost",
+          "status": "busy",
+          "cpu_cores": 8,
+          "memory_mb": 7661,
+          "disk_free_gb": 2.24,
+          "agent_slots": 4,
+          "active_agents": 1,
+          "capabilities": [
+            "python3",
+            "bash",
+            "git",
+            "node",
+            "gcc",
+            "ffmpeg"
+          ],
+          "tasks_completed": 0,
+          "tasks_failed": 0,
+          "last_heartbeat": "2026-07-29T22:58:08.295219"
+        }
+      ]
+    },
+    "agent_mesh": {
+      "agents": {
+        "compile": {
+          "agent_id": "compile-01",
+          "agent_type": "compile",
+          "tasks_processed": 4,
+          "tasks_failed": 0,
+          "success_rate": "100.0%",
+          "last_task": "task-1785380288"
+        },
+        "parse": {
+          "agent_id": "parse-01",
+          "agent_type": "parse",
+          "tasks_processed": 4,
+          "tasks_failed": 0,
+          "success_rate": "100.0%",
+          "last_task": "task-1785380288"
+        },
+        "prune": {
+          "agent_id": "prune-01",
+          "agent_type": "prune",
+          "tasks_processed": 4,
+          "tasks_failed": 0,
+          "success_rate": "100.0%",
+          "last_task": "task-1785380288"
+        },
+        "debug": {
+          "agent_id": "debug-01",
+          "agent_type": "debug",
+          "tasks_processed": 4,
+          "tasks_failed": 0,
+          "success_rate": "100.0%",
+          "last_task": "task-1785380288"
+        },
+        "route": {
+          "agent_id": "route-01",
+          "agent_type": "route",
+          "tasks_processed": 4,
+          "tasks_failed": 0,
+          "success_rate": "100.0%",
+          "last_task": "task-1785380288"
+        }
+      },
+      "pipeline_runs": 20,
+      "route_distribution": {
+        "deploy": 0,
+        "archive": 0,
+        "escalate": 0,
+        "discard": 4
+      }
+    },
+    "build_engine": {
+      "environments": 2,
+      "queued_builds": 0,
+      "completed_builds": 4,
+      "environment_details": {
+        "env-production-1785380288": {
+          "env_id": "env-production-1785380288",
+          "env_type": "production",
+          "status": "initialized",
+          "components": 0,
+          "deployments": 0,
+          "forensic_snapshots": 1
+        },
+        "env-forensic-1785380288": {
+          "env_id": "env-forensic-1785380288",
+          "env_type": "forensic",
+          "status": "initialized",
+          "components": 0,
+          "deployments": 0,
+          "forensic_snapshots": 1
+        }
+      }
+    }
+  },
+  "operations_log": [
+    {
+      "operation": "ingest_evidence",
+      "details": {
+        "source_type": "forensic_code",
+        "size": 37
+      },
+      "timestamp": "2026-07-29T22:58:08.344698",
+      "orchestrator_id": "orch-1785380288"
+    },
+    {
+      "operation": "ingest_evidence",
+      "details": {
+        "source_type": "forensic_code",
+        "size": 54
+      },
+      "timestamp": "2026-07-29T22:58:08.345160",
+      "orchestrator_id": "orch-1785380288"
+    },
+    {
+      "operation": "ingest_evidence",
+      "details": {
+        "source_type": "forensic_code",
+        "size": 16
+      },
+      "timestamp": "2026-07-29T22:58:08.345367",
+      "orchestrator_id": "orch-1785380288"
+    },
+    {
+      "operation": "run_pipeline",
+      "details": {
+        "source_type": "forensic_code",
+        "target": "production"
+      },
+      "timestamp": "2026-07-29T22:58:08.345509",
+      "orchestrator_id": "orch-1785380288"
+    },
+    {
+      "operation": "process_batch",
+      "details": {
+        "count": 3
+      },
+      "timestamp": "2026-07-29T22:58:08.348861",
+      "orchestrator_id": "orch-1785380288"
+    },
+    {
+      "operation": "run_pipeline",
+      "details": {
+        "source_type": "forensic_code",
+        "target": "forensic"
+      },
+      "timestamp": "2026-07-29T22:58:08.348880",
+      "orchestrator_id": "orch-1785380288"
+    },
+    {
+      "operation": "run_pipeline",
+      "details": {
+        "source_type": "forensic_code",
+        "target": "forensic"
+      },
+      "timestamp": "2026-07-29T22:58:08.350237",
+      "orchestrator_id": "orch-1785380288"
+    },
+    {
+      "operation": "run_pipeline",
+      "details": {
+        "source_type": "forensic_code",
+        "target": "forensic"
+      },
+      "timestamp": "2026-07-29T22:58:08.351652",
+      "orchestrator_id": "orch-1785380288"
+    }
+  ]
+}

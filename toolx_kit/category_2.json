@@ -1,0 +1,7 @@
+{
+    "id": 2,
+    "name": "Vulnerability Scanner",
+    "tools": ["nikto", "sqlmap", "openvas"],
+    "status": "available",
+    "integrated": true
+}

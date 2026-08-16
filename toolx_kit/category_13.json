@@ -1,0 +1,7 @@
+{
+    "id": 13,
+    "name": "DDOS Attacks",
+    "tools": ["slowloris", "thc-ipv6"],
+    "status": "available",
+    "integrated": true
+}

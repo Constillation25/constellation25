@@ -1,0 +1,50 @@
+{
+  "mercury": {
+    "name": "mercury",
+    "state": "CLOSED",
+    "failures": 0,
+    "last_failure": null
+  },
+  "venus": {
+    "name": "venus",
+    "state": "CLOSED",
+    "failures": 0,
+    "last_failure": null
+  },
+  "jupiter": {
+    "name": "jupiter",
+    "state": "CLOSED",
+    "failures": 0,
+    "last_failure": null
+  },
+  "uranus": {
+    "name": "uranus",
+    "state": "CLOSED",
+    "failures": 0,
+    "last_failure": null
+  },
+  "neptune": {
+    "name": "neptune",
+    "state": "CLOSED",
+    "failures": 0,
+    "last_failure": null
+  },
+  "saturn": {
+    "name": "saturn",
+    "state": "CLOSED",
+    "failures": 0,
+    "last_failure": null
+  },
+  "mars": {
+    "name": "mars",
+    "state": "CLOSED",
+    "failures": 0,
+    "last_failure": null
+  },
+  "pluto": {
+    "name": "pluto",
+    "state": "CLOSED",
+    "failures": 0,
+    "last_failure": null
+  }
+}

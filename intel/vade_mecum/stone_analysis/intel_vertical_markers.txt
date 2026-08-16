@@ -1,0 +1,18 @@
+LOCATION: Tise Hall Gym Chimney (Fieldstone/Rubble Masonry)
+MARKER: 3 Distinct Stones in Vertical Alignment
+POSITION: Center-face of chimney
+CONSTRUCTION: 1902, Sparks ownership
+
+OBSERVATIONS:
+- Top stone: Lighter color (white/tan vs gray-brown)
+- Middle stone: Angular/different shape
+- Bottom stone: Rounded texture
+- All three vertically aligned center
+
+HYPOTHESES:
+1. Removable access stones to flue cavity
+2. Measurement markers (count courses down)
+3. Mason's signature for special construction
+4. Deliberate marker for hidden compartment
+
+INVESTIGATION_PRIORITY: CRITICAL

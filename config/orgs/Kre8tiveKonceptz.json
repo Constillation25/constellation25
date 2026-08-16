@@ -1,0 +1,103 @@
+{
+  "name": "Kre8tiveKonceptz",
+  "id": "fb07dfa4",
+  "created": 1785387237.2077858,
+  "projects": [
+    {
+      "id": "a9d29902",
+      "name": "Default Project",
+      "is_default": true,
+      "created": 1785387237.2082455,
+      "resources": {
+        "6571898f": {
+          "id": "6571898f",
+          "name": "VideoCourts Engine",
+          "type": "compute",
+          "project_id": "a9d29902",
+          "created": 1785387237.2105777,
+          "metadata": {}
+        },
+        "77309d9d": {
+          "id": "77309d9d",
+          "name": "MyBuyo Database",
+          "type": "database",
+          "project_id": "a9d29902",
+          "created": 1785387237.210791,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "id": "210ea45c",
+      "name": "Project 2",
+      "is_default": false,
+      "created": 1785387237.2091029,
+      "resources": {
+        "97b87ca8": {
+          "id": "97b87ca8",
+          "name": "Agent Swarm",
+          "type": "compute",
+          "project_id": "210ea45c",
+          "created": 1785387237.2108998,
+          "metadata": {}
+        }
+      }
+    },
+    {
+      "id": "d379aa08",
+      "name": "Project 3",
+      "is_default": false,
+      "created": 1785387237.209884,
+      "resources": {}
+    }
+  ],
+  "users": [
+    {
+      "id": "a0142227",
+      "username": "CyGeL",
+      "email": "cygel@kre8tive.space",
+      "created": 1785387237.2110405,
+      "policies": [
+        "admin"
+      ],
+      "api_keys": [
+        "production-key"
+      ],
+      "groups": [],
+      "apps": [],
+      "active": true
+    },
+    {
+      "id": "d9608c34",
+      "username": "Agent_Mars",
+      "email": "mars@c25.local",
+      "created": 1785387237.2119472,
+      "policies": [
+        "deploy"
+      ],
+      "api_keys": [],
+      "groups": [],
+      "apps": [],
+      "active": true
+    }
+  ],
+  "billing": {
+    "balance": 0.0,
+    "invoices": [
+      {
+        "id": "506c40dd",
+        "amount": 999.0,
+        "description": "Professional License - Annual",
+        "status": "pending",
+        "created": 1785387237.2142088
+      },
+      {
+        "id": "44e60814",
+        "amount": 2500.0,
+        "description": "VeRseD_Ai Biometric Gate",
+        "status": "pending",
+        "created": 1785387237.215271
+      }
+    ]
+  }
+}

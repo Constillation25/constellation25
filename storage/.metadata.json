@@ -1,0 +1,25 @@
+{
+  "objects": {
+    "folder_1785387237": {
+      "id": "folder_1785387237",
+      "name": "projects",
+      "type": "folder",
+      "path": "/data/data/com.termux/files/home/constellation25/storage/projects",
+      "parent": "/",
+      "created": "2026-07-30T00:53:57.846296",
+      "size": 0,
+      "item_count": 0
+    },
+    "file_1785387237": {
+      "id": "file_1785387237",
+      "name": "data.csv",
+      "type": "file",
+      "path": "/data/data/com.termux/files/home/constellation25/storage/my-folder/subfolder-2/data.csv",
+      "parent": "/my-folder/subfolder-2",
+      "created": "2026-07-30T00:53:57.848435",
+      "size": 24,
+      "content_hash": 1184728082426489356
+    }
+  },
+  "created": "2026-07-30T00:53:57.843815"
+}

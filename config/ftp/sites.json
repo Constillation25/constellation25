@@ -1,0 +1,27 @@
+{
+  "sites": {
+    "Production Server": {
+      "name": "Production Server",
+      "protocol": "FTP",
+      "host": "ftp.online.net",
+      "port": 21,
+      "encryption": "Require explicit FTP over TLS",
+      "user": "webmaster@example.com",
+      "password": "*********",
+      "last_connected": "2026-07-30T00:54:02.629008",
+      "bookmarks": 0
+    },
+    "Backup Server": {
+      "name": "Backup Server",
+      "protocol": "SFTP",
+      "host": "backup.scaleway.com",
+      "port": 22,
+      "encryption": "SFTP",
+      "user": "backup_user",
+      "password": "***********",
+      "last_connected": null,
+      "bookmarks": 0
+    }
+  },
+  "folders": {}
+}

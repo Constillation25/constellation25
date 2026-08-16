@@ -1,0 +1,2291 @@
+{
+  "generated_at": "2026-07-30T02:33:27.140411",
+  "system": "Termux Constellation25",
+  "stats": {
+    "total": 316,
+    "high_complexity": 7,
+    "categories": {
+      "general": 300,
+      "file_operations": 6,
+      "navigation": 1,
+      "version_control": 2,
+      "script_execution": 4,
+      "execution_build": 3
+    }
+  },
+  "history": [
+    {
+      "command": "\"\"\"Get build by ID\"\"\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "cursor.execute(\"SELECT * FROM builds WHERE build_id = ?\", (build_id,))",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "row = cursor.fetchone()",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "return dict(row) if row else None",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "def get_all_builds(self, limit=100):",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"\"\"Get all builds\"\"\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "cursor.execute(\"SELECT * FROM builds ORDER BY created_at DESC LIMIT ?\", (limit,))",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "return [dict(row) for row in cursor.fetchall()]",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "def get_stats(self):",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"\"\"Get database statistics\"\"\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "cursor = self.conn.cursor()",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "stats = {}",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "for table in ['builds', 'artifacts', 'snapshots', 'environments', 'evidence']:",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "cursor.execute(f\"SELECT COUNT(*) as count FROM {table}\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "stats[table] = cursor.fetchone()['count']",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "return stats",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "persist = ProductionPersistence()",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "print(\"=== PRODUCTION PERSISTENCE MANAGER ===\\n\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "print(f\"Database: {persist.db_path}\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "print(f\"Stats: {persist.get_stats()}\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "cat << 'PYEOF' > ~/constellation25/modules/totalrecall_mesh/encryption/encryption.py",
+      "category": "file_operations",
+      "complexity": "high",
+      "notes": [
+        "Heredoc block (prone to terminal paste truncation)"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this file_operations command."
+    },
+    {
+      "command": "Production Encryption Manager",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "Encrypts evidence vault and sensitive artifacts",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "import hashlib",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "from cryptography.fernet import Fernet",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "logging.basicConfig(level=logging.INFO, format='%(asctime)s [ENCRYPT] %(message)s')",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "class ProductionEncryption:",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"\"\"Encryption manager for sensitive data\"\"\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "def __init__(self, key_file=None):",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "self.key_file = key_file or str(Path.home() / \"constellation25\" / \"secrets\" / \"encryption.key\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "Path(self.key_file).parent.mkdir(parents=True, exist_ok=True)",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "self.key = self._load_or_generate_key()",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "self.fernet = Fernet(self.key)",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "def _load_or_generate_key(self):",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"\"\"Load existing key or generate new one\"\"\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "if Path(self.key_file).exists():",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "with open(self.key_file, 'rb') as f:",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "return f.read()",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "else:",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "key = Fernet.generate_key()",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "with open(self.key_file, 'wb') as f:",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "f.write(key)",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "logger.info(f\"Encryption key generated: {self.key_file}\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "return key",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "def encrypt(self, data):",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"\"\"Encrypt data\"\"\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "encrypted = self.fernet.encrypt(data)",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "return encrypted",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "def decrypt(self, encrypted_data):",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"\"\"Decrypt data\"\"\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "decrypted = self.fernet.decrypt(encrypted_data)",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "return decrypted.decode()",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "def encrypt_file(self, file_path):",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"\"\"Encrypt a file\"\"\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "with open(file_path, 'rb') as f:",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "data = f.read()",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "encrypted = self.encrypt(data)",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "encrypted_path = f\"{file_path}.enc\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "with open(encrypted_path, 'wb') as f:",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "f.write(encrypted)",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "logger.info(f\"File encrypted: {file_path} \u2192 {encrypted_path}\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "return encrypted_path",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "def decrypt_file(self, encrypted_path):",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"\"\"Decrypt a file\"\"\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "with open(encrypted_path, 'rb') as f:",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "encrypted = f.read()",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "decrypted = self.decrypt(encrypted)",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "original_path = encrypted_path.replace('.enc', '')",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "with open(original_path, 'w') as f:",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "f.write(decrypted)",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "logger.info(f\"File decrypted: {encrypted_path} \u2192 {original_path}\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "return original_path",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "def hash_data(self, data):",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"\"\"Create SHA-256 hash of data\"\"\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "if isinstance(data, str):",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "data = data.encode()",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "return hashlib.sha256(data).hexdigest()",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "encryption = ProductionEncryption()",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "print(\"=== PRODUCTION ENCRYPTION MANAGER ===\\n\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "test_data = \"sensitive forensic evidence\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "encrypted = encryption.encrypt(test_data)",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "print(f\"Original: {test_data}\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "print(f\"Encrypted: {encrypted[:50]}...\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "decrypted = encryption.decrypt(encrypted)",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "print(f\"Decrypted: {decrypted}\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "hash_val = encryption.hash_data(test_data)",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "print(f\"Hash: {hash_val}\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"[\u2713] Phase 1 complete: Production upgrades (Redis queue, SQLite persistence, encryption)\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"[PHASE 2] Deploying file walker agent...\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "cat << 'PYEOF' > ~/constellation25/modules/totalrecall_mesh/agents/file_walker.py",
+      "category": "file_operations",
+      "complexity": "high",
+      "notes": [
+        "Heredoc block (prone to terminal paste truncation)"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this file_operations command."
+    },
+    {
+      "command": "File Walker Agent",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "Walks all directories, reads files, creates missing directories, validates code",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "import os",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "logging.basicConfig(level=logging.INFO, format='%(asctime)s [WALKER] %(message)s')",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "class FileWalkerAgent:",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"\"\"Walks filesystem and validates/fixes structure\"\"\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "def __init__(self, base_dir=None):",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "self.base_dir = Path(base_dir) if base_dir else Path.home() / \"constellation25\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "self.files_processed = 0",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "self.directories_created = 0",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "self.errors_found = 0",
+      "category": "general",
+      "complexity": "low",
+      "notes": [
+        "Historical failure indicator"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "self.errors_fixed = 0",
+      "category": "general",
+      "complexity": "low",
+      "notes": [
+        "Historical failure indicator"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "self.file_types = {",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "'.py': 0, '.md': 0, '.html': 0, '.css': 0, '.js': 0,",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "'.java': 0, '.json': 0, '.yaml': 0, '.yml': 0, '.sh': 0",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "def walk_directory(self, directory=None):",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"\"\"Walk directory tree\"\"\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "directory = Path(directory) if directory else self.base_dir",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "if not directory.exists():",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "logger.warning(f\"Directory does not exist: {directory}\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "return []",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "files = []",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "for root, dirs, filenames in os.walk(directory):",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "dirs[:] = [d for d in dirs if not d.startswith('.')]",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "for filename in filenames:",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "file_path = Path(root) / filename",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "files.append(file_path)",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "self.files_processed += 1",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "ext = file_path.suffix.lower()",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "if ext in self.file_types:",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "self.file_types[ext] += 1",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "logger.info(f\"Walked {directory}: {len(files)} files\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "return files",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "def validate_file(self, file_path):",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"\"\"Validate a file\"\"\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "errors = []",
+      "category": "general",
+      "complexity": "low",
+      "notes": [
+        "Historical failure indicator"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "if not file_path.exists():",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "errors.append({\"type\": \"missing\", \"file\": str(file_path)})",
+      "category": "general",
+      "complexity": "low",
+      "notes": [
+        "Historical failure indicator"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "if file_path.stat().st_size == 0:",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "errors.append({\"type\": \"empty\", \"file\": str(file_path)})",
+      "category": "general",
+      "complexity": "low",
+      "notes": [
+        "Historical failure indicator"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "if file_path.suffix == '.py':",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "with open(file_path, 'r') as f:",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "compile(f.read(), file_path, 'exec')",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "except SyntaxError as e:",
+      "category": "general",
+      "complexity": "low",
+      "notes": [
+        "Historical failure indicator"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "errors.append({\"type\": \"syntax_error\", \"file\": str(file_path), \"error\": str(e)})",
+      "category": "general",
+      "complexity": "low",
+      "notes": [
+        "Historical failure indicator"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "self.errors_found += 1",
+      "category": "general",
+      "complexity": "low",
+      "notes": [
+        "Historical failure indicator"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "return errors",
+      "category": "general",
+      "complexity": "low",
+      "notes": [
+        "Historical failure indicator"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "def create_missing_directories(self, required_dirs):",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"\"\"Create missing directories\"\"\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "for dir_path in required_dirs:",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "path = Path(dir_path)",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "if not path.exists():",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "path.mkdir(parents=True, exist_ok=True)",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "self.directories_created += 1",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "logger.info(f\"Created directory: {dir_path}\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "def fix_errors(self, errors):",
+      "category": "general",
+      "complexity": "low",
+      "notes": [
+        "Historical failure indicator"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"\"\"Fix common errors\"\"\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [
+        "Historical failure indicator"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "for error in errors:",
+      "category": "general",
+      "complexity": "low",
+      "notes": [
+        "Historical failure indicator"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "if error['type'] == 'empty':",
+      "category": "general",
+      "complexity": "low",
+      "notes": [
+        "Historical failure indicator"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "with open(error['file'], 'w') as f:",
+      "category": "general",
+      "complexity": "low",
+      "notes": [
+        "Historical failure indicator"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "f.write(\"# Empty file\\n\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "self.errors_fixed += 1",
+      "category": "general",
+      "complexity": "low",
+      "notes": [
+        "Historical failure indicator"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "logger.info(f\"Fixed empty file: {error['file']}\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [
+        "Historical failure indicator"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "def get_walker_stats(self):",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"files_processed\": self.files_processed,",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"directories_created\": self.directories_created,",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"errors_found\": self.errors_found,",
+      "category": "general",
+      "complexity": "low",
+      "notes": [
+        "Historical failure indicator"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"errors_fixed\": self.errors_fixed,",
+      "category": "general",
+      "complexity": "low",
+      "notes": [
+        "Historical failure indicator"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"file_types\": self.file_types",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "walker = FileWalkerAgent()",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "print(\"=== FILE WALKER AGENT DEMO ===\\n\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "files = walker.walk_directory()",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "print(f\"Files processed: {walker.files_processed}\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "print(f\"File types: {walker.file_types}\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "required_dirs = [",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "Path.home() / \"constellation25\" / \"production\",",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "Path.home() / \"constellation25\" / \"logs\",",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "Path.home() / \"constellation25\" / \"secrets\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "]",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "walker.create_missing_directories(required_dirs)",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "print(f\"Directories created: {walker.directories_created}\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "print()",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "print(f\"Walker stats: {walker.get_walker_stats()}\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"[\u2713] Phase 2 complete: File walker agent deployed\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"[PHASE 3] Deploying git sync script...\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "cat << 'BASHEOF' > ~/constellation25/scripts/git_sync.sh",
+      "category": "file_operations",
+      "complexity": "high",
+      "notes": [
+        "Heredoc block (prone to terminal paste truncation)"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this file_operations command."
+    },
+    {
+      "command": "echo \"[*] CONSTELLATION25 GIT SYNC STARTING...\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"[*] Mode: Stream (no full clone)\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "BASE_DIR=\"$HOME/constellation25\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "REPOS_DIR=\"$BASE_DIR/repos\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "LOG_FILE=\"$BASE_DIR/logs/git_sync_$(date +%Y%m%d_%H%M%S).log\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "mkdir -p \"$REPOS_DIR\" \"$BASE_DIR/logs\"",
+      "category": "file_operations",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this file_operations command."
+    },
+    {
+      "command": "REPOS=(",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"FacePrintPay/constellation25\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"FacePrintPay/videocourts\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"FacePrintPay/mybuyo\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"FacePrintPay/commz\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"FacePrintPay/pathos\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": ")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "sync_repo() {",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "local repo=$1",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "local repo_name=$(basename \"$repo\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "local repo_path=\"$REPOS_DIR/$repo_name\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"[SYNC] $repo\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "if [ -d \"$repo_path/.git\" ]; then",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "cd \"$repo_path\"",
+      "category": "navigation",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this navigation command."
+    },
+    {
+      "command": "git pull --rebase --autostash 2>&1 | tee -a \"$LOG_FILE\"",
+      "category": "version_control",
+      "complexity": "medium",
+      "notes": [
+        "Uses piping"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this version_control command."
+    },
+    {
+      "command": "echo \"[\u2713] Pulled: $repo_name\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "else",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "git clone --depth 1 \"https://github.com/$repo.git\" \"$repo_path\" 2>&1 | tee -a \"$LOG_FILE\"",
+      "category": "version_control",
+      "complexity": "medium",
+      "notes": [
+        "Uses piping"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this version_control command."
+    },
+    {
+      "command": "echo \"[\u2713] Cloned: $repo_name\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "fi",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"[*] Syncing ${#REPOS[@]} repos...\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "for repo in \"${REPOS[@]}\"; do",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "sync_repo \"$repo\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "done",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"[*] GIT SYNC COMPLETE\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"[*] Log: $LOG_FILE\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "chmod +x ~/constellation25/scripts/git_sync.sh",
+      "category": "script_execution",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this script_execution command."
+    },
+    {
+      "command": "echo \"[\u2713] Phase 3 complete: Git sync script deployed\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"[PHASE 4] Deploying streaming pipeline...\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "cat << 'PYEOF' > ~/constellation25/modules/totalrecall_mesh/orchestrator/streaming_deploy.py",
+      "category": "file_operations",
+      "complexity": "high",
+      "notes": [
+        "Heredoc block (prone to terminal paste truncation)"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this file_operations command."
+    },
+    {
+      "command": "Streaming Deployment Pipeline",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "Streams code from repos into TotalRecall mesh without full download",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"\"\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "import json",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "import time",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "import subprocess",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "import logging",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "from pathlib import Path",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "from datetime import datetime",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "logging.basicConfig(level=logging.INFO, format='%(asctime)s [STREAM] %(message)s')",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "logger = logging.getLogger(__name__)",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "class StreamingDeployer:",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"\"\"Streams code into TotalRecall mesh\"\"\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "def __init__(self):",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "self.repos_dir = Path.home() / \"constellation25\" / \"repos\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "self.mesh_dir = Path.home() / \"constellation25\" / \"modules\" / \"totalrecall_mesh\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "self.deployed_count = 0",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "self.failed_count = 0",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "def stream_repo_to_mesh(self, repo_path):",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"\"\"Stream repo code into mesh\"\"\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "repo_path = Path(repo_path)",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "if not repo_path.exists():",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "logger.warning(f\"Repo not found: {repo_path}\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "return False",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "for file_path in repo_path.rglob('*'):",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "if file_path.is_file() and not file_path.name.startswith('.'):",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "try:",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "with open(file_path, 'r', errors='ignore') as f:",
+      "category": "general",
+      "complexity": "low",
+      "notes": [
+        "Historical failure indicator"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "content = f.read()",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "self.deployed_count += 1",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "logger.debug(f\"Streamed: {file_path.name}\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "except Exception as e:",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "self.failed_count += 1",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "logger.error(f\"Failed to stream {file_path}: {e}\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [
+        "Historical failure indicator"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "return True",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "def deploy_all_repos(self):",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"\"\"Deploy all repos to mesh\"\"\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "if not self.repos_dir.exists():",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "logger.warning(\"No repos directory found\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "return",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "repos = list(self.repos_dir.iterdir())",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "logger.info(f\"Found {len(repos)} repos to deploy\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "for repo in repos:",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "if repo.is_dir():",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "logger.info(f\"Deploying: {repo.name}\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "self.stream_repo_to_mesh(repo)",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "logger.info(f\"Deployment complete: {self.deployed_count} files streamed, {self.failed_count} failed\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "def get_deploy_stats(self):",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "return {",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"deployed_files\": self.deployed_count,",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"failed_files\": self.failed_count,",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "\"success_rate\": f\"{(self.deployed_count / max(self.deployed_count + self.failed_count, 1) * 100):.1f}%\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "}",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "if __name__ == \"__main__\":",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "deployer = StreamingDeployer()",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "print(\"=== STREAMING DEPLOYMENT PIPELINE ===\\n\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "print(\"Deploying repos to TotalRecall mesh...\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "deployer.deploy_all_repos()",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "print(f\"\\nDeployment stats: {deployer.get_deploy_stats()}\")",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "PYEOF",
+      "category": "general",
+      "complexity": "high",
+      "notes": [
+        "Heredoc block (prone to terminal paste truncation)"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"[\u2713] Phase 4 complete: Streaming deployment pipeline deployed\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"[PHASE 5] Creating master deployment script...\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "cat << 'BASHEOF' > ~/constellation25/deploy_production.sh",
+      "category": "file_operations",
+      "complexity": "high",
+      "notes": [
+        "Heredoc block (prone to terminal paste truncation)"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this file_operations command."
+    },
+    {
+      "command": "echo \"\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"\u2551   CONSTELLATION25 PRODUCTION DEPLOYMENT                   \u2551\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"\u2551   TotalRecall Builder Agent Mesh                          \u2551\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"[1/5] Starting Redis...\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "redis-server --daemonize yes 2>/dev/null || echo \"[!] Redis not installed, using fallback queue\"",
+      "category": "general",
+      "complexity": "medium",
+      "notes": [
+        "Chained command (high failure risk if prior step fails)",
+        "Uses piping"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"[2/5] Running file walker agent...\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "python3 ~/constellation25/modules/totalrecall_mesh/agents/file_walker.py",
+      "category": "execution_build",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this execution_build command."
+    },
+    {
+      "command": "echo \"[3/5] Syncing git repos...\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "bash ~/constellation25/scripts/git_sync.sh",
+      "category": "script_execution",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this script_execution command."
+    },
+    {
+      "command": "echo \"[4/5] Streaming deployment...\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "python3 ~/constellation25/modules/totalrecall_mesh/orchestrator/streaming_deploy.py",
+      "category": "execution_build",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this execution_build command."
+    },
+    {
+      "command": "echo \"[5/5] Starting TotalRecall orchestrator...\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "python3 ~/constellation25/modules/totalrecall_mesh/orchestrator/orchestrator.py",
+      "category": "execution_build",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this execution_build command."
+    },
+    {
+      "command": "echo \"\u2551   DEPLOYMENT COMPLETE                                     \u2551\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"Next steps:\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"  1. Check logs: ~/constellation25/logs/\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"  2. View mesh status: python3 ~/constellation25/modules/totalrecall_mesh/orchestrator/orchestrator.py\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"  3. Monitor queue: redis-cli LLEN totalrecall:tasks\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "BASHEOF",
+      "category": "general",
+      "complexity": "high",
+      "notes": [
+        "Heredoc block (prone to terminal paste truncation)"
+      ],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "chmod +x ~/constellation25/deploy_production.sh",
+      "category": "script_execution",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this script_execution command."
+    },
+    {
+      "command": "echo \"[\u2713] Phase 5 complete: Master deployment script created\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"\u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"\u2551   CONSTELLATION25 PRODUCTION DEPLOYMENT READY             \u2551\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"\u255a\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255d\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"What was deployed:\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"  \u2713 Redis-based production queue\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"  \u2713 SQLite persistence layer\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"  \u2713 Encryption manager\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"  \u2713 File walker agent\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"  \u2713 Git sync script (stream mode)\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"  \u2713 Streaming deployment pipeline\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"  \u2713 Master deployment script\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"To run full deployment:\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"  bash ~/constellation25/deploy_production.sh\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"To run individual components:\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"  python3 ~/constellation25/modules/totalrecall_mesh/orchestrator/orchestrator.py\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"  bash ~/constellation25/scripts/git_sync.sh\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"  python3 ~/constellation25/modules/totalrecall_mesh/agents/file_walker.py\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "echo \"[!] PRODUCTION SYSTEM IS LIVE\"",
+      "category": "general",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this general command."
+    },
+    {
+      "command": "bash ~/constellation25/deploy_production.sh",
+      "category": "script_execution",
+      "complexity": "low",
+      "notes": [],
+      "agent_action": "Agent should verify syntax and dependencies for this script_execution command."
+    }
+  ]
+}

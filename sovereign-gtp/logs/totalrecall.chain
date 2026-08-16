@@ -1,0 +1,10 @@
+[
+  {
+    "block_index": 0,
+    "timestamp": "2026-07-26T17:39:16.525992",
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "data": "Genesis block - Constellation25 SovereignGTP initialized",
+    "nonce": 0,
+    "hash": "9504ea1b07636a36b547037196f8959a590cb2cb41e5405734f439747bb2c256"
+  }
+]

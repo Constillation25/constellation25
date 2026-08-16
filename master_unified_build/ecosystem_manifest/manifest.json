@@ -1,0 +1,2613 @@
+{
+  "timestamp": "2026-08-03T04:08:53.977440",
+  "owner": "CyGeL White",
+  "total_modules": 324,
+  "modules": [
+    {
+      "name": ".agent-engine",
+      "path": "/data/data/com.termux/files/home/.agent-engine",
+      "remote": "https://github.com/FacePrintPay/.agent-engine.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": ".c25_backend",
+      "path": "/data/data/com.termux/files/home/.c25_backend",
+      "remote": "https://github.com/FacePrintPay/.c25_backend.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": ".c25_bridge",
+      "path": "/data/data/com.termux/files/home/.c25_bridge",
+      "remote": "https://github.com/FacePrintPay/.c25_bridge.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": ".c25_connector",
+      "path": "/data/data/com.termux/files/home/.c25_connector",
+      "remote": "https://github.com/FacePrintPay/.c25_connector.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": ".c25_db",
+      "path": "/data/data/com.termux/files/home/.c25_db",
+      "remote": "https://github.com/FacePrintPay/.c25_db.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": ".c25_debug",
+      "path": "/data/data/com.termux/files/home/.c25_debug",
+      "remote": "https://github.com/FacePrintPay/.c25_debug.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": ".c25_deploy_fix",
+      "path": "/data/data/com.termux/files/home/.c25_deploy_fix",
+      "remote": "https://github.com/FacePrintPay/.c25_deploy_fix.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": ".c25_deps",
+      "path": "/data/data/com.termux/files/home/.c25_deps",
+      "remote": "https://github.com/FacePrintPay/.c25_deps.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": ".c25_diag",
+      "path": "/data/data/com.termux/files/home/.c25_diag",
+      "remote": "https://github.com/FacePrintPay/.c25_diag.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": ".c25_emergency_quarantine",
+      "path": "/data/data/com.termux/files/home/.c25_emergency_quarantine",
+      "remote": "https://github.com/FacePrintPay/.c25_emergency_quarantine.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": ".c25_integrity",
+      "path": "/data/data/com.termux/files/home/.c25_integrity",
+      "remote": "https://github.com/FacePrintPay/.c25_integrity.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": ".c25_mcp",
+      "path": "/data/data/com.termux/files/home/.c25_mcp",
+      "remote": "https://github.com/FacePrintPay/.c25_mcp.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": ".c25_mesh",
+      "path": "/data/data/com.termux/files/home/.c25_mesh",
+      "remote": "https://github.com/FacePrintPay/.c25_mesh.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": ".c25_migrations",
+      "path": "/data/data/com.termux/files/home/.c25_migrations",
+      "remote": "https://github.com/FacePrintPay/.c25_migrations.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": ".c25_rss",
+      "path": "/data/data/com.termux/files/home/.c25_rss",
+      "remote": "https://github.com/FacePrintPay/.c25_rss.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": ".c25_upgrade",
+      "path": "/data/data/com.termux/files/home/.c25_upgrade",
+      "remote": "https://github.com/FacePrintPay/.c25_upgrade.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": ".c25",
+      "path": "/data/data/com.termux/files/home/.c25",
+      "remote": "https://github.com/FacePrintPay/.c25.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": ".cloudflared",
+      "path": "/data/data/com.termux/files/home/.cloudflared",
+      "remote": "https://github.com/FacePrintPay/.cloudflared.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": ".devcontainer",
+      "path": "/data/data/com.termux/files/home/.devcontainer",
+      "remote": "https://github.com/FacePrintPay/.devcontainer.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": ".github",
+      "path": "/data/data/com.termux/files/home/.github",
+      "remote": "https://github.com/FacePrintPay/.github.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": ".github",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/.github",
+      "remote": "https://github.com/TheKre8tive/.github.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": ".mybuyo",
+      "path": "/data/data/com.termux/files/home/.mybuyo",
+      "remote": "https://github.com/FacePrintPay/.mybuyo.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": ".oh-my-zsh",
+      "path": "/data/data/com.termux/files/home/.oh-my-zsh",
+      "remote": "https://github.com/FacePrintPay/.oh-my-zsh.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "2plusdo-ai",
+      "path": "/data/data/com.termux/files/home/2plusdo-ai",
+      "remote": "https://github.com/FacePrintPay/2plusdo-ai.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "AIMetaverseLive",
+      "path": "/data/data/com.termux/files/home/AIMetaverseLive",
+      "remote": "https://github.com/FacePrintPay/AIMetaverseLive.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "AIMetaverse_Deployment",
+      "path": "/data/data/com.termux/files/home/AIMetaverse_Deployment",
+      "remote": "https://github.com/FacePrintPay/AIMetaverse_Deployment.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "AI",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/AI",
+      "remote": "https://github.com/TheKre8tive/AI.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "AiKre8tive-Investor-Assets",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/AiKre8tive-Investor-Assets",
+      "remote": "https://github.com/Kre8tive-Space/AiKre8tive-Investor-Assets.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "AiKre8tive-Sovereign-GTP-",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/AiKre8tive-Sovereign-GTP-",
+      "remote": "https://github.com/Kre8tive-Space/AiKre8tive-Sovereign-GTP-.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "AiKre8tive-Stargate",
+      "path": "/data/data/com.termux/files/home/AiKre8tive-Stargate",
+      "remote": "https://github.com/FacePrintPay/AiKre8tive-Stargate.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "AiKre8tive-Stargate",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/AiKre8tive-Stargate",
+      "remote": "https://github.com/TheKre8tive/AiKre8tive-Stargate.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "AiKre8tive-",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/AiKre8tive-",
+      "remote": "https://github.com/Kre8tive-Space/AiKre8tive-.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "AiKre8tive.us",
+      "path": "/data/data/com.termux/files/home/AiKre8tive.us",
+      "remote": "https://github.com/FacePrintPay/AiKre8tive.us.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "AiKre8tiveGenesis",
+      "path": "/data/data/com.termux/files/home/AiKre8tiveGenesis",
+      "remote": "https://github.com/FacePrintPay/AiKre8tiveGenesis.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "AiKre8tive_ONE",
+      "path": "/data/data/com.termux/files/home/AiKre8tive_ONE",
+      "remote": "https://github.com/FacePrintPay/AiKre8tive_ONE.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "AiKre8tive_Sovereign_Genesis",
+      "path": "/data/data/com.termux/files/home/AiKre8tive_Sovereign_Genesis",
+      "remote": "https://github.com/FacePrintPay/AiKre8tive_Sovereign_Genesis.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "AiKre8tive_Sovereign_Genesis",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/AiKre8tive_Sovereign_Genesis",
+      "remote": "https://github.com/FacePrintPay/AiKre8tive_Sovereign_Genesis.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "AiMetaverse",
+      "path": "/data/data/com.termux/files/home/AiMetaverse",
+      "remote": "https://github.com/FacePrintPay/AiMetaverse.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "AiMetaverse",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/AiMetaverse",
+      "remote": "https://github.com/Constillation25/AiMetaverse.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "AiMeta",
+      "path": "/data/data/com.termux/files/home/AiMeta",
+      "remote": "https://github.com/FacePrintPay/AiMeta.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "Apollo-11",
+      "path": "/data/data/com.termux/files/home/Apollo-11",
+      "remote": "https://github.com/FacePrintPay/Apollo-11.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "C25-AUTO-BUILD",
+      "path": "/data/data/com.termux/files/home/C25-AUTO-BUILD",
+      "remote": "https://github.com/FacePrintPay/C25-AUTO-BUILD.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "C25-MASTER",
+      "path": "/data/data/com.termux/files/home/C25-MASTER",
+      "remote": "https://github.com/FacePrintPay/C25-MASTER.git",
+      "branch": "main",
+      "agent": "sun"
+    },
+    {
+      "name": "C25_EVIDENCE_20260523_1710",
+      "path": "/data/data/com.termux/files/home/C25_EVIDENCE_20260523_1710",
+      "remote": "https://github.com/FacePrintPay/C25_EVIDENCE_20260523_1710.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "C25_Graph_Viewer",
+      "path": "/data/data/com.termux/files/home/Documents/ObsidianVault/C25_Graph_Viewer",
+      "remote": "https://github.com/FacePrintPay/c25-graph-viewer.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "C25_MASTER_BUNDLE",
+      "path": "/data/data/com.termux/files/home/C25_MASTER_BUNDLE",
+      "remote": "https://github.com/Kre8tive-Space/C25_MASTER_BUNDLE.git",
+      "branch": "main",
+      "agent": "sun"
+    },
+    {
+      "name": "C25_OMNIBUS",
+      "path": "/data/data/com.termux/files/home/C25_OMNIBUS",
+      "remote": "local-only",
+      "branch": "master",
+      "agent": "earth"
+    },
+    {
+      "name": "CASE_AUDIT_20260610_232922",
+      "path": "/data/data/com.termux/files/home/CASE_AUDIT_20260610_232922",
+      "remote": "https://github.com/FacePrintPay/CASE_AUDIT_20260610_232922.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "CASE_AUDIT_20260611_002459",
+      "path": "/data/data/com.termux/files/home/CASE_AUDIT_20260611_002459",
+      "remote": "https://github.com/FacePrintPay/CASE_AUDIT_20260611_002459.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "COMPLETE_CASE_FILE",
+      "path": "/data/data/com.termux/files/home/COMPLETE_CASE_FILE",
+      "remote": "https://github.com/FacePrintPay/COMPLETE_CASE_FILE.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "COMPLETE_LITIGATION_PACKAGE",
+      "path": "/data/data/com.termux/files/home/COMPLETE_LITIGATION_PACKAGE",
+      "remote": "https://github.com/FacePrintPay/COMPLETE_LITIGATION_PACKAGE.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "Constellation25_Build",
+      "path": "/data/data/com.termux/files/home/Constellation25_Build",
+      "remote": "https://github.com/FacePrintPay/Constellation25_Build.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "Constellation25_Recovered",
+      "path": "/data/data/com.termux/files/home/Constellation25_Recovered",
+      "remote": "https://github.com/FacePrintPay/Constellation25_Recovered.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "Constellation25_UNIFIED_SOURCE",
+      "path": "/data/data/com.termux/files/home/Constellation25_UNIFIED_SOURCE",
+      "remote": "https://github.com/Kre8tive-Space/Constellation25_UNIFIED_SOURCE.git",
+      "branch": "master",
+      "agent": "earth"
+    },
+    {
+      "name": "CyGeL-White-",
+      "path": "/data/data/com.termux/files/home/CyGeL-White-",
+      "remote": "https://github.com/FacePrintPay/CyGeL-White-.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "DOJ_EVIDENCE_PACKAGE",
+      "path": "/data/data/com.termux/files/home/DOJ_EVIDENCE_PACKAGE",
+      "remote": "https://github.com/FacePrintPay/DOJ_EVIDENCE_PACKAGE.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "Documents",
+      "path": "/data/data/com.termux/files/home/Documents",
+      "remote": "https://github.com/FacePrintPay/Documents.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "Kre8tive-Konceptz",
+      "path": "/data/data/com.termux/files/home/github-repos/Kre8tive-Konceptz",
+      "remote": "https://github.com/FacePrintPay/kre8tive-konceptz.git",
+      "branch": "gh-pages",
+      "agent": "earth"
+    },
+    {
+      "name": "Linked2-platform_WORKING_TREE_BACKUP_1779151102",
+      "path": "/data/data/com.termux/files/home/Linked2-platform_WORKING_TREE_BACKUP_1779151102",
+      "remote": "https://github.com/FacePrintPay/Linked2-platform_WORKING_TREE_BACKUP_1779151102.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "Linked2-platform_salvage_1779151043",
+      "path": "/data/data/com.termux/files/home/github-repos/Linked2-platform_salvage_1779151043",
+      "remote": "https://github.com/FacePrintPay/linked2-platform-salvage-1779151043.git",
+      "branch": "gh-pages",
+      "agent": "earth"
+    },
+    {
+      "name": "Linked2-platform",
+      "path": "/data/data/com.termux/files/home/aikre8tive-system/Linked2-platform",
+      "remote": "https://github.com/TheKre8tive/Linked2-platform.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "Linked2-platform",
+      "path": "/data/data/com.termux/files/home/github-repos/Linked2-platform",
+      "remote": "https://github.com/FacePrintPay/linked2-platform.git",
+      "branch": "gh-pages",
+      "agent": "earth"
+    },
+    {
+      "name": "MASTER_EVIDENCE_COMPILATION",
+      "path": "/data/data/com.termux/files/home/MASTER_EVIDENCE_COMPILATION",
+      "remote": "https://github.com/FacePrintPay/MASTER_EVIDENCE_COMPILATION.git",
+      "branch": "main",
+      "agent": "sun"
+    },
+    {
+      "name": "NUCLEUS",
+      "path": "/data/data/com.termux/files/home/NUCLEUS",
+      "remote": "https://github.com/FacePrintPay/NUCLEUS.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "Obsidian",
+      "path": "/data/data/com.termux/files/home/Obsidian",
+      "remote": "https://github.com/FacePrintPay/Obsidian.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "Orange",
+      "path": "/data/data/com.termux/files/home/prion_swarm/platform_audit/faceprintpay/Orange",
+      "remote": "https://github.com/FacePrintPay/Orange.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "Organized",
+      "path": "/data/data/com.termux/files/home/Organized",
+      "remote": "https://github.com/FacePrintPay/Organized.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "PaTHos",
+      "path": "/data/data/com.termux/files/home/PaTHos",
+      "remote": "https://github.com/FacePrintPay/PaTHos.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "PaThosAi",
+      "path": "/data/data/com.termux/files/home/prion_swarm/platform_audit/faceprintpay/PaThosAi",
+      "remote": "https://github.com/FacePrintPay/PaThosAi.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "PingPangDemo",
+      "path": "/data/data/com.termux/files/home/PingPangDemo",
+      "remote": "https://github.com/FacePrintPay/PingPangDemo.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "PoRTaLed-",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/PoRTaLed-",
+      "remote": "https://github.com/Kre8tive-Space/PoRTaLed-.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "Remote-Evidence-Collector",
+      "path": "/data/data/com.termux/files/home/Remote-Evidence-Collector",
+      "remote": "https://github.com/FacePrintPay/Remote-Evidence-Collector.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "Remote-Evidence-Collector",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/Remote-Evidence-Collector",
+      "remote": "https://github.com/Constillation25/Remote-Evidence-Collector.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "RepoDepot-Stargate",
+      "path": "/data/data/com.termux/files/home/RepoDepot-Stargate",
+      "remote": "https://github.com/FacePrintPay/RepoDepot-Stargate.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "Resources",
+      "path": "/data/data/com.termux/files/home/Resources",
+      "remote": "https://github.com/FacePrintPay/Resources.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "Root",
+      "path": "/data/data/com.termux/files/home/Root",
+      "remote": "https://github.com/FacePrintPay/Root.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "SOVEREIGN_AGI_UNIFIED",
+      "path": "/data/data/com.termux/files/home/SOVEREIGN_AGI_UNIFIED",
+      "remote": "https://github.com/FacePrintPay/SOVEREIGN_AGI_UNIFIED.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "STACK",
+      "path": "/data/data/com.termux/files/home/STACK",
+      "remote": "https://github.com/FacePrintPay/STACK.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "SalesGTP",
+      "path": "/data/data/com.termux/files/home/SalesGTP",
+      "remote": "https://github.com/FacePrintPay/SalesGTP.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "Scripts",
+      "path": "/data/data/com.termux/files/home/Documents/ObsidianVault/Scripts",
+      "remote": "https://github.com/FacePrintPay/scripts.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "SovereignApp",
+      "path": "/data/data/com.termux/files/home/SovereignApp",
+      "remote": "https://github.com/FacePrintPay/SovereignApp.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "SovereignGTP",
+      "path": "/data/data/com.termux/files/home/SovereignGTP",
+      "remote": "https://github.com/FacePrintPay/SovereignGTP.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "SovereignVault",
+      "path": "/data/data/com.termux/files/home/SovereignVault",
+      "remote": "https://github.com/FacePrintPay/SovereignVault.git",
+      "branch": "main",
+      "agent": "saturn"
+    },
+    {
+      "name": "THAT",
+      "path": "/data/data/com.termux/files/home/aikre8tive-system/Linked2-platform/THAT",
+      "remote": "https://github.com/FacePrintPay/THAT.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "TheKre8tive",
+      "path": "/data/data/com.termux/files/home/TheKre8tive",
+      "remote": "https://github.com/FacePrintPay/TheKre8tive.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "TotalRecall-Builder",
+      "path": "/data/data/com.termux/files/home/TotalRecall-Builder",
+      "remote": "local-only",
+      "branch": "main",
+      "agent": "neptune"
+    },
+    {
+      "name": "Vault",
+      "path": "/data/data/com.termux/files/home/Vault",
+      "remote": "https://github.com/FacePrintPay/Vault.git",
+      "branch": "main",
+      "agent": "saturn"
+    },
+    {
+      "name": "VeRseD_Ai",
+      "path": "/data/data/com.termux/files/home/github-repos/VeRseD_Ai",
+      "remote": "https://github.com/FacePrintPay/versed-ai.git",
+      "branch": "gh-pages",
+      "agent": "earth"
+    },
+    {
+      "name": "VeRseD_Ai",
+      "path": "/data/data/com.termux/files/home/prion_swarm/platform_audit/faceprintpay/VeRseD_Ai",
+      "remote": "https://github.com/FacePrintPay/VeRseD_Ai.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "Versed_Ai",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/Versed_Ai",
+      "remote": "https://github.com/Kre8tive-Space/Versed_Ai.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "VideoCourts",
+      "path": "/data/data/com.termux/files/home/VideoCourts",
+      "remote": "https://github.com/FacePrintPay/VideoCourts.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "WideOpen-Obsidian",
+      "path": "/data/data/com.termux/files/home/WideOpen-Obsidian",
+      "remote": "https://github.com/FacePrintPay/WideOpen-Obsidian.git",
+      "branch": "main",
+      "agent": "mars"
+    },
+    {
+      "name": "agent-debug-20260411_004400",
+      "path": "/data/data/com.termux/files/home/agent-debug-20260411_004400",
+      "remote": "https://github.com/FacePrintPay/agent-debug-20260411_004400.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "agent_logs",
+      "path": "/data/data/com.termux/files/home/agent_logs",
+      "remote": "https://github.com/FacePrintPay/agent_logs.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "agent_output",
+      "path": "/data/data/com.termux/files/home/agent_output",
+      "remote": "https://github.com/FacePrintPay/agent_output.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "agentik",
+      "path": "/data/data/com.termux/files/home/agentik",
+      "remote": "https://github.com/FacePrintPay/agentik.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "agentik",
+      "path": "/data/data/com.termux/files/home/prion_swarm/platform_audit/faceprintpay/agentik",
+      "remote": "https://github.com/FacePrintPay/agentik.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "agents",
+      "path": "/data/data/com.termux/files/home/github-repos/constellation25/agents",
+      "remote": "https://github.com/FacePrintPay/agents.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "ai_metaverse_web",
+      "path": "/data/data/com.termux/files/home/ai_metaverse_web",
+      "remote": "https://github.com/FacePrintPay/ai_metaverse_web.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "ai_metaverse",
+      "path": "/data/data/com.termux/files/home/ai_metaverse",
+      "remote": "https://github.com/FacePrintPay/ai_metaverse.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "ai_output",
+      "path": "/data/data/com.termux/files/home/ai_output",
+      "remote": "https://github.com/FacePrintPay/ai_output.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "aikre8tive-planetary-grid",
+      "path": "/data/data/com.termux/files/home/aikre8tive-planetary-grid",
+      "remote": "https://github.com/Kre8tive-Space/aikre8tive-planetary-grid.git",
+      "branch": "master",
+      "agent": "earth"
+    },
+    {
+      "name": "aikre8tive-planetary-grid",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/aikre8tive-planetary-grid",
+      "remote": "https://github.com/Kre8tive-Space/aikre8tive-planetary-grid.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "aikre8tive-system",
+      "path": "/data/data/com.termux/files/home/aikre8tive-system",
+      "remote": "https://github.com/FacePrintPay/aikre8tive-system.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "aikre8tive",
+      "path": "/data/data/com.termux/files/home/aikre8tive",
+      "remote": "https://github.com/FacePrintPay/aikre8tive.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "aimetaverse-demo",
+      "path": "/data/data/com.termux/files/home/aimetaverse-demo",
+      "remote": "https://github.com/FacePrintPay/aimetaverse-demo.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "aimetaverse-demo",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/aimetaverse-demo",
+      "remote": "https://github.com/Constillation25/aimetaverse-demo.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "aimetaverse",
+      "path": "/data/data/com.termux/files/home/aimetaverse",
+      "remote": "https://github.com/FacePrintPay/aimetaverse.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "api",
+      "path": "/data/data/com.termux/files/home/api",
+      "remote": "https://github.com/FacePrintPay/api.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "apple",
+      "path": "/data/data/com.termux/files/home/llama.cpp/scripts/apple",
+      "remote": "https://github.com/FacePrintPay/apple.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "apps",
+      "path": "/data/data/com.termux/files/home/apps",
+      "remote": "https://github.com/FacePrintPay/apps.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "arcai-",
+      "path": "/data/data/com.termux/files/home/arcai-",
+      "remote": "https://github.com/FacePrintPay/arcai-.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "arcai-",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/arcai-",
+      "remote": "https://github.com/Constillation25/arcai-.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "archives",
+      "path": "/data/data/com.termux/files/home/archives",
+      "remote": "https://github.com/FacePrintPay/archives.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "backups",
+      "path": "/data/data/com.termux/files/home/backups",
+      "remote": "https://github.com/FacePrintPay/backups.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "bard-totalrecall",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/bard-totalrecall",
+      "remote": "https://github.com/Constillation25/bard-totalrecall.git",
+      "branch": "main",
+      "agent": "neptune"
+    },
+    {
+      "name": "blackboxai-1741225183777",
+      "path": "/data/data/com.termux/files/home/blackboxai-1741225183777",
+      "remote": "https://github.com/FacePrintPay/blackboxai-1741225183777.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "blackboxai-1742356607403",
+      "path": "/data/data/com.termux/files/home/blackboxai-1742356607403",
+      "remote": "https://github.com/FacePrintPay/blackboxai-1742356607403.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "blackboxai-1742357245683",
+      "path": "/data/data/com.termux/files/home/blackboxai-1742357245683",
+      "remote": "https://github.com/FacePrintPay/blackboxai-1742357245683.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "blackboxai-1742367771175",
+      "path": "/data/data/com.termux/files/home/blackboxai-1742367771175",
+      "remote": "https://github.com/FacePrintPay/blackboxai-1742367771175.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "blackboxai-1742368461092",
+      "path": "/data/data/com.termux/files/home/blackboxai-1742368461092",
+      "remote": "https://github.com/FacePrintPay/blackboxai-1742368461092.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "blackboxai-1742374192849",
+      "path": "/data/data/com.termux/files/home/blackboxai-1742374192849",
+      "remote": "https://github.com/FacePrintPay/blackboxai-1742374192849.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "blackboxai-1742374192849",
+      "path": "/data/data/com.termux/files/home/failed-builds-audit/blackboxai-1742374192849",
+      "remote": "https://github.com/FacePrintPay/c25-agent-integrations.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "blackboxai-1742376990260",
+      "path": "/data/data/com.termux/files/home/blackboxai-1742376990260",
+      "remote": "https://github.com/FacePrintPay/blackboxai-1742376990260.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "blackboxai-1742376990260",
+      "path": "/data/data/com.termux/files/home/failed-builds-audit/blackboxai-1742376990260",
+      "remote": "https://github.com/FacePrintPay/c25-agent-deploy.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "bolt.new",
+      "path": "/data/data/com.termux/files/home/bolt.new",
+      "remote": "https://github.com/FacePrintPay/bolt.new.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "brewery",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/brewery",
+      "remote": "https://github.com/Kre8tive-Space/brewery.git",
+      "branch": "master",
+      "agent": "earth"
+    },
+    {
+      "name": "builds",
+      "path": "/data/data/com.termux/files/home/builds",
+      "remote": "https://github.com/FacePrintPay/builds.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "c25-agent-api",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/c25-agent-api",
+      "remote": "https://github.com/FacePrintPay/c25-agent-api.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "c25-agent-api",
+      "path": "/data/data/com.termux/files/home/github-repos/c25-agent-api",
+      "remote": "https://github.com/FacePrintPay/c25-agent-api.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "c25-agent-api",
+      "path": "/data/data/com.termux/files/home/zeroeye/c25-agent-api",
+      "remote": "https://github.com/FacePrintPay/c25-agent-api.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "c25-agent-core",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/c25-agent-core",
+      "remote": "https://github.com/FacePrintPay/c25-agent-core.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "c25-constellation25-swarm",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/c25-constellation25-swarm",
+      "remote": "https://github.com/TheKre8tive/Linked2-platform.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "c25-deploy-router",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/c25-deploy-router",
+      "remote": "https://github.com/Constillation25/c25-deploy-router.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "c25-fdroid-repo",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/c25-fdroid-repo",
+      "remote": "https://github.com/Constillation25/c25-fdroid-repo.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "c25-master",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/c25-master",
+      "remote": "https://github.com/Constillation25/c25-master.git",
+      "branch": "main",
+      "agent": "sun"
+    },
+    {
+      "name": "c25-monorepo",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/c25-monorepo",
+      "remote": "https://github.com/Constillation25/c25-monorepo.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "c25-os",
+      "path": "/data/data/com.termux/files/home/c25-os",
+      "remote": "https://github.com/Constillation25/constellation25.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "c25-outputs-20260316_192522",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/c25-outputs-20260316_192522",
+      "remote": "https://github.com/Constillation25/c25-outputs-20260316_192522.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "c25-repodepo",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/c25-repodepo",
+      "remote": "https://github.com/Constillation25/c25-repodepo.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "c25-secure-github-auth",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/c25-secure-github-auth",
+      "remote": "https://github.com/TheKre8tive/Linked2-platform.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "c25-sovereign-launch",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/c25-sovereign-launch",
+      "remote": "https://github.com/TheKre8tive/Linked2-platform.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "c25-termux-addon",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/c25-termux-addon",
+      "remote": "https://github.com/Constillation25/c25-termux-addon.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "c25-training-corpus",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/c25-training-corpus",
+      "remote": "https://github.com/Constillation25/c25-training-corpus.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "c25_unified_workspace",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace",
+      "remote": "https://github.com/TheKre8tive/Linked2-platform.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "camel-search-maths",
+      "path": "/data/data/com.termux/files/home/coral-mcp-release/examples/camel-search-maths",
+      "remote": "https://github.com/FacePrintPay/camel-search-maths.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "camel-search-maths",
+      "path": "/data/data/com.termux/files/home/coral-server/examples/camel-search-maths",
+      "remote": "https://github.com/FacePrintPay/camel-search-maths.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "camel-search-maths",
+      "path": "/data/data/com.termux/files/home/unified-source/coral-server/examples/camel-search-maths",
+      "remote": "https://github.com/FacePrintPay/camel-search-maths.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "ci",
+      "path": "/data/data/com.termux/files/home/llama.cpp/ci",
+      "remote": "https://github.com/FacePrintPay/ci.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "code_recovery",
+      "path": "/data/data/com.termux/files/home/code_recovery",
+      "remote": "https://github.com/FacePrintPay/code_recovery.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "consolidation-audit",
+      "path": "/data/data/com.termux/files/home/consolidation-audit",
+      "remote": "https://github.com/FacePrintPay/consolidation-audit.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "constellation-25-live",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/constellation-25-live",
+      "remote": "https://github.com/Constillation25/constellation-25-live.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "constellation-25-live",
+      "path": "/data/data/com.termux/files/home/constellation-25-live",
+      "remote": "https://github.com/FacePrintPay/constellation-25-live.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "constellation25-adserver",
+      "path": "/data/data/com.termux/files/home/github-repos/constellation25-adserver",
+      "remote": "https://github.com/FacePrintPay/constellation25-adserver.git",
+      "branch": "gh-pages",
+      "agent": "earth"
+    },
+    {
+      "name": "constellation25-ecosystem",
+      "path": "/data/data/com.termux/files/home/constellation25-ecosystem",
+      "remote": "https://@github.com/Constillation25/constellation25-ecosystem.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "constellation25-monolithic-delta",
+      "path": "/data/data/com.termux/files/home/constellation25-monolithic-delta",
+      "remote": "https://github.com/FacePrintPay/constellation25-monolithic-delta.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "constellation25-mono",
+      "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono",
+      "remote": "https://github.com/FacePrintPay/constellation25-mono.git",
+      "branch": "gh-pages",
+      "agent": "earth"
+    },
+    {
+      "name": "constellation25-recon",
+      "path": "/data/data/com.termux/files/home/github-repos/constellation25-recon",
+      "remote": "https://github.com/FacePrintPay/constellation25-recon.git",
+      "branch": "gh-pages",
+      "agent": "earth"
+    },
+    {
+      "name": "constellation25-ui",
+      "path": "/data/data/com.termux/files/home/constellation25-ui",
+      "remote": "https://github.com/FacePrintPay/constellation25-ui.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "constellation25_build_synthesis",
+      "path": "/data/data/com.termux/files/home/constellation25_build_synthesis",
+      "remote": "https://github.com/FacePrintPay/constellation25_build_synthesis.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "constellation25_sovereign_data",
+      "path": "/data/data/com.termux/files/home/constellation25_sovereign_data",
+      "remote": "https://github.com/FacePrintPay/constellation25_sovereign_data.git",
+      "branch": "main",
+      "agent": "neptune"
+    },
+    {
+      "name": "constellation25_sovereign_moat",
+      "path": "/data/data/com.termux/files/home/constellation25_sovereign_moat",
+      "remote": "https://github.com/FacePrintPay/constellation25_sovereign_moat.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "constellation25_unified_build_20260411_115932",
+      "path": "/data/data/com.termux/files/home/constellation25_unified_build_20260411_115932",
+      "remote": "https://github.com/FacePrintPay/constellation25_unified_build_20260411_115932.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "constellation25_unified_build_20260411_120007",
+      "path": "/data/data/com.termux/files/home/constellation25_unified_build_20260411_120007",
+      "remote": "https://github.com/FacePrintPay/constellation25_unified_build_20260411_120007.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "constellation25_workspace",
+      "path": "/data/data/com.termux/files/home/constellation25_workspace",
+      "remote": "https://github.com/FacePrintPay/constellation25_workspace.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "constellation25",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/constellation25",
+      "remote": "https://github.com/Constillation25/constellation25.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "constellation25",
+      "path": "/data/data/com.termux/files/home/constellation25/constellation25",
+      "remote": "https://github.com/Constillation25/constellation25.git",
+      "branch": "feature/your-agent-name",
+      "agent": "earth"
+    },
+    {
+      "name": "constellation25",
+      "path": "/data/data/com.termux/files/home/constellation25",
+      "remote": "https://github.com/Constillation25/constellation25.git",
+      "branch": "feature/your-agent-name",
+      "agent": "earth"
+    },
+    {
+      "name": "constellation25",
+      "path": "/data/data/com.termux/files/home/github-repos/constellation25",
+      "remote": "https://github.com/Constillation25/constellation25.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "coral-mcp-release",
+      "path": "/data/data/com.termux/files/home/coral-mcp-release",
+      "remote": "https://github.com/Kre8tive-Space/coral-mcp-release.git",
+      "branch": "master",
+      "agent": "earth"
+    },
+    {
+      "name": "coral-server",
+      "path": "/data/data/com.termux/files/home/coral-server",
+      "remote": "https://github.com/FacePrintPay/coral-server.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "customassets",
+      "path": "/data/data/com.termux/files/home/customassets",
+      "remote": "https://github.com/FacePrintPay/customassets.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "cygnus-recovered",
+      "path": "/data/data/com.termux/files/home/cygnus-recovered",
+      "remote": "https://github.com/FacePrintPay/cygnus-recovered.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "cygnus-run",
+      "path": "/data/data/com.termux/files/home/cygnus-run",
+      "remote": "https://github.com/FacePrintPay/cygnus-run.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "data-api",
+      "path": "/data/data/com.termux/files/home/data-api",
+      "remote": "https://github.com/FacePrintPay/data-api.git",
+      "branch": "main",
+      "agent": "neptune"
+    },
+    {
+      "name": "db",
+      "path": "/data/data/com.termux/files/home/db",
+      "remote": "https://github.com/FacePrintPay/db.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "digital-dollar",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/digital-dollar",
+      "remote": "https://github.com/Constillation25/digital-dollar.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "digital-dollar",
+      "path": "/data/data/com.termux/files/home/digital-dollar",
+      "remote": "https://github.com/FacePrintPay/digital-dollar.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "disclose_hunt_20260608_112211",
+      "path": "/data/data/com.termux/files/home/disclose_hunt_20260608_112211",
+      "remote": "https://github.com/FacePrintPay/disclose_hunt_20260608_112211.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "dist-canonical",
+      "path": "/data/data/com.termux/files/home/dist-canonical",
+      "remote": "https://github.com/FacePrintPay/dist-canonical.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "django-dynamic-api",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/django-dynamic-api",
+      "remote": "https://github.com/Kre8tive-Space/django-dynamic-api.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "docs",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/docs",
+      "remote": "https://github.com/Constillation25/docs.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "docs",
+      "path": "/data/data/com.termux/files/home/docs",
+      "remote": "https://github.com/FacePrintPay/docs.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "docs",
+      "path": "/data/data/com.termux/files/home/github-repos/constellation25/docs",
+      "remote": "https://github.com/FacePrintPay/docs.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "downloads",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/downloads",
+      "remote": "https://github.com/Constillation25/downloads.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "evidence_consolidated",
+      "path": "/data/data/com.termux/files/home/evidence_consolidated",
+      "remote": "https://github.com/FacePrintPay/evidence_consolidated.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "evidence_demo",
+      "path": "/data/data/com.termux/files/home/evidence_demo",
+      "remote": "https://github.com/FacePrintPay/evidence_demo.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "evidence_export",
+      "path": "/data/data/com.termux/files/home/evidence_export",
+      "remote": "https://github.com/FacePrintPay/evidence_export.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "evidence",
+      "path": "/data/data/com.termux/files/home/evidence",
+      "remote": "https://github.com/FacePrintPay/evidence.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "examples",
+      "path": "/data/data/com.termux/files/home/llama.cpp/examples",
+      "remote": "https://github.com/FacePrintPay/examples.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "faceprintpay",
+      "path": "/data/data/com.termux/files/home/github-repos/faceprintpay",
+      "remote": "https://github.com/Constillation25/faceprintpay.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "failed-builds-audit",
+      "path": "/data/data/com.termux/files/home/failed-builds-audit",
+      "remote": "https://github.com/FacePrintPay/failed-builds-audit.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "forensic_api",
+      "path": "/data/data/com.termux/files/home/forensic_api",
+      "remote": "https://github.com/FacePrintPay/forensic_api.git",
+      "branch": "main",
+      "agent": "neptune"
+    },
+    {
+      "name": "forensic_audit_WHITE-V-GOOGLE-EDNC-20260501",
+      "path": "/data/data/com.termux/files/home/forensic_audit_WHITE-V-GOOGLE-EDNC-20260501",
+      "remote": "https://github.com/FacePrintPay/forensic_audit_WHITE-V-GOOGLE-EDNC-20260501.git",
+      "branch": "main",
+      "agent": "neptune"
+    },
+    {
+      "name": "forensic_audit",
+      "path": "/data/data/com.termux/files/home/forensic_audit",
+      "remote": "https://github.com/FacePrintPay/forensic_audit.git",
+      "branch": "main",
+      "agent": "neptune"
+    },
+    {
+      "name": "forensic_scan_365d_20260518T204204Z",
+      "path": "/data/data/com.termux/files/home/forensic_scan_365d_20260518T204204Z",
+      "remote": "https://github.com/FacePrintPay/forensic_scan_365d_20260518T204204Z.git",
+      "branch": "main",
+      "agent": "neptune"
+    },
+    {
+      "name": "forensic_scan_365d_20260521T223248Z",
+      "path": "/data/data/com.termux/files/home/forensic_scan_365d_20260521T223248Z",
+      "remote": "https://github.com/FacePrintPay/forensic_scan_365d_20260521T223248Z.git",
+      "branch": "main",
+      "agent": "neptune"
+    },
+    {
+      "name": "frequency_casting_1775882642",
+      "path": "/data/data/com.termux/files/home/frequency_casting_1775882642",
+      "remote": "https://github.com/FacePrintPay/frequency_casting_1775882642.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "frontend",
+      "path": "/data/data/com.termux/files/home/frontend",
+      "remote": "https://github.com/FacePrintPay/frontend.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "funding-extracted",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/funding-extracted",
+      "remote": "https://github.com/Constillation25/funding-extracted.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "funding-extracted",
+      "path": "/data/data/com.termux/files/home/funding-extracted",
+      "remote": "https://github.com/FacePrintPay/funding-extracted.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "gdrive_mount",
+      "path": "/data/data/com.termux/files/home/gdrive_mount",
+      "remote": "https://github.com/FacePrintPay/gdrive_mount.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "gguf-split",
+      "path": "/data/data/com.termux/files/home/llama.cpp/tools/gguf-split",
+      "remote": "https://github.com/FacePrintPay/gguf-split.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "github-repos",
+      "path": "/data/data/com.termux/files/home/github-repos",
+      "remote": "https://github.com/TheKre8tive/Linked2-platform.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "golf-course-project-mcp-server",
+      "path": "/data/data/com.termux/files/home/prion_swarm/platform_audit/faceprintpay/golf-course-project-mcp-server",
+      "remote": "https://github.com/FacePrintPay/golf-course-project-mcp-server.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "home",
+      "path": "/data/data/com.termux/files/home",
+      "remote": "https://github.com/TheKre8tive/Linked2-platform.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "imin-cyber-framework",
+      "path": "/data/data/com.termux/files/home/imin-cyber-framework",
+      "remote": "https://github.com/Kre8tive-Space/imin-cyber-framework.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "kreativekoncepts",
+      "path": "/data/data/com.termux/files/home/kreativekoncepts",
+      "remote": "https://github.com/FacePrintPay/kreativekoncepts.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "ledgers",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/ledgers",
+      "remote": "https://github.com/Constillation25/ledgers.git",
+      "branch": "master",
+      "agent": "earth"
+    },
+    {
+      "name": "ledgers",
+      "path": "/data/data/com.termux/files/home/ledgers",
+      "remote": "https://github.com/FacePrintPay/ledgers.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "legal",
+      "path": "/data/data/com.termux/files/home/legal",
+      "remote": "https://github.com/FacePrintPay/legal.git",
+      "branch": "main",
+      "agent": "jupiter"
+    },
+    {
+      "name": "libqrencode",
+      "path": "/data/data/com.termux/files/home/libqrencode",
+      "remote": "https://github.com/fukuchi/libqrencode.git",
+      "branch": "master",
+      "agent": "earth"
+    },
+    {
+      "name": "linked2",
+      "path": "/data/data/com.termux/files/home/aikre8tive-system/linked2",
+      "remote": "https://github.com/TheKre8tive/Linked2-platform.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "linker",
+      "path": "/data/data/com.termux/files/home/linker",
+      "remote": "https://github.com/FacePrintPay/linker.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "llama.cpp",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/llama.cpp",
+      "remote": "https://github.com/Constillation25/llama.cpp.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "llama.cpp",
+      "path": "/data/data/com.termux/files/home/llama.cpp",
+      "remote": "https://github.com/FacePrintPay/llama.cpp.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "logs",
+      "path": "/data/data/com.termux/files/home/AiKre8tiveGenesis/platform/logs",
+      "remote": "https://github.com/TheKre8tive/AiKre8tive-Logs.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "master",
+      "path": "/data/data/com.termux/files/home/github-repos/master",
+      "remote": "https://github.com/FacePrintPay/master.git",
+      "branch": "gh-pages",
+      "agent": "sun"
+    },
+    {
+      "name": "material-components-flutter-codelabs",
+      "path": "/data/data/com.termux/files/home/material-components-flutter-codelabs",
+      "remote": "https://github.com/FacePrintPay/material-components-flutter-codelabs.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "memoria-agent",
+      "path": "/data/data/com.termux/files/home/memoria-agent",
+      "remote": "https://github.com/FacePrintPay/memoria-agent.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "mesh_build_cache",
+      "path": "/data/data/com.termux/files/home/mesh_build_cache",
+      "remote": "https://github.com/FacePrintPay/mesh_build_cache.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "mesh_deployment_logs",
+      "path": "/data/data/com.termux/files/home/mesh_deployment_logs",
+      "remote": "https://github.com/FacePrintPay/mesh_deployment_logs.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "migrations",
+      "path": "/data/data/com.termux/files/home/migrations",
+      "remote": "https://github.com/FacePrintPay/migrations.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "monetary_engine_mission",
+      "path": "/data/data/com.termux/files/home/monetary_engine_mission",
+      "remote": "https://github.com/FacePrintPay/monetary_engine_mission.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "money_hunt_20260608_091302",
+      "path": "/data/data/com.termux/files/home/money_hunt_20260608_091302",
+      "remote": "https://github.com/FacePrintPay/money_hunt_20260608_091302.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "monorepo",
+      "path": "/data/data/com.termux/files/home/monorepo",
+      "remote": "https://github.com/FacePrintPay/monorepo.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "morphic-ai-answer-engine-generative-ui",
+      "path": "/data/data/com.termux/files/home/morphic-ai-answer-engine-generative-ui",
+      "remote": "https://github.com/FacePrintPay/morphic-ai-answer-engine-generative-ui.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "mtmd",
+      "path": "/data/data/com.termux/files/home/llama.cpp/tools/mtmd",
+      "remote": "https://github.com/FacePrintPay/mtmd.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "mybuyo-biometric-saas",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/mybuyo-biometric-saas",
+      "remote": "https://github.com/Constillation25/mybuyo-biometric-saas.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "mybuyo-biometric-saas",
+      "path": "/data/data/com.termux/files/home/mybuyo-biometric-saas",
+      "remote": "https://github.com/FacePrintPay/mybuyo-biometric-saas.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "mybuyo-foodlion-mvp",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/mybuyo-foodlion-mvp",
+      "remote": "https://github.com/Constillation25/mybuyo-foodlion-mvp.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "mybuyo-foodlion-mvp",
+      "path": "/data/data/com.termux/files/home/mybuyo-foodlion-mvp",
+      "remote": "https://github.com/FacePrintPay/mybuyo-foodlion-mvp.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "mybuyo-restore",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/mybuyo-restore",
+      "remote": "https://github.com/FacePrintPay/mybuyo-restore.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "mybuyoxfoodlion-pitch",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/mybuyoxfoodlion-pitch",
+      "remote": "https://github.com/Constillation25/mybuyoxfoodlion-pitch.git",
+      "branch": "master",
+      "agent": "earth"
+    },
+    {
+      "name": "mybuyoxfoodlion-pitch",
+      "path": "/data/data/com.termux/files/home/mybuyoxfoodlion-pitch",
+      "remote": "https://github.com/FacePrintPay/mybuyoxfoodlion-pitch.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "mybuyo",
+      "path": "/data/data/com.termux/files/home/github-repos/mybuyo",
+      "remote": "https://github.com/TheKre8tive/Linked2-platform.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "neo-agent",
+      "path": "/data/data/com.termux/files/home/neo-agent",
+      "remote": "https://github.com/FacePrintPay/neo-agent.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "neosync_activated_1775882642",
+      "path": "/data/data/com.termux/files/home/neosync_activated_1775882642",
+      "remote": "https://github.com/FacePrintPay/neosync_activated_1775882642.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "nextjs-boilerplate",
+      "path": "/data/data/com.termux/files/home/nextjs-boilerplate",
+      "remote": "https://github.com/FacePrintPay/nextjs-boilerplate.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "nextjs-enterprise-boilerplate",
+      "path": "/data/data/com.termux/files/home/nextjs-enterprise-boilerplate",
+      "remote": "https://github.com/FacePrintPay/nextjs-enterprise-boilerplate.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "nlp2code-test",
+      "path": "/data/data/com.termux/files/home/nlp2code-test",
+      "remote": "https://github.com/FacePrintPay/nlp2code-test.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "npm-documentation",
+      "path": "/data/data/com.termux/files/home/npm-documentation",
+      "remote": "https://github.com/FacePrintPay/npm-documentation.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "obsidian-vault-bare.git",
+      "path": "/data/data/com.termux/files/home/Documents/obsidian-vault-bare.git",
+      "remote": "https://github.com/FacePrintPay/obsidian-vault-bare.git",
+      "branch": "main",
+      "agent": "saturn"
+    },
+    {
+      "name": "obsidian-vault",
+      "path": "/data/data/com.termux/files/home/obsidian-vault",
+      "remote": "https://github.com/FacePrintPay/obsidian-vault.git",
+      "branch": "main",
+      "agent": "saturn"
+    },
+    {
+      "name": "pages",
+      "path": "/data/data/com.termux/files/home/pages",
+      "remote": "https://github.com/FacePrintPay/pages.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "pathos-campaign",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/pathos-campaign",
+      "remote": "https://github.com/Constillation25/pathos-campaign.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "pathos-campaign",
+      "path": "/data/data/com.termux/files/home/pathos-campaign",
+      "remote": "https://github.com/FacePrintPay/pathos-campaign.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "pathos",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/pathos",
+      "remote": "https://github.com/Constillation25/pathos.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "pinggy",
+      "path": "/data/data/com.termux/files/home/pinggy",
+      "remote": "https://github.com/FacePrintPay/pinggy.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "pitch_prep",
+      "path": "/data/data/com.termux/files/home/pitch_prep",
+      "remote": "https://github.com/FacePrintPay/pitch_prep.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "planetary-ai-platform",
+      "path": "/data/data/com.termux/files/home/planetary-ai-platform",
+      "remote": "https://github.com/FacePrintPay/planetary-ai-platform.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "precedence_dossier_20260416T090446Z",
+      "path": "/data/data/com.termux/files/home/precedence_dossier_20260416T090446Z",
+      "remote": "https://github.com/FacePrintPay/precedence_dossier_20260416T090446Z.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "presskit",
+      "path": "/data/data/com.termux/files/home/presskit",
+      "remote": "https://github.com/FacePrintPay/presskit.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "prion_swarm",
+      "path": "/data/data/com.termux/files/home/prion_swarm",
+      "remote": "https://github.com/FacePrintPay/prion_swarm.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "prior_art_bundle_20260520",
+      "path": "/data/data/com.termux/files/home/prior_art_bundle_20260520",
+      "remote": "https://github.com/FacePrintPay/prior_art_bundle_20260520.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "prior_art_bundle",
+      "path": "/data/data/com.termux/files/home/prior_art_bundle",
+      "remote": "https://github.com/FacePrintPay/prior_art_bundle.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "project2",
+      "path": "/data/data/com.termux/files/home/ranger_sandbox/project2",
+      "remote": "https://github.com/FacePrintPay/project2.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "public",
+      "path": "/data/data/com.termux/files/home/github-repos/VeRseD_Ai/public",
+      "remote": "https://github.com/FacePrintPay/public.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "public",
+      "path": "/data/data/com.termux/files/home/github-repos/aikrektive-stargate/public",
+      "remote": "git@github.com:FacePrintPay/public.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "public",
+      "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/public",
+      "remote": "https://github.com/FacePrintPay/public.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "public",
+      "path": "/data/data/com.termux/files/home/github-repos/master/public",
+      "remote": "https://github.com/FacePrintPay/public.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "public",
+      "path": "/data/data/com.termux/files/home/github-repos/videocourts/public",
+      "remote": "https://github.com/FacePrintPay/public.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "public",
+      "path": "/data/data/com.termux/files/home/public",
+      "remote": "https://github.com/FacePrintPay/public.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "public",
+      "path": "/data/data/com.termux/files/home/unified-source/videocourts/public",
+      "remote": "https://github.com/FacePrintPay/public.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "quantize",
+      "path": "/data/data/com.termux/files/home/llama.cpp/tools/quantize",
+      "remote": "https://github.com/FacePrintPay/quantize.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "ranger-git",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/ranger-git",
+      "remote": "https://github.com/Constillation25/ranger-git.git",
+      "branch": "master",
+      "agent": "earth"
+    },
+    {
+      "name": "ranger-git",
+      "path": "/data/data/com.termux/files/home/ranger-git",
+      "remote": "https://github.com/FacePrintPay/ranger-git.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "reconstructed",
+      "path": "/data/data/com.termux/files/home/reconstructed",
+      "remote": "https://github.com/FacePrintPay/reconstructed.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "recovered_artifacts",
+      "path": "/data/data/com.termux/files/home/recovered_artifacts",
+      "remote": "https://github.com/FacePrintPay/recovered_artifacts.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "repos",
+      "path": "/data/data/com.termux/files/home/repos",
+      "remote": "https://github.com/FacePrintPay/repos.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "scripts",
+      "path": "/data/data/com.termux/files/home/github-repos/Linked2-platform/scripts",
+      "remote": "https://github.com/FacePrintPay/scripts.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "scripts",
+      "path": "/data/data/com.termux/files/home/github-repos/Linked2-platform_salvage_1779151043/scripts",
+      "remote": "https://github.com/FacePrintPay/scripts.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "scripts",
+      "path": "/data/data/com.termux/files/home/github-repos/constellation25/scripts",
+      "remote": "https://github.com/FacePrintPay/scripts.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "scripts",
+      "path": "/data/data/com.termux/files/home/llama.cpp/scripts",
+      "remote": "https://github.com/FacePrintPay/scripts.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "scripts",
+      "path": "/data/data/com.termux/files/home/scripts",
+      "remote": "https://github.com/FacePrintPay/scripts.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "scripts",
+      "path": "/data/data/com.termux/files/home/unified-source/Linked2-platform/scripts",
+      "remote": "https://github.com/FacePrintPay/scripts.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "sentinel-lens",
+      "path": "/data/data/com.termux/files/home/sentinel-lens",
+      "remote": "https://github.com/FacePrintPay/sentinel-lens.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "server",
+      "path": "/data/data/com.termux/files/home/llama.cpp/tools/server",
+      "remote": "https://github.com/FacePrintPay/server.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "shopify_recon",
+      "path": "/data/data/com.termux/files/home/shopify_recon",
+      "remote": "https://github.com/FacePrintPay/shopify_recon.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "skills",
+      "path": "/data/data/com.termux/files/home/skills",
+      "remote": "https://github.com/FacePrintPay/skills.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "sovereign-ai-empire",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/sovereign-ai-empire",
+      "remote": "https://github.com/TheKre8tive/Linked2-platform.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "sovereign-gtp",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/sovereign-gtp",
+      "remote": "https://github.com/Constillation25/sovereign-gtp.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "stargate-dtest",
+      "path": "/data/data/com.termux/files/home/stargate-dtest",
+      "remote": "https://github.com/FacePrintPay/stargate-dtest.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "stargate-grpc-go-client",
+      "path": "/data/data/com.termux/files/home/stargate-grpc-go-client",
+      "remote": "https://github.com/FacePrintPay/stargate-grpc-go-client.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "stargate-grpc-java-client",
+      "path": "/data/data/com.termux/files/home/stargate-grpc-java-client",
+      "remote": "https://github.com/FacePrintPay/stargate-grpc-java-client.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "stargate-grpc-node-client",
+      "path": "/data/data/com.termux/files/home/stargate-grpc-node-client",
+      "remote": "https://github.com/FacePrintPay/stargate-grpc-node-client.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "stargate-grpc-nosqlbench",
+      "path": "/data/data/com.termux/files/home/stargate-grpc-nosqlbench",
+      "remote": "https://github.com/FacePrintPay/stargate-grpc-nosqlbench.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "stargate",
+      "path": "/data/data/com.termux/files/home/aikre8tive-system/stargate",
+      "remote": "https://github.com/FacePrintPay/AiKre8tive-Stargate.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "submission_packets",
+      "path": "/data/data/com.termux/files/home/submission_packets",
+      "remote": "https://github.com/FacePrintPay/submission_packets.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "sycl",
+      "path": "/data/data/com.termux/files/home/llama.cpp/examples/sycl",
+      "remote": "https://github.com/FacePrintPay/sycl.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "tasks",
+      "path": "/data/data/com.termux/files/home/tasks",
+      "remote": "https://github.com/FacePrintPay/tasks.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "techft_launch",
+      "path": "/data/data/com.termux/files/home/techft_launch",
+      "remote": "https://github.com/FacePrintPay/techft_launch.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "telegram_bot_build",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/telegram_bot_build",
+      "remote": "https://github.com/Constillation25/telegram_bot_build.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "telegram_bot_build",
+      "path": "/data/data/com.termux/files/home/telegram_bot_build",
+      "remote": "https://github.com/FacePrintPay/telegram_bot_build.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "termux-ngrok",
+      "path": "/data/data/com.termux/files/home/termux-ngrok",
+      "remote": "https://github.com/FacePrintPay/termux-ngrok.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "termux-wizard",
+      "path": "/data/data/com.termux/files/home/termux-wizard",
+      "remote": "https://github.com/FacePrintPay/termux-wizard.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "termux_meaningful_inventory_20260416_050238",
+      "path": "/data/data/com.termux/files/home/termux_meaningful_inventory_20260416_050238",
+      "remote": "https://github.com/FacePrintPay/termux_meaningful_inventory_20260416_050238.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "termux_meaningful_inventory_20260416_050259",
+      "path": "/data/data/com.termux/files/home/termux_meaningful_inventory_20260416_050259",
+      "remote": "https://github.com/FacePrintPay/termux_meaningful_inventory_20260416_050259.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "tests",
+      "path": "/data/data/com.termux/files/home/github-repos/constellation25-mono/tests",
+      "remote": "https://github.com/FacePrintPay/tests.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "tests",
+      "path": "/data/data/com.termux/files/home/llama.cpp/tests",
+      "remote": "https://github.com/FacePrintPay/tests.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "that",
+      "path": "/data/data/com.termux/files/home/aikre8tive-system/that",
+      "remote": "https://github.com/FacePrintPay/THAT.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "tmp",
+      "path": "/data/data/com.termux/files/home/tmp",
+      "remote": "https://github.com/FacePrintPay/tmp.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "totalrecall_analysis_20260501_183124",
+      "path": "/data/data/com.termux/files/home/totalrecall_analysis_20260501_183124",
+      "remote": "https://github.com/FacePrintPay/totalrecall_analysis_20260501_183124.git",
+      "branch": "main",
+      "agent": "neptune"
+    },
+    {
+      "name": "totalrecall_forensic_bundle",
+      "path": "/data/data/com.termux/files/home/totalrecall_forensic_bundle",
+      "remote": "https://github.com/FacePrintPay/totalrecall_forensic_bundle.git",
+      "branch": "main",
+      "agent": "neptune"
+    },
+    {
+      "name": "totalrecall",
+      "path": "/data/data/com.termux/files/home/totalrecall",
+      "remote": "https://github.com/FacePrintPay/totalrecall.git",
+      "branch": "main",
+      "agent": "neptune"
+    },
+    {
+      "name": "tr_grep_archive_20260501_190644",
+      "path": "/data/data/com.termux/files/home/tr_grep_archive_20260501_190644",
+      "remote": "https://github.com/FacePrintPay/tr_grep_archive_20260501_190644.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "tr_test",
+      "path": "/data/data/com.termux/files/home/tr_test",
+      "remote": "https://github.com/FacePrintPay/tr_test.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "vercel",
+      "path": "/data/data/com.termux/files/home/.claude/plugins/marketplaces/vercel",
+      "remote": "https://github.com/vercel/vercel-plugin",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "versed_logs",
+      "path": "/data/data/com.termux/files/home/versed_logs",
+      "remote": "https://github.com/FacePrintPay/versed_logs.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "videocourts-org_BACKUP_1774926493",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/videocourts-org_BACKUP_1774926493",
+      "remote": "https://github.com/Constillation25/videocourts-org_BACKUP_1774926493.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "videocourts-org",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/videocourts-org",
+      "remote": "https://github.com/Constillation25/videocourts-org.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "videocourts_backend",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/videocourts_backend",
+      "remote": "https://github.com/Constillation25/videocourts_backend.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "videocourts",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/videocourts",
+      "remote": "https://github.com/FacePrintPay/videocourts.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "videocourts",
+      "path": "/data/data/com.termux/files/home/github-repos/videocourts",
+      "remote": "https://github.com/Constillation25/videocourts.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "videocourts",
+      "path": "/data/data/com.termux/files/home/prion_swarm/platform_audit/faceprintpay/videocourts",
+      "remote": "https://github.com/FacePrintPay/videocourts.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "vite-react",
+      "path": "/data/data/com.termux/files/home/vite-react",
+      "remote": "https://github.com/FacePrintPay/vite-react.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "vite",
+      "path": "/data/data/com.termux/files/home/c25_unified_workspace/vite",
+      "remote": "https://github.com/TheKre8tive/vite.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "vscode-project-manager",
+      "path": "/data/data/com.termux/files/home/vscode-project-manager",
+      "remote": "https://github.com/FacePrintPay/vscode-project-manager.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "webserver",
+      "path": "/data/data/com.termux/files/home/webserver",
+      "remote": "https://github.com/FacePrintPay/webserver.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "wheel_build",
+      "path": "/data/data/com.termux/files/home/wheel_build",
+      "remote": "https://github.com/TheKre8tive/Linked2-platform.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "wikitext-2-raw",
+      "path": "/data/data/com.termux/files/home/wikitext-2-raw",
+      "remote": "https://github.com/FacePrintPay/wikitext-2-raw.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "workspace",
+      "path": "/data/data/com.termux/files/home/workspace",
+      "remote": "https://github.com/FacePrintPay/workspace.git",
+      "branch": "main",
+      "agent": "earth"
+    },
+    {
+      "name": "zeroeye",
+      "path": "/data/data/com.termux/files/home/zeroeye",
+      "remote": "https://github.com/SnowfallHD/zeroeye.git",
+      "branch": "c25-websocket-origin-bounty",
+      "agent": "earth"
+    },
+    {
+      "name": "~",
+      "path": "/data/data/com.termux/files/home/~",
+      "remote": "https://github.com/FacePrintPay/~.git",
+      "branch": "main",
+      "agent": "earth"
+    }
+  ],
+  "agent_routing": {
+    "earth": [
+      ".agent-engine",
+      ".c25_backend",
+      ".c25_bridge",
+      ".c25_connector",
+      ".c25_db",
+      ".c25_debug",
+      ".c25_deploy_fix",
+      ".c25_deps",
+      ".c25_diag",
+      ".c25_emergency_quarantine",
+      ".c25_integrity",
+      ".c25_mcp",
+      ".c25_mesh",
+      ".c25_migrations",
+      ".c25_rss",
+      ".c25_upgrade",
+      ".c25",
+      ".cloudflared",
+      ".devcontainer",
+      ".github",
+      ".github",
+      ".mybuyo",
+      ".oh-my-zsh",
+      "2plusdo-ai",
+      "AIMetaverseLive",
+      "AIMetaverse_Deployment",
+      "AI",
+      "AiKre8tive-Investor-Assets",
+      "AiKre8tive-Sovereign-GTP-",
+      "AiKre8tive-Stargate",
+      "AiKre8tive-Stargate",
+      "AiKre8tive-",
+      "AiKre8tive.us",
+      "AiKre8tiveGenesis",
+      "AiKre8tive_ONE",
+      "AiKre8tive_Sovereign_Genesis",
+      "AiKre8tive_Sovereign_Genesis",
+      "AiMetaverse",
+      "AiMetaverse",
+      "AiMeta",
+      "Apollo-11",
+      "C25-AUTO-BUILD",
+      "C25_EVIDENCE_20260523_1710",
+      "C25_Graph_Viewer",
+      "C25_OMNIBUS",
+      "CASE_AUDIT_20260610_232922",
+      "CASE_AUDIT_20260611_002459",
+      "COMPLETE_CASE_FILE",
+      "COMPLETE_LITIGATION_PACKAGE",
+      "Constellation25_Build",
+      "Constellation25_Recovered",
+      "Constellation25_UNIFIED_SOURCE",
+      "CyGeL-White-",
+      "DOJ_EVIDENCE_PACKAGE",
+      "Documents",
+      "Kre8tive-Konceptz",
+      "Linked2-platform_WORKING_TREE_BACKUP_1779151102",
+      "Linked2-platform_salvage_1779151043",
+      "Linked2-platform",
+      "Linked2-platform",
+      "NUCLEUS",
+      "Obsidian",
+      "Orange",
+      "Organized",
+      "PaTHos",
+      "PaThosAi",
+      "PingPangDemo",
+      "PoRTaLed-",
+      "Remote-Evidence-Collector",
+      "Remote-Evidence-Collector",
+      "RepoDepot-Stargate",
+      "Resources",
+      "Root",
+      "SOVEREIGN_AGI_UNIFIED",
+      "STACK",
+      "SalesGTP",
+      "Scripts",
+      "SovereignApp",
+      "SovereignGTP",
+      "THAT",
+      "TheKre8tive",
+      "VeRseD_Ai",
+      "VeRseD_Ai",
+      "Versed_Ai",
+      "VideoCourts",
+      "agent-debug-20260411_004400",
+      "agent_logs",
+      "agent_output",
+      "agentik",
+      "agentik",
+      "agents",
+      "ai_metaverse_web",
+      "ai_metaverse",
+      "ai_output",
+      "aikre8tive-planetary-grid",
+      "aikre8tive-planetary-grid",
+      "aikre8tive-system",
+      "aikre8tive",
+      "aimetaverse-demo",
+      "aimetaverse-demo",
+      "aimetaverse",
+      "api",
+      "apple",
+      "apps",
+      "arcai-",
+      "arcai-",
+      "archives",
+      "backups",
+      "blackboxai-1741225183777",
+      "blackboxai-1742356607403",
+      "blackboxai-1742357245683",
+      "blackboxai-1742367771175",
+      "blackboxai-1742368461092",
+      "blackboxai-1742374192849",
+      "blackboxai-1742374192849",
+      "blackboxai-1742376990260",
+      "blackboxai-1742376990260",
+      "bolt.new",
+      "brewery",
+      "builds",
+      "c25-agent-api",
+      "c25-agent-api",
+      "c25-agent-api",
+      "c25-agent-core",
+      "c25-constellation25-swarm",
+      "c25-deploy-router",
+      "c25-fdroid-repo",
+      "c25-monorepo",
+      "c25-os",
+      "c25-outputs-20260316_192522",
+      "c25-repodepo",
+      "c25-secure-github-auth",
+      "c25-sovereign-launch",
+      "c25-termux-addon",
+      "c25-training-corpus",
+      "c25_unified_workspace",
+      "camel-search-maths",
+      "camel-search-maths",
+      "camel-search-maths",
+      "ci",
+      "code_recovery",
+      "consolidation-audit",
+      "constellation-25-live",
+      "constellation-25-live",
+      "constellation25-adserver",
+      "constellation25-ecosystem",
+      "constellation25-monolithic-delta",
+      "constellation25-mono",
+      "constellation25-recon",
+      "constellation25-ui",
+      "constellation25_build_synthesis",
+      "constellation25_sovereign_moat",
+      "constellation25_unified_build_20260411_115932",
+      "constellation25_unified_build_20260411_120007",
+      "constellation25_workspace",
+      "constellation25",
+      "constellation25",
+      "constellation25",
+      "constellation25",
+      "coral-mcp-release",
+      "coral-server",
+      "customassets",
+      "cygnus-recovered",
+      "cygnus-run",
+      "db",
+      "digital-dollar",
+      "digital-dollar",
+      "disclose_hunt_20260608_112211",
+      "dist-canonical",
+      "django-dynamic-api",
+      "docs",
+      "docs",
+      "docs",
+      "downloads",
+      "evidence_consolidated",
+      "evidence_demo",
+      "evidence_export",
+      "evidence",
+      "examples",
+      "faceprintpay",
+      "failed-builds-audit",
+      "frequency_casting_1775882642",
+      "frontend",
+      "funding-extracted",
+      "funding-extracted",
+      "gdrive_mount",
+      "gguf-split",
+      "github-repos",
+      "golf-course-project-mcp-server",
+      "home",
+      "imin-cyber-framework",
+      "kreativekoncepts",
+      "ledgers",
+      "ledgers",
+      "libqrencode",
+      "linked2",
+      "linker",
+      "llama.cpp",
+      "llama.cpp",
+      "logs",
+      "material-components-flutter-codelabs",
+      "memoria-agent",
+      "mesh_build_cache",
+      "mesh_deployment_logs",
+      "migrations",
+      "monetary_engine_mission",
+      "money_hunt_20260608_091302",
+      "monorepo",
+      "morphic-ai-answer-engine-generative-ui",
+      "mtmd",
+      "mybuyo-biometric-saas",
+      "mybuyo-biometric-saas",
+      "mybuyo-foodlion-mvp",
+      "mybuyo-foodlion-mvp",
+      "mybuyo-restore",
+      "mybuyoxfoodlion-pitch",
+      "mybuyoxfoodlion-pitch",
+      "mybuyo",
+      "neo-agent",
+      "neosync_activated_1775882642",
+      "nextjs-boilerplate",
+      "nextjs-enterprise-boilerplate",
+      "nlp2code-test",
+      "npm-documentation",
+      "pages",
+      "pathos-campaign",
+      "pathos-campaign",
+      "pathos",
+      "pinggy",
+      "pitch_prep",
+      "planetary-ai-platform",
+      "precedence_dossier_20260416T090446Z",
+      "presskit",
+      "prion_swarm",
+      "prior_art_bundle_20260520",
+      "prior_art_bundle",
+      "project2",
+      "public",
+      "public",
+      "public",
+      "public",
+      "public",
+      "public",
+      "public",
+      "quantize",
+      "ranger-git",
+      "ranger-git",
+      "reconstructed",
+      "recovered_artifacts",
+      "repos",
+      "scripts",
+      "scripts",
+      "scripts",
+      "scripts",
+      "scripts",
+      "scripts",
+      "sentinel-lens",
+      "server",
+      "shopify_recon",
+      "skills",
+      "sovereign-ai-empire",
+      "sovereign-gtp",
+      "stargate-dtest",
+      "stargate-grpc-go-client",
+      "stargate-grpc-java-client",
+      "stargate-grpc-node-client",
+      "stargate-grpc-nosqlbench",
+      "stargate",
+      "submission_packets",
+      "sycl",
+      "tasks",
+      "techft_launch",
+      "telegram_bot_build",
+      "telegram_bot_build",
+      "termux-ngrok",
+      "termux-wizard",
+      "termux_meaningful_inventory_20260416_050238",
+      "termux_meaningful_inventory_20260416_050259",
+      "tests",
+      "tests",
+      "that",
+      "tmp",
+      "tr_grep_archive_20260501_190644",
+      "tr_test",
+      "vercel",
+      "versed_logs",
+      "videocourts-org_BACKUP_1774926493",
+      "videocourts-org",
+      "videocourts_backend",
+      "videocourts",
+      "videocourts",
+      "videocourts",
+      "vite-react",
+      "vite",
+      "vscode-project-manager",
+      "webserver",
+      "wheel_build",
+      "wikitext-2-raw",
+      "workspace",
+      "zeroeye",
+      "~"
+    ],
+    "mars": [
+      "WideOpen-Obsidian"
+    ],
+    "jupiter": [
+      "legal"
+    ],
+    "saturn": [
+      "SovereignVault",
+      "Vault",
+      "obsidian-vault-bare.git",
+      "obsidian-vault"
+    ],
+    "neptune": [
+      "TotalRecall-Builder",
+      "bard-totalrecall",
+      "constellation25_sovereign_data",
+      "data-api",
+      "forensic_api",
+      "forensic_audit_WHITE-V-GOOGLE-EDNC-20260501",
+      "forensic_audit",
+      "forensic_scan_365d_20260518T204204Z",
+      "forensic_scan_365d_20260521T223248Z",
+      "totalrecall_analysis_20260501_183124",
+      "totalrecall_forensic_bundle",
+      "totalrecall"
+    ],
+    "sun": [
+      "C25-MASTER",
+      "C25_MASTER_BUNDLE",
+      "MASTER_EVIDENCE_COMPILATION",
+      "c25-master",
+      "master"
+    ]
+  }
+}

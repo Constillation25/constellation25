@@ -1,0 +1,49 @@
+{
+  "constellation25_agents": {
+    "earth": {"role": "Foundation", "tasks": ["G_legal_ai", "I_pathos_nlp"], "status": "active"},
+    "moon": {"role": "Validation", "tasks": ["B_compliance", "H_totalrecall"], "status": "active"},
+    "sun": {"role": "Optimization", "tasks": ["A_landing_page", "F_videocourts_ui"], "status": "active"},
+    "mercury": {"role": "Speed", "tasks": ["E_marketing", "J_sovereigndeck"], "status": "active"},
+    "venus": {"role": "Design", "tasks": ["F_videocourts_ui", "C_investor"], "status": "active"},
+    "mars": {"role": "Security", "tasks": ["B_compliance", "H_totalrecall"], "status": "active"},
+    "jupiter": {"role": "Documentation", "tasks": ["I_pathos_nlp", "D_county_pilot"], "status": "active"},
+    "saturn": {"role": "Refactoring", "tasks": ["A_landing_page", "J_sovereigndeck"], "status": "active"},
+    "uranus": {"role": "Innovation", "tasks": ["G_legal_ai", "E_marketing"], "status": "standby"},
+    "neptune": {"role": "Deep Analysis", "tasks": ["B_compliance", "I_pathos_nlp"], "status": "standby"},
+    "pluto": {"role": "Edge Cases", "tasks": ["H_totalrecall", "G_legal_ai"], "status": "standby"},
+    "atlas": {"role": "Infrastructure", "tasks": ["D_county_pilot", "J_sovereigndeck"], "status": "standby"},
+    "nova": {"role": "Discovery", "tasks": ["E_marketing", "C_investor"], "status": "standby"},
+    "ion": {"role": "Energy", "tasks": ["A_landing_page", "F_videocourts_ui"], "status": "standby"},
+    "helix": {"role": "Structure", "tasks": ["I_pathos_nlp", "G_legal_ai"], "status": "standby"},
+    "orion": {"role": "Navigation", "tasks": ["D_county_pilot", "B_compliance"], "status": "standby"},
+    "lyra": {"role": "Harmony", "tasks": ["F_videocourts_ui", "J_sovereigndeck"], "status": "standby"},
+    "cygnus": {"role": "Swan Song", "tasks": ["H_totalrecall", "C_investor"], "status": "standby"},
+    "draco": {"role": "Guardian", "tasks": ["B_compliance", "G_legal_ai"], "status": "standby"},
+    "pegasus": {"role": "Flight", "tasks": ["E_marketing", "A_landing_page"], "status": "standby"},
+    "andromeda": {"role": "Galaxy", "tasks": ["J_sovereigndeck", "I_pathos_nlp"], "status": "standby"},
+    "cassiopeia": {"role": "Queen", "tasks": ["C_investor", "D_county_pilot"], "status": "standby"},
+    "perseus": {"role": "Hero", "tasks": ["G_legal_ai", "F_videocourts_ui"], "status": "standby"},
+    "hercules": {"role": "Strength", "tasks": ["H_totalrecall", "B_compliance"], "status": "standby"},
+    "aquila": {"role": "Eagle", "tasks": ["E_marketing", "A_landing_page"], "status": "standby"}
+  },
+  "task_categories": {
+    "A_landing_page": {"agent": "sun", "priority": "high", "output_format": "html"},
+    "B_compliance": {"agent": "mars", "priority": "critical", "output_format": "md"},
+    "C_investor": {"agent": "venus", "priority": "high", "output_format": "md"},
+    "D_county_pilot": {"agent": "earth", "priority": "medium", "output_format": "pdf"},
+    "E_marketing": {"agent": "mercury", "priority": "medium", "output_format": "txt"},
+    "F_videocourts_ui": {"agent": "venus", "priority": "high", "output_format": "jsx"},
+    "G_legal_ai": {"agent": "earth", "priority": "critical", "output_format": "py"},
+    "H_totalrecall": {"agent": "mars", "priority": "critical", "output_format": "json"},
+    "I_pathos_nlp": {"agent": "jupiter", "priority": "high", "output_format": "py"},
+    "J_sovereigndeck": {"agent": "saturn", "priority": "medium", "output_format": "html"}
+  },
+  "mesh_config": {
+    "heartbeat_interval": 30,
+    "batch_size": 25,
+    "max_retries": 3,
+    "log_level": "INFO",
+    "redis_host": "127.0.0.1",
+    "redis_port": 6379
+  }
+}

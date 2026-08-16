@@ -1,0 +1,15 @@
+[
+  {
+    "license_id": "AGNTK-B5671D05",
+    "buyer_handle": "@duckman_dev",
+    "tier": "Sovereign Lifetime",
+    "price_usd": 25,
+    "payment_routing": {
+      "method": "cashapp",
+      "instructions": "Route $25 to $CyGeLWhite (Update with actual CashTag)",
+      "status": "PENDING_VERIFICATION"
+    },
+    "issued_at": "2026-07-21T02:38:00.120614",
+    "biometric_gate": "FACEPRINTPAY_MCP_AUTH_REQUIRED"
+  }
+]

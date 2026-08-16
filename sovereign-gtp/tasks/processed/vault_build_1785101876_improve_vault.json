@@ -1,0 +1,9 @@
+{
+  "task_id": "build_1785101876_improve_vault",
+  "agent": "vault",
+  "type": "improve_vault",
+  "priority": "high",
+  "created": "20260726T213756Z",
+  "payload": "Same as helio: make vault.py return honest 'not implemented' responses for anything beyond the current compliance templates. Document what it can and cannot do.",
+  "status": "pending"
+}

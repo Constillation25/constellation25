@@ -1,0 +1,24 @@
+advanced:
+  default_remote_dir: ''
+  enable_recursive: true
+  limit_speed: false
+  speed_limit: 0
+  synchronize_local_dirs: false
+bookmarks: []
+general:
+  background_color: None
+  comments: ''
+  encryption: Require explicit FTP over TLS
+  host: ''
+  logon_type: Normal
+  password: ''
+  port: 21
+  protocol: FTP
+  user: ''
+site_name: Production FTP
+transfer_settings:
+  ascii_files: Auto
+  continue_interrupted: true
+  delete_extra_files: false
+  overwrite_mode: Overwrite if newer
+  transfer_mode: Auto

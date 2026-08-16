@@ -1,0 +1,7 @@
+{
+    "id": 14,
+    "name": "Web Server's",
+    "tools": ["nginx", "apache", "caddy"],
+    "status": "available",
+    "integrated": true
+}

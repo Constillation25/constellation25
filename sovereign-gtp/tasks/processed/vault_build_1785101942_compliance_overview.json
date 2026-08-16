@@ -1,0 +1,9 @@
+{
+  "task_id": "build_1785101942_compliance_overview",
+  "agent": "vault",
+  "type": "compliance_overview",
+  "priority": "high",
+  "created": "20260726T213902Z",
+  "payload": "Generate a realistic COMPLIANCE.md that maps the current TotalRecall logger and BaseAgent logging to basic audit and chain-of-custody needs. Keep it honest about current limitations.",
+  "status": "pending"
+}

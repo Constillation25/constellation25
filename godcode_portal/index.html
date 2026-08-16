@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C25 Sovereign Portal</title>
+    <style>
+        body { background-color: #050505; color: #00ff41; font-family: 'Courier New', monospace; margin: 0; padding: 20px; }
+        .header { text-align: center; border-bottom: 1px solid #00ff41; padding-bottom: 20px; margin-bottom: 20px; }
+        .agent-view { display: none; border: 1px solid #333; padding: 20px; margin-top: 20px; }
+        .active { display: block; }
+        .chat-box { height: 300px; overflow-y: scroll; border: 1px solid #004400; padding: 10px; margin-bottom: 10px; background: #001100; }
+        input { width: 80%; background: #000; color: #0f0; border: 1px solid #0f0; padding: 10px; }
+        button { background: #004400; color: #fff; border: none; padding: 10px 20px; cursor: pointer; }
+        #status-bar { position: fixed; bottom: 0; left: 0; width: 100%; background: #002200; padding: 5px; text-align: center; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 id="portal-title">CONSTELLATION 25</h1>
+        <p id="agent-name">Initializing Sovereign Link...</p>
+    </div>
+
+    <!-- Dynamic Agent Modules -->
+    <div id="module-container"></div>
+
+    <!-- Universal Chat Interface -->
+    <div class="agent-view active">
+        <h3>SOVEREIGN INFERENCE (Qwen/Ollama)</h3>
+        <div class="chat-box" id="chat-history"></div>
+        <input type="text" id="user-input" placeholder="Enter command for Agent...">
+        <button onclick="sendToAgent()">EXECUTE</button>
+    </div>
+
+    <div id="status-bar">MCP: Connecting... | Ollama: Waiting...</div>
+
+    <script>
+        // C25 GODCODE ROUTING TABLE
+        const AGENT_MAP = {
+            "videocourts.com": { name: "MARS (Justice/Security)", port: 8005 },
+            "mybuyo.com": { name: "VENUS (Commerce)", port: 8003 },
+            "pennichain.com": { name: "JUPITER (Ledger)", port: 8007 },
+            "nlp2code.diy": { name: "SATURN (PaTHos OS)", port: 3000 },
+            "sovereigngtp.xyz": { name: "URANUS (Innovation)", port: 8009 },
+            "aimetaverse.cloud": { name: "EARTH (Foundation)", port: 8004 },
+            "kre8tive.space": { name: "SOL (Core Identity)", port: 8001 },
+            "airecords.org": { name: "PLUTO (Total Recall)", port: 8011 },
+            "marsfiat.com": { name: "MARS (Fiat/Crypto)", port: 8005 },
+            "linq2.cloud": { name: "MERCURY (Routing)", port: 8002 }
+        };
+
+        const domain = window.location.hostname;
+        const agent = AGENT_MAP[domain] || { name: "UNKNOWN AGENT", port: 8989 };
+        
+        document.getElementById('portal-title').innerText = "C25 SOVEREIGN PORTAL";
+        document.getElementById('agent-name').innerText = `ACTIVE MODULE: ${agent.name}`;
+
+        // Local MCP & Ollama Endpoints
+        const MCP_URL = "http://localhost:8989"; 
+        const OLLAMA_URL = "http://localhost:11434/api/generate";
+
+        async function sendToAgent() {
+            const input = document.getElementById('user-input');
+            const history = document.getElementById('chat-history');
+            const query = input.value;
+            
+            history.innerHTML += `<div style="color:#fff">> USER: ${query}</div>`;
+            input.value = '';
+
+            // Try Local Ollama First (Sovereign)
+            try {
+                const res = await fetch(OLLAMA_URL, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({ model: "qwen2.5", prompt: query, stream: false })
+                });
+                const data = await res.json();
+                history.innerHTML += `<div>> ${agent.name}: ${data.response}</div>`;
+            } catch (e) {
+                history.innerHTML += `<div style="color:red">⚠️ Local Ollama Offline. Switching to MCP Fallback...</div>`;
+                // Fallback to MCP Tool Call
+                try {
+                    const mcpRes = await fetch(`${MCP_URL}/tools/call`, {
+                        method: 'POST',
+                        body: JSON.stringify({ tool: agent.name, input: query })
+                    });
+                    const mData = await mcpRes.json();
+                    history.innerHTML += `<div>> MCP RESPONSE: ${JSON.stringify(mData)}</div>`;
+                } catch (err) {
+                    history.innerHTML += `<div style="color:red">❌ Sovereign Link Lost. Check Termux.</div>`;
+                }
+            }
+            history.scrollTop = history.scrollHeight;
+        }
+    </script>
+</body>
+</html>

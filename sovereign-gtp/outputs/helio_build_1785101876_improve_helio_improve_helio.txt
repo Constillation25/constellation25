@@ -1,0 +1,6 @@
+<!-- improve_helio - Helio Agent -->
+<!-- Payload: Replace the hard-coded HTML string templates in helio.py with a clearer structure: if the payload asks for something you cannot do, return a clear 'not implemented' message instead of fake HTML. Keep the BaseAgent inheritance. -->
+<!-- Generated: 2026-07-26T17:39:16.490325 -->
+<div class="placeholder p-8 bg-slate-100 rounded text-center">
+  <p class="text-slate-600">UI component placeholder for: Replace the hard-coded HTML string templates in helio.py with a clearer structure: if the payload asks for something you cannot do, return a clear 'not implemented' message instead of fake HTML. Keep the BaseAgent inheritance.</p>
+</div>

@@ -1,0 +1,14 @@
+{
+  "task_id": "'"$TASK_ID"'",
+  "timestamp": "'"$TIMESTAMP"'",
+  "agents": ["Forge", "Titan"],
+  "priority": "HIGH",
+  "action": "EXECUTE_SCRAPER",
+  "payload": {
+    "target_list": "free-programming-books.md",
+    "tool": "beautifulsoup4",
+    "extract": ["text", "code_blocks", "diagrams"],
+    "output_dir": "~/constellation25/corpus/raw_html",
+    "termux_optimized": true
+  }
+}

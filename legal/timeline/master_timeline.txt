@@ -1,0 +1,51 @@
+2026-06-29 00:43:29 | canonical_routing.log | [Mars] Lead Prion Swarm (5 workers + 1 scanner) for Bug Bounty automation. [Enceladus] SHA256 hash all swarm outputs and capital raise logs for TotalRecall. [Charon] Manage FacePrintPay repos. Ensure 
+2026-06-29 00:43:29 | capital_raise_routing.log | [Saturn] Execute B2B outreach using partnership_offer.md. Target Angel/Seed networks, prioritizing Dnicole Young's warm intros. [Neptune] Parse incoming investor responses. Classify intent (Hot/Warm/C
+2026-06-29 00:43:29 | config.json | {"agents":{"PaTHos":{"path":"~/planetary_agents/pathos_router.py","port":3100}},"notifications":true} 
+2026-06-29 00:43:29 | earth_router.log | [EARTH] Routed task to Jupiter. Log: /data/data/com.termux/files/home/.c25/logs/jupiter_task.log [EARTH] Routed task to Saturn. Log: /data/data/com.termux/files/home/.c25/logs/saturn_task.log [EARTH] 
+2026-06-29 00:43:29 | jupiter_task.log | ASSIGNED TO: Jupiter Role: Autonomous e-commerce product researcher... STATUS: EXECUTING 
+2026-06-29 00:43:29 | mars_task.log | ASSIGNED TO: Mars Role: Autonomous software developer and market validator... STATUS: EXECUTING 
+2026-06-29 00:43:29 | ollama.log | nohup: ignoring input time=2026-06-20T02:49:19.717Z level=INFO source=routes.go:1919 msg="server config" env="map[CUDA_VISIBLE_DEVICES: GGML_VK_VISIBLE_DEVICES: GPU_DEVICE_ORDINAL: HIP_VISIBLE_DEVICES
+2026-06-29 00:43:29 | rclone_retry.log | 2026/06/19 21:20:35 INFO  : Starting transaction limiter: max 5 transactions/s with burst 1 2026/06/19 21:20:36 NOTICE: videocourts-main: Can't follow symlink without -L/--copy-links 2026/06/19 21:20:
+2026-06-29 00:43:29 | saturn_task.log | ASSIGNED TO: Saturn Role: Automated B2B lead generation specialist... STATUS: EXECUTING 
+2026-06-29 00:43:29 | scanner.log | nohup: ignoring input 
+2026-06-29 00:43:29 | supervisor.log | [Fri Jun 19 17:21:26 EDT 2026] Earth Supervisor Online. Monitoring agents... 
+2026-06-29 00:43:29 | totalrecall.log | [Fri Jun 19 16:59:35 EDT 2026] BOOT_INIT hash: bdb822047f9e5f51e6c2057cfcf7a4528a3c75bebdf9d29c5fb668c1fa6db526 [Fri Jun 19 16:59:35 EDT 2026] Starting Ollama server... [Fri Jun 19 16:59:39 EDT 2026] 
+2026-06-29 00:43:29 | uranus_task.log | ASSIGNED TO: Uranus Role: SEO-focused affiliate content marketer... STATUS: EXECUTING 
+2026-06-29 00:43:29 | worker_1.log | nohup: ignoring input 
+2026-06-29 00:43:29 | worker_2.log | nohup: ignoring input 
+2026-06-29 00:43:29 | worker_3.log | nohup: ignoring input 
+2026-06-29 00:43:29 | worker_4.log | nohup: ignoring input 
+2026-06-29 00:43:29 | worker_5.log | nohup: ignoring input 
+2026-06-29 00:43:30 | active_models.txt | qwen2.5-coder:3b        f72c60cabf62    1.9 GB    4 hours ago     qwen:latest             d53d04290064    2.3 GB    4 days ago      qwen2.5-coder:latest    dae161e27b0e    4.7 GB    4 days ago      ll
+2026-06-29 00:43:30 | agent_restart.log | Started Earth Ops on :8001 Started Data Archivist on :8002 Started Security on :8003 Traceback (most recent call last):   File "/data/data/com.termux/files/home/.c25/agents/agent_1.py", line 30, in <m
+2026-06-29 00:43:30 | auth_request.txt | session_id=sess_1780028855 otn=4123456789012345 auth_req=true srt_auth=valid credit_check=approved 
+2026-06-29 00:43:30 | auth_response.txt | status=APPROVED txn_ref=TXN_1780028855 
+2026-06-29 00:43:30 | cart.txt | session_id=sess_1780028855 otn=4123456789012345 auth_req=true 
+2026-06-29 00:43:30 | digadollar_otn_1780028191.json | {   "task_id": "digadollar_otn_integration",   "patent": "US6908030B2",   "modules": [     {"agent":"Venus", "module":"otn_generator", "spec":"16-digit OTN: [1-digit network][4-digit issuer][10-digit 
+2026-06-29 00:43:30 | gamma_backend.log | nohup: ignoring input python3: can't open file '/data/data/com.termux/files/home/.c25/gamma_backend.py': [Errno 2] No such file or directory nohup: ignoring input  * Serving Flask app 'gamma_backend' 
+2026-06-29 00:43:30 | index.html | <!DOCTYPE html><html><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>innerView // C25</title><link rel="stylesheet" href="styles.css"/></head><b
+2026-06-29 00:43:30 | jupiter_result_1780028502.json | {"status":"approved","otn":"4123456789012345","txn_ref":"TXN_1780028502"} 
+2026-06-29 00:43:30 | jupiter_result_1780028855.json | {"status":"approved","otn":"4123456789012345","txn_ref":"TXN_1780028855"} 
+2026-06-29 00:43:30 | mcp.log | nohup: ignoring input [2026-06-28 12:11:06] [MCP] HTTP live on port 3000 
+2026-06-29 00:43:30 | model_registry.json | {   "total_models": 4,   "models": [     {       "name": "qwen2.5-coder:3b",       "size": "f72c60cabf62",       "modified": "1.9 GB 4 hours ago"     },     {       "name": "qwen:latest",       "size"
+2026-06-29 00:43:30 | pending_auth.txt | session_id=sess_1780028855 otn=4123456789012345 
+2026-06-29 00:43:30 | queue.txt | session_id=sess_1780028855 otn=4123456789012345 auth_req=true 
+2026-06-29 00:43:30 | raw_models.txt | NAME                    ID              SIZE      MODIFIED     qwen2.5-coder:3b        f72c60cabf62    1.9 GB    4 hours ago     qwen:latest             d53d04290064    2.3 GB    4 days ago      qwen2
+2026-06-29 00:43:30 | response.txt | status=APPROVED txn_ref=TXN_1780028855 
+2026-06-29 00:43:30 | tunnel.log | nohup: ignoring input 2026-06-20T02:49:37Z INF Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these
+2026-06-29 00:43:30 | venus_otn_1782258776.log | [19:52:56] [VENUS] GENERATING OTN (Net:4 Issuer:1234) 
+2026-06-29 00:43:30 | watchdog.log | nohup: ignoring input Fri Jun 19 17:42:42 EDT 2026: Agent 1 died, restarting... Fri Jun 19 17:42:42 EDT 2026: Agent 2 died, restarting... Fri Jun 19 17:42:42 EDT 2026: Agent 3 died, restarting... Fri 
+2026-06-29 00:43:31 | .fairlog.txt | # Fair-Sync Trigger Sat Jul 19 14:55:46 EDT 2025 
+2026-06-29 00:43:31 | agent_payload.json | {"prompt": "You are Agent Saturn. Task: Circular dependencies. Output JSON: {\"agent\":8, \"loops\":[]}. File preview: #!/usr/bin/env python3\n\nimport argparse\nimport json\nimport os\nimport random\
+2026-06-29 00:43:31 | c25_html_inventory.txt | /data/data/com.termux/files/home/coral-server/index.html /data/data/com.termux/files/home/github-repos/constellation25-recon/index.html /data/data/com.termux/files/home/github-repos/constellation25-ad
+2026-06-29 00:43:31 | deploy.log |  [0;36m╔═══════════════════════════════════════════════════╗[0m [0;36m║  🌌 CONSTELLATI
+2026-06-29 00:43:31 | index.html | <html><body><h1>.github | C25</h1></body></html> 
+2026-06-29 00:43:31 | task_routing_20260619_160105.log | [20260619_160105] Routing tasks to C25 Planetary Agents... [20260619_160105] Generated DB migration: /data/data/com.termux/files/home/db/migrations/20260619_160105_activate_agents.sql [20260619_160105
+2026-06-29 00:43:31 | vercel.json | {   "cleanUrls": true,   "rewrites": [{ "source": "/(.*)", "destination": "/" }] } 
+2026-07-01 03:43:28 | README.md | # .github # AiMetaverse Platform â€“ OSS Licensing & Dev Grid Created and maintained by Commander **#MrGGTP**  ## Overview This repository powers the AI-driven Planet.Ai and FacePrintPay systems,
+2026-07-01 03:43:28 | README.md | # AI API Repository Platform  ## Components: - Flask API Server - Snowflake DB Connector - HTML/JS Frontend - Dockerized Full Stack  ## Deployment:  ```bash cd docker docker-compose up --build ```  Fr
+2026-07-01 03:43:28 | README.md | # AiMetaverse Platform â€“ OSS Licensing & Dev Grid Created and maintained by Commander **#MrGGTP**  ## Overview This repository powers the AI-driven Planet.Ai and FacePrintPay systems, integrati
+2026-07-01 03:43:28 | README.md | # π innerView Agent (C25) Local introspection & observability for Constellation25. - `ui/` : Dashboard (HTML/CSS/JS) - `state/` : JSON state files - `bin/` : Launchers  ## Run `~/.c25/modules/innervi
+2026-08-04 02:32:54 | .agent_state.json | {   "current_stage": "ready",   "active_branch": "main",   "failures": 0 }
+============================================================
+LEGAL CASE TIMELINE - Generated Tue Aug  4 04:20:52 EDT 2026

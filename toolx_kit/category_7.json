@@ -1,0 +1,7 @@
+{
+    "id": 7,
+    "name": "Stress Testing",
+    "tools": ["stress-ng", "ab", "wrk"],
+    "status": "available",
+    "integrated": true
+}

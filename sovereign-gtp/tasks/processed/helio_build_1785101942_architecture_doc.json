@@ -1,0 +1,9 @@
+{
+  "task_id": "build_1785101942_architecture_doc",
+  "agent": "helio",
+  "type": "architecture_doc",
+  "priority": "high",
+  "created": "20260726T213902Z",
+  "payload": "Create a clean ARCHITECTURE.md that accurately describes the current Constellation25 system: BaseAgent, TotalRecall logger, IntelligentRouter, JSON IPC, boot_mesh.sh, and the existing agents (helio, vault, echo). Do not invent features that do not exist. Output pure Markdown.",
+  "status": "pending"
+}

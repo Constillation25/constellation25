@@ -1,0 +1,96 @@
+Generate compliance matrix HTML table
+Summarize NCSC CVP deficiencies report
+Map VideoCourts to Administrative AI Orders
+Draft risk mitigation statement document
+Produce chain of custody explainer
+Create CJIS compliance checklist
+Build SOC 2 requirements matrix
+Generate HIPAA safeguards document
+Create FedRAMP baseline comparison
+Build ISO 27001 gap analysis
+Generate NIST framework mapping
+Create audit log specification
+Build access control matrix
+Generate encryption standards doc
+Create data retention policy
+Build incident response plan
+Generate disaster recovery procedure
+Create business continuity plan
+Build vendor risk assessment
+Generate third party audit report
+Create penetration test summary
+Build vulnerability scan results
+Generate security training materials
+Create acceptable use policy
+Build password policy document
+Generate MFA implementation guide
+Create session management spec
+Build authentication flow diagram
+Generate authorization matrix
+Create role-based access control
+Build least privilege guidelines
+Generate separation of duties doc
+Create conflict of interest policy
+Build ethics guidelines
+Generate whistleblower protection
+Create complaint handling procedure
+Build investigation protocol
+Generate corrective action plan
+Create preventive measures list
+Build monitoring procedures
+Generate alert thresholds
+Create escalation procedures
+Build notification templates
+Generate compliance calendar
+Create audit schedule
+Build evidence collection guide
+Generate documentation standards
+Create record keeping requirements
+Build archival procedures
+Generate destruction protocols
+Create legal hold process
+Build eDiscovery readiness
+Generate subpoena response plan
+Create warrant handling procedure
+Build court order compliance
+Generate regulatory reporting
+Create filing requirements list
+Build submission deadlines
+Generate form templates
+Create certification statements
+Build attestation documents
+Generate verification procedures
+Create validation checklists
+Build testing protocols
+Generate quality assurance plan
+Create performance metrics
+Build KPI dashboard spec
+Generate SLA definitions
+Create uptime requirements
+Build availability targets
+Generate response time goals
+Create throughput benchmarks
+Build capacity planning doc
+Generate scalability requirements
+Create load testing plan
+Build stress testing procedures
+Generate failover protocols
+Create backup procedures
+Build restoration testing
+Generate data integrity checks
+Create consistency validation
+Build reconciliation procedures
+Generate audit trail requirements
+Create tamper detection system
+Build forensic analysis guide
+Generate incident classification
+Create severity definitions
+Build impact assessment matrix
+Generate root cause analysis
+Create lessons learned template
+Build improvement recommendations
+Generate action item tracking
+Create follow-up procedures
+Build closure criteria
+Generate post-incident review
+Create continuous improvement plan

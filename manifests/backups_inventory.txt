@@ -1,0 +1,7 @@
+total 86
+drwx------.   5 u0_a510 u0_a510   3452 Jun 29 00:43 .
+drwx------. 329 u0_a510 u0_a510 118784 Aug 11 19:28 ..
+drwx------.   7 u0_a510 u0_a510   3452 Jul 25 05:47 .git
+drwx--S---.  13 u0_a510 u0_a510   3452 Jul 25 13:05 VideoCourts_1776349635
+drwx------.   4 u0_a510 u0_a510   3452 Jul 25 13:05 checkpoint_20260411_004400
+-rw-------.   1 u0_a510 u0_a510   2472 Jun 29 00:43 ith the Compiler

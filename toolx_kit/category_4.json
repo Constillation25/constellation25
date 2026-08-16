@@ -1,0 +1,7 @@
+{
+    "id": 4,
+    "name": "Wireless Testing",
+    "tools": ["aircrack-ng", "reaver", "wifite"],
+    "status": "available",
+    "integrated": true
+}

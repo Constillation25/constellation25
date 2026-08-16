@@ -1,0 +1,7 @@
+{
+    "id": 9,
+    "name": "Password Attacks",
+    "tools": ["hashcat", "john", "hydra"],
+    "status": "available",
+    "integrated": true
+}

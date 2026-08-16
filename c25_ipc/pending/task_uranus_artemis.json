@@ -1,0 +1,14 @@
+{
+  "task_id": "'"$TASK_ID"'",
+  "timestamp": "'"$TIMESTAMP"'",
+  "agents": ["Uranus", "Artemis"],
+  "priority": "HIGH",
+  "action": "GENERATE_AND_VALIDATE_QUIZZES",
+  "payload": {
+    "source": "~/constellation25/corpus/cleaned_text",
+    "llm_router": "NLP2CODE",
+    "output_format": "json",
+    "quiz_types": ["multiple_choice", "code_completion", "true_false"],
+    "qa_validation": true
+  }
+}

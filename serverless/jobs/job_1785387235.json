@@ -1,0 +1,9 @@
+{
+  "id": "job_1785387235",
+  "name": "forensic-analysis",
+  "command": "python3 /app/analyze.py --full-scan",
+  "max_duration_minutes": 45,
+  "submitted": "2026-07-30T00:53:55.876743",
+  "status": "queued",
+  "type": "job"
+}

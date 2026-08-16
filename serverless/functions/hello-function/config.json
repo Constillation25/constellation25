@@ -1,0 +1,7 @@
+{
+  "name": "hello-function",
+  "runtime": "python3",
+  "handler": "handler",
+  "deployed": "2026-07-30T00:53:55.874315",
+  "type": "function"
+}

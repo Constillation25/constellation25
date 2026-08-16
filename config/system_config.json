@@ -1,0 +1,15 @@
+  ,
+  "sovereign_gtp": {
+    "enabled": true,
+    "root": "${HOME}/constellation25/sovereign-gtp",
+    "active_agents": 8,
+    "total_agents": 25,
+    "task_backlog": 1000,
+    "categories": ["A_landing_page", "B_compliance", "C_investor", "D_county_pilot", "E_marketing", "F_videocourts_ui", "G_legal_ai", "H_totalrecall", "I_pathos_nlp", "J_sovereigndeck"],
+    "integration_points": {
+      "nlp2code": "${HOME}/constellation25/nlp2code-package",
+      "totalrecall": "${HOME}/constellation25/sovereign-gtp/totalrecall",
+      "videocourts": "${HOME}/constellation25/videocourts",
+      "websocket": "ws://localhost:8001/ws/courtroom"
+    }
+  }

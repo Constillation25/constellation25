@@ -1,0 +1,33 @@
+advanced:
+  default_remote_dir: /var/www/html
+  enable_recursive: true
+  limit_speed: false
+  speed_limit: 0
+  synchronize_local_dirs: true
+bookmarks:
+- created: '2026-07-30T00:54:02.904752'
+  name: Web Root
+  path: /var/www/html
+- created: '2026-07-30T00:54:02.904758'
+  name: Uploads
+  path: /var/www/uploads
+- created: '2026-07-30T00:54:02.904763'
+  name: Logs
+  path: /var/log/apache2
+general:
+  background_color: None
+  comments: Production server
+  encryption: Require explicit FTP over TLS
+  host: ftp.online.net
+  logon_type: Normal
+  password: secret123
+  port: 21
+  protocol: FTP - File Transfer Protocol
+  user: webmaster@example.com
+site_name: Staging FTP
+transfer_settings:
+  ascii_files: Auto
+  continue_interrupted: true
+  delete_extra_files: false
+  overwrite_mode: Overwrite if newer
+  transfer_mode: Auto

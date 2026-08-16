@@ -1,0 +1,9 @@
+{
+  "task_id": "build_1785101852_user_guide",
+  "agent": "helio",
+  "type": "user_guide",
+  "priority": "high",
+  "created": "20260726T213732Z",
+  "payload": "Write a short USER_GUIDE.md explaining how to start the mesh, drop a task, check status, and stop the system. Use only commands and paths that actually exist today.",
+  "status": "pending"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Neo Morphious",
+  "designation": "AGENT-26",
+  "role": "Adaptive Runtime Mutator & System Evolution Engine",
+  "domain": ["hot-swap", "agent-mutation", "runtime-adaptation", "self-healing"],
+  "ipc_channel": "neo_morphious",
+  "status": "active",
+  "created": "2026-07-26"
+}

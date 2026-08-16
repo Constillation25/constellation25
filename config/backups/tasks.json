@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "task_id": "backup_1",
+      "name": "S3 Backup 1",
+      "status": "success",
+      "source": "/data/data/com.termux/files/home/constellation25/modules",
+      "target": {
+        "server": "s3.fr-par.scw.cloud",
+        "bucket": "testsc",
+        "protocol": "s3"
+      },
+      "last_backup": "2026-07-30T00:53:56.681270",
+      "next_backup": "2026-07-30T10:40:00.681285",
+      "schedule": {
+        "interval": "daily",
+        "time": "10:40"
+      },
+      "size_bytes": 413008,
+      "size_kb": 403.33,
+      "versions": 1,
+      "integrity_check": "passed"
+    }
+  ]
+}
