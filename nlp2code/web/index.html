@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NLP2CODE - Total Recall Metadata Harvest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>NLP2CODE Interface</h1>
+    <p>Natural Language to Code Generation for Total Recall Forensic Engine</p>
+  </header>
+  
+  <main>
+    <section class="input-section">
+      <h2>Natural Language Input</h2>
+      <textarea id="nlpInput" placeholder="Describe what you want to build..."></textarea>
+      <button id="generateBtn">Generate Code</button>
+      <button id="harvestBtn">Harvest Metadata</button>
+    </section>
+    
+    <section class="output-section">
+      <h2>Generated Code</h2>
+      <pre id="codeOutput"></pre>
+    </section>
+    
+    <section class="metadata-section">
+      <h2>Total Recall Metadata</h2>
+      <pre id="metadataOutput"></pre>
+    </section>
+    
+    <section class="status-section">
+      <h2>System Status</h2>
+      <div id="statusOutput"></div>
+    </section>
+  </main>
+  
+  <script src="nlp2code.js"></script>
+</body>
+</html>
