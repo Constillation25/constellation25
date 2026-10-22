@@ -1,0 +1,7 @@
+{
+  "task_id": "001",
+  "target_agent": "MERCURY",
+  "action": "scrape_delinquent_taxes",
+  "payload": { "county": "Miami-Dade", "url": "https://..." },
+  "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+}

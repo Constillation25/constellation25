@@ -1,0 +1,53 @@
+{
+  "$schema": "https://repomix.com/schemas/latest/schema.json",
+  "input": {
+    "maxFileSize": 100000000
+  },
+  "output": {
+    "filePath": "/data/data/com.termux/files/home/constellation25/data/faceprintpay_mega_pack.xml",
+    "style": "xml",
+    "parsableStyle": false,
+    "compress": false,
+    "headerText": "CONSTELLATION25 MEGA BUILD\n212,383 Files | All Faceprintpay Repositories\n",
+    "fileSummary": true,
+    "directoryStructure": true,
+    "files": true,
+    "removeComments": false,
+    "removeEmptyLines": false,
+    "topFilesLength": 50,
+    "showLineNumbers": true,
+    "includeEmptyDirectories": false,
+    "truncateBase64": true,
+    "tokenCountTree": 100000,
+    "git": {
+      "sortByChanges": false,
+      "includeDiffs": false,
+      "includeLogs": false
+    }
+  },
+  "include": ["**/*"],
+  "ignore": {
+    "useGitignore": true,
+    "useDefaultPatterns": true,
+    "customPatterns": [
+      "**/node_modules/**",
+      "**/.git/**",
+      "**/__pycache__/**",
+      "**/.venv/**",
+      "**/venv/**",
+      "**/.cache/**",
+      "**/Android/**",
+      "**/*.db",
+      "**/*.sqlite",
+      "**/*.apk",
+      "**/*.zip",
+      "**/*.log"
+    ]
+  },
+  "security": {
+    "enableSecurityCheck": false
+  },
+  "tokenCount": {
+    "encoding": "o200k_base"
+  }
+}

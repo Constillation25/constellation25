@@ -1,0 +1,37 @@
+[1m[90m[TAILING] Tailing last 10 lines for [all] processes (change the value with --lines option)[39m[22m
+[90m/data/data/com.termux/files/home/.pm2/pm2.log last 10 lines:[39m
+[34mPM2        | [39m2026-10-10T11:20:29: PM2 log: App [c25-master-orchestrator:0] exited with code [2] via signal [SIGINT]
+[34mPM2        | [39m2026-10-10T11:20:29: PM2 log: App [c25-master-orchestrator:0] starting in -fork mode-
+[34mPM2        | [39m2026-10-10T11:20:29: PM2 log: App [c25-master-orchestrator:0] online
+[34mPM2        | [39m2026-10-10T11:20:29: PM2 log: App [c25-master-orchestrator:0] exited with code [2] via signal [SIGINT]
+[34mPM2        | [39m2026-10-10T11:20:29: PM2 log: App [c25-master-orchestrator:0] starting in -fork mode-
+[34mPM2        | [39m2026-10-10T11:20:29: PM2 log: App [c25-master-orchestrator:0] online
+[34mPM2        | [39m2026-10-10T11:20:29: PM2 log: App [c25-master-orchestrator:0] exited with code [2] via signal [SIGINT]
+[34mPM2        | [39m2026-10-10T11:20:29: PM2 log: App [c25-master-orchestrator:0] starting in -fork mode-
+[34mPM2        | [39m2026-10-10T11:20:29: PM2 log: App [c25-master-orchestrator:0] online
+[34mPM2        | [39m2026-10-10T11:20:29: PM2 warn: [pidusage] We couldn't find uptime from /proc/uptime, using os.uptime() value
+
+[90m/data/data/com.termux/files/home/.pm2/logs/c25-master-orchestrator-out.log last 10 lines:[39m
+[32m0|c25-mast | [39m[+] Agent [Recon] -> Executing local build compilation & verification.
+[32m0|c25-mast | [39m[+] Agent [SCAF] -> Executing local build compilation & verification.
+[32m0|c25-mast | [39m[+] Agent [Shado] -> Executing local build compilation & verification.
+[32m0|c25-mast | [39m[+] Agent [Starg8] -> Executing local build compilation & verification.
+[32m0|c25-mast | [39m[+] Agent [Swifty] -> Executing local build compilation & verification.
+[32m0|c25-mast | [39m[+] Agent [Synthi] -> Executing local build compilation & verification.
+[32m0|c25-mast | [39m[+] Agent [VerseBot] -> Executing local build compilation & verification.
+[32m0|c25-mast | [39m[+] Agent [ZaLe] -> Executing local build compilation & verification.
+[32m0|c25-mast | [39m[+] Agent [Zion] -> Executing local build compilation & verification.
+[32m0|c25-mast | [39m[+] All agent nodes synchronized. System compilation ready.
+
+[90m/data/data/com.termux/files/home/.pm2/logs/c25-master-orchestrator-error.log last 10 lines:[39m
+[31m0|c25-mast | [39mpython3: can't open file '/data/data/com.termux/files/home/constellation25/bin/agent_builder_loop.py': [Errno 2] No such file or directory
+[31m0|c25-mast | [39mpython3: can't open file '/data/data/com.termux/files/home/constellation25/bin/agent_builder_loop.py': [Errno 2] No such file or directory
+[31m0|c25-mast | [39mpython3: can't open file '/data/data/com.termux/files/home/constellation25/bin/agent_builder_loop.py': [Errno 2] No such file or directory
+[31m0|c25-mast | [39mpython3: can't open file '/data/data/com.termux/files/home/constellation25/bin/agent_builder_loop.py': [Errno 2] No such file or directory
+[31m0|c25-mast | [39mpython3: can't open file '/data/data/com.termux/files/home/constellation25/bin/agent_builder_loop.py': [Errno 2] No such file or directory
+[31m0|c25-mast | [39mpython3: can't open file '/data/data/com.termux/files/home/constellation25/bin/agent_builder_loop.py': [Errno 2] No such file or directory
+[31m0|c25-mast | [39mpython3: can't open file '/data/data/com.termux/files/home/constellation25/bin/agent_builder_loop.py': [Errno 2] No such file or directory
+[31m0|c25-mast | [39mpython3: can't open file '/data/data/com.termux/files/home/constellation25/bin/agent_builder_loop.py': [Errno 2] No such file or directory
+[31m0|c25-mast | [39mpython3: can't open file '/data/data/com.termux/files/home/constellation25/bin/agent_builder_loop.py': [Errno 2] No such file or directory
+[31m0|c25-mast | [39mpython3: can't open file '/data/data/com.termux/files/home/constellation25/bin/agent_builder_loop.py': [Errno 2] No such file or directory
+

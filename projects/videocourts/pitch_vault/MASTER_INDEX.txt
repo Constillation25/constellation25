@@ -1,0 +1,35 @@
+/data/data/com.termux/files/home/constellation25/projects/videocourts/pitch_vault:
+total 25
+drwx------. 7 u0_a510 u0_a510 3452 Oct  8 16:58 .
+drwx------. 3 u0_a510 u0_a510 3452 Oct  8 16:58 ..
+-rw-------. 1 u0_a510 u0_a510    0 Oct  8 16:58 MASTER_INDEX.txt
+drwx------. 2 u0_a510 u0_a510 3452 Oct  8 16:58 code
+drwx------. 2 u0_a510 u0_a510 3452 Oct  8 16:58 deck
+drwx------. 2 u0_a510 u0_a510 3452 Oct  8 16:58 docs
+drwx------. 2 u0_a510 u0_a510 3452 Oct  8 16:58 legal
+drwx------. 2 u0_a510 u0_a510 3452 Oct  8 16:58 media
+
+/data/data/com.termux/files/home/constellation25/projects/videocourts/pitch_vault/code:
+total 7
+drwx------. 2 u0_a510 u0_a510 3452 Oct  8 16:58 .
+drwx------. 7 u0_a510 u0_a510 3452 Oct  8 16:58 ..
+
+/data/data/com.termux/files/home/constellation25/projects/videocourts/pitch_vault/deck:
+total 7
+drwx------. 2 u0_a510 u0_a510 3452 Oct  8 16:58 .
+drwx------. 7 u0_a510 u0_a510 3452 Oct  8 16:58 ..
+
+/data/data/com.termux/files/home/constellation25/projects/videocourts/pitch_vault/docs:
+total 7
+drwx------. 2 u0_a510 u0_a510 3452 Oct  8 16:58 .
+drwx------. 7 u0_a510 u0_a510 3452 Oct  8 16:58 ..
+
+/data/data/com.termux/files/home/constellation25/projects/videocourts/pitch_vault/legal:
+total 7
+drwx------. 2 u0_a510 u0_a510 3452 Oct  8 16:58 .
+drwx------. 7 u0_a510 u0_a510 3452 Oct  8 16:58 ..
+
+/data/data/com.termux/files/home/constellation25/projects/videocourts/pitch_vault/media:
+total 7
+drwx------. 2 u0_a510 u0_a510 3452 Oct  8 16:58 .
+drwx------. 7 u0_a510 u0_a510 3452 Oct  8 16:58 ..

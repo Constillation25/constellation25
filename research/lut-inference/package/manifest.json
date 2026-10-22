@@ -1,0 +1,52 @@
+{
+  "build_time": "2026-10-22T04:01:49Z",
+  "files": [
+    {
+      "path": "./EXECUTIVE_SUMMARY.md",
+      "sha256": "4d38f8cba3a3a52fd25bcb959335dec9a0a27e4fe32f7a4f66ff32ca6c48c209",
+      "size": 1669
+    },
+    {
+      "path": "./bench/measure_device.py",
+      "sha256": "1bda6830596a490e7059afef76aaaa0faf261e0deb13c2a1780aa419404ccc44",
+      "size": 4838
+    },
+    {
+      "path": "./forensic/trfe_lut_runner.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "./kernels/build.sh",
+      "sha256": "81d0e7c2af23b501529d1224f37b3c892450b67179f6da00f87261ac39e78170",
+      "size": 370
+    },
+    {
+      "path": "./kernels/lut_gemm.cu",
+      "sha256": "41e71330e4e7e125fa8d84b037ad112caeb2fea973fb8305a0f2bfe3a5bcf078",
+      "size": 3590
+    },
+    {
+      "path": "./ledger/write_ledger.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "path": "./results/measured.json",
+      "sha256": "86d1136e4f38c93476b37c0405e46d5ae704cd53a308815c633550e50f11c74d",
+      "size": 1364
+    },
+    {
+      "path": "./runtime/capture_health.sh",
+      "sha256": "c770b95fdcf0d0ba42eeaa67e71fe19a31baf296521ce5c869ef9e6e5b14403b",
+      "size": 658
+    },
+    {
+      "path": "./runtime/full_runtime.log",
+      "sha256": "336ed94706702dcd84a988dee3a4948b653b7752b896770f486e2ca413ece95d",
+      "size": 2266
+    }
+  ],
+  "total_files": 9,
+  "total_bytes": 14755
+}

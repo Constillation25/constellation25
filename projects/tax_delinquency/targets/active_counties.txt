@@ -1,0 +1,3 @@
+# Format: State|County|URL|SourceType
+FL|Miami-Dade|https://www.miamidade.gov/pa/property-search.asp|HTML_SCRAPING
+TX|Harris|https://public.hcad.org/records/QuickSearch.asp|HTML_SCRAPING

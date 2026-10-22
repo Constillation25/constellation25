@@ -1,0 +1,48 @@
+{
+  "device": "Android-16-aarch64-64bit-ELF",
+  "python": "3.14.6",
+  "numpy": "2.4.4",
+  "timestamp": "2026-10-22T03:56:36Z",
+  "analytic": {
+    "attention_flop_per_byte": 109.71,
+    "ffn_flop_per_byte": 267.13,
+    "combined_flop_per_byte": 221.69,
+    "h100_roofline_balance_flop_per_byte": 295,
+    "rtx4090_roofline_balance_flop_per_byte": 82
+  },
+  "measured_matmul": {
+    "n": 2048,
+    "seconds": 0.58844,
+    "gflops": 29.2,
+    "gb_per_s": 0.09,
+    "flop_per_byte": 341.33,
+    "regime": "compute-bound (large square GEMM)"
+  },
+  "measured_memcpy": {
+    "mb": 67.1,
+    "seconds": 0.010241,
+    "gb_per_s": 13.11,
+    "flop_per_byte": 0.0,
+    "regime": "memory-bound (pure gather/copy)"
+  },
+  "measured_gemv_decode": {
+    "shape": "4096x4096 @ 4096",
+    "seconds": 0.006018,
+    "gflops": 5.58,
+    "gb_per_s": 11.16,
+    "flop_per_byte": 0.5,
+    "regime": "memory-bound (autoregressive decode)"
+  },
+  "lut_gemm": {
+    "quantization": "4-bit per operand (16 levels)",
+    "lut_entries": 256,
+    "lut_bytes": 1024,
+    "fits_in_64kb_smem": true,
+    "max_abs_error": 1.287758,
+    "max_rel_error": 0.016151,
+    "cosine_similarity": 0.999991,
+    "cpu_ref_seconds": 0.001465,
+    "cpu_lut_seconds": 0.323196,
+    "cpu_note": "NumPy LUT path materializes K x N gather -> slower on CPU. Speedup requires GPU SMEM (see kernels/build.sh)."
+  }
+}
